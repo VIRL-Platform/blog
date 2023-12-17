@@ -3,7 +3,7 @@
   background-color: #265073; /* Dark teal background */
   color: #FFC436;
   text-align: center; /* Center content on small screens */
-  padding: 10px; /* Reduced padding for small screens */
+  padding: 20px; /* Reduced padding for small screens */
 }
 
 
@@ -13,7 +13,13 @@
   line-height: 1.2;
 }
 
-.header-video video {
+.teaser-video video {
+  height: auto; /* Maintain the aspect ratio of the image */
+  display: block; /* Prevent inline spacing issues */
+  max-width: 100%;
+}
+
+.header-image img {
   max-width: 100%; /* Ensure the image is never more than 100% of its container */
   height: auto; /* Maintain the aspect ratio of the image */
   display: block; /* Prevent inline spacing issues */
@@ -55,22 +61,30 @@
     display: flex; /* Use flexbox for positioning on larger screens */
     justify-content: space-between; /* Space between the content and image */
     align-items: center; /* Align items vertically */
-    padding: 40px 40px; /* Increase padding for larger screens */
+    padding: 50px 50px; /* Increase padding for larger screens */
   }
 
   .header-content {
-    max-width: calc(40% - 10px); /* Adjust width to include margin */
+    max-width: calc(50% - 20px); /* Adjust width to include margin */
     text-align: left; /* Align text to the left for larger screens */
     margin-right: 10px; /* Add margin to the right of the header content */
   }
 
   .header-content h1 {
-    font-size: 3em; /* Increase font size for larger screens */
+    font-size: 3.3em; /* Increase font size for larger screens */
   }
 
-  .header-video {
-    max-width: calc(60% - 20px); /* Adjust width to include margin */
+  .teaser-video {
     width: 100%; /* Set width to 100% */
+  }
+
+  .header-image {
+    max-width: calc(50% - 20px); /* Adjust width to include margin */
+  }
+
+  .header-image img {
+    max-width: 90%; /* Image should be responsive within the container */
+    height: auto; /* Maintain the aspect ratio */
   }
 }
 
@@ -106,7 +120,7 @@
 .byline-column p {
   color: #666; /* Lighter grey color for the text */
   font-size: 14px; /* Adjust the font size as needed */
-  margin: 5px 0; /* Space between paragraphs */
+  margin: 0px 0; /* Space between paragraphs */
 }
 
 .author-link, .affiliation-link {
@@ -228,31 +242,74 @@ d-article section{
 
 .video-container {
   position: relative;
-  padding-top: 56.25%;
-  /* overflow: hidden; */
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0; /* Collapse the container to the aspect ratio */
 }
 
 .video-container iframe {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
 
+.preview-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 
-blockquote {
+.preview {
+  cursor: pointer;
+  transition: opacity 0.2s, box-shadow 0.2s;
+  opacity: 0.5; /* 50% transparent */
+  height: 50px; /* Fixed height */
+  width: auto; /* Auto width to maintain aspect ratio */
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.preview:hover {
+  opacity: 1.0; /* Fully opaque on hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow effect on hover */
+}
+
+
+/* blockquote {
   border-left: 4px solid #ccc;
   margin: 0.5em auto;
   padding: 0.5em 10px;
   color: #666;
   font-style: italic;
   width: 80%;
-  /* max-width: 100px; */
+} */
+
+/* blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+} */
+
+blockquote {
+  border-left: 6px solid #4a90e2; /* Brighter border color */
+  background-color: #f9f9f9;      /* Subtle background */
+  margin: 1em auto;
+  padding: 1em 10px;
+  color: #333;                    /* Darker font color */
+  font-style: italic;
+  font-weight: bold;              /* Bolder font */
+  width: 85%;
+  box-shadow: 2px 2px 8px #ccc;   /* Box shadow */
 }
 
 blockquote:before {
-  color: #ccc;
+  color: #4a90e2;                 /* Matching the border color */
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
@@ -282,11 +339,11 @@ blockquote:before {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin-top: 5px;  /* Keeps the original top margin */
-  margin-bottom: 5px;  /* Keeps the original bottom margin */
-  margin-left: 20px;  /* Increases the left margin */
-  margin-right: 20px;  /* Increases the right margin */
+  font-size: 11px;
+  margin-top: 0px;  /* Keeps the original top margin */
+  margin-bottom: 10px;  /* Keeps the original bottom margin */
+  margin-left: 5px;  /* Increases the left margin */
+  margin-right: 5px;  /* Increases the right margin */
   cursor: pointer;
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px #999; /* Subtle shadow */
@@ -304,6 +361,7 @@ blockquote:before {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .llmul {
@@ -327,3 +385,284 @@ blockquote:before {
   display: block;
 }
 
+
+/* collapsible code */
+.collapsible {
+  background-color: hsla(206, 95%, 20%, 0.2);
+  cursor: pointer;
+  padding: 1em;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+.active, .collapsible:hover {
+  transition: max-height 0.2s ease-out;
+  /* background-color: #acc2c2; */
+}
+
+.collapsible {
+  background-color: hsla(206, 95%, 20%, 0.2);
+  cursor: pointer;
+  padding: 1em;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+.active, .collapsible:hover {
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border-radius: 4px;
+}
+
+.collapsible.active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.collapsible .collapsible-indicator::after {
+  content: "+"
+}
+
+.collapsible.active .collapsible-indicator::after {
+  content: "-"
+}
+
+.collapsible h4 {
+  margin: 0;
+  line-height: inherit;
+}
+
+d-article .content {
+  padding: .3em 1em;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-color: hsla(206, 95%, 20%, 0.2);
+}
+
+
+
+aside .counting-table {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Set max-width for the aside element */
+}
+
+aside figure {
+  margin: 0;
+  display: block; /* Ensures that figure behaves as a block-level element */
+}
+
+aside figure table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Use fixed table layout for consistent column sizing */
+}
+
+aside th, aside td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #dee2e6;
+  white-space: nowrap;
+  text-overflow: ellipsis; /* Add ellipsis to clipped content */
+}
+
+aside th {
+  background-color: #e9ecef;
+  color: #495057;
+}
+aside tr:hover {
+  background-color: #f2f2f2;
+}
+aside th:first-child, aside td:first-child {
+  border-right: 1px solid #dee2e6;
+}
+
+figcaption .table-caption {
+  text-align: center;
+  padding: 8px;
+  font-style: italic;
+  color: #6c757d;
+  margin-top: 0; /* Ensures there is no additional space between table and caption */
+  font-size: 12px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.img-magnifier-container {
+  position:relative;
+  margin-bottom: 30px;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}
+
+
+img {
+  vertical-align: middle;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.slider-img-container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.my-slides {
+  display: none;
+}
+
+.my-slides:hover .overlay {
+  opacity: 1;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(148, 143, 143, 0.8);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev {
+  left: -3%;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -3%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(255, 255, 255);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #0e0d0d;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.row {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  height: 50px; /* Fixed height */
+  width: auto; /* Auto width to maintain aspect ratio */
+}
+
+.active-slide-img,
+.demo:hover {
+  opacity: 1;
+}
+
+
+.overlay {
+  position: absolute; 
+  top: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.system-fundamental-aside {
+  display: none;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 100;
+  width: 230px;
+  color: rgb(0, 0, 0);
+  /* width: fit-content; */
+}
+
+.clickable-region {
+  position: absolute;
+  /* border: 2px solid rgba(255, 255, 255, 0.5); */
+  background: rgba(255, 255, 0, 0.1); /* Semi-transparent yellow */
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.clickable-region:hover {
+  background: rgba(255, 255, 0, 0.4); /* More visible on hover */
+  border-color: rgba(255, 255, 255, 0.75); /* Brighter border on hover */
+}
+
+.clickable-image-container {
+  position: relative;
+  width: 100%;
+}
+.clickable-image-container img {
+  width: 100%;
+  height: auto;
+}

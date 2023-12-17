@@ -7,7 +7,7 @@ var marginTop = parseInt(computedStyle.marginTop, 10);
 // Calculate the original top offset plus the margin-top
 var originalOffsetTop = dContents.offsetTop;
 var originalOffsetLeft = dContents.offsetLeft;
-var originalWidth = dContents.offsetWidth; // This should include padding if box-sizing is border-box
+var originalWidth = dContents.offsetWidth + 20; // This should include padding if box-sizing is border-box
 
 // Function to handle the resize event
 function onResize() {
