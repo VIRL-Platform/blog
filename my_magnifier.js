@@ -1,12 +1,15 @@
-function magnify(imgID, zoom) {
+function magnify(imgID, zoom, glassWidth = 100, glassHeight = 100) {
     var img, glass, w, h, bw;
     img = document.getElementById(imgID);
-    /*create magnifier glass:*/
+    /* Create magnifier glass */
     glass = document.createElement("DIV");
     glass.setAttribute("class", "img-magnifier-glass");
-    /*insert magnifier glass:*/
+    /* Set size of the magnifier glass */
+    glass.style.width = glassWidth + "px";
+    glass.style.height = glassHeight + "px";
+    /* Insert magnifier glass */
     img.parentElement.insertBefore(glass, img);
-    /*set background properties for the magnifier glass:*/
+    /* Set background properties for the magnifier glass */
     glass.style.backgroundImage = "url('" + img.src + "')";
     glass.style.backgroundRepeat = "no-repeat";
     glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
