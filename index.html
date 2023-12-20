@@ -61,7 +61,7 @@
             </div>
         </div>
 
-        <d-contents style="margin-top: 5px; position: relative;">
+        <!-- <d-contents style="margin-top: 5px; position: relative;">
             <nav>
                 <h4>Contents</h4>
                 <div><a href="#agent-examplers">Virtual Intelligence in Real Life</a></div>
@@ -75,7 +75,7 @@
                 <div><a href="#system">System Fundamental</a></div>
                 <div><a href="#virlbenchmark"><em>V-IRL</em> Benchmark</a></div>
             </nav>
-        </d-contents>
+        </d-contents> -->
 
         <p>
         There is a sensory gulf between the Earth that humans inhabit and the imaginary, digital realms in which modern AI agents are created.
@@ -89,6 +89,10 @@
                 <source src="videos/teaser_video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close" id="close-span">&times;</span>
+            <img class="modal-content" id="img01">
         </div>
 
         <h2 id="agent-examplers">Virtual Intelligence in Real Life</h2>
@@ -116,7 +120,7 @@
         <div class="content">
             <d-figure>
                 <figure style="margin-bottom: 10px">
-                    <img src="virl_images/courier.png" alt="Route optimizer figure">
+                    <img class="modal-trigger" src="virl_images/courier.png" alt="Route optimizer figure">
                     <figcaption>Finding the shortest path for Peng to travel to five places.</figcaption>
                 </figure>
             </d-figure>
@@ -146,7 +150,7 @@
         <div class="content interactive-image">
             <div id="image-text-container">
                 <div class="image-review-container" style="margin-bottom: 0px;">
-                    <img style="width: 55%;" src="virl_images/place_recommend/place1.png" alt="place illustration">
+                    <img class="modal-trigger" style="width: 55%;" src="virl_images/place_recommend/place1.png" alt="place illustration">
                     <div class="text-box">
                         <p style="font-size: 14px; margin-bottom: 0px;"><strong>Example Place Review:</strong></p>
                         <blockquote class="place-review">Well done, Chow House. Authentic cuisine, expertly prepared.  Twice Cooked pork, done the right way. You can see the leeks from the photo with none of that Americanized garbage many places dump into this otherwise elegant dish... Big shrimp.  Big flavor.  Peanuts.  Initially, I was scared of the deep fried dried red pepper, but they turned out really tasty and crunchy, not as spicy as I had originally feared. Pork fried rice, expertly cooked.  All in all, if you live downtown and like authentic Sichuan food, this is your place.  Bravo! (rating: 5)</blockquote>
@@ -185,7 +189,7 @@
         <div class="content">
             <d-figure>
                 <figure>
-                    <img src="virl_images/agent_estate.png" alt="Estate recommender">
+                    <img class="modal-trigger" src="virl_images/agent_estate.png" alt="Estate recommender">
                     <figcaption style="text-align: center">Part of candidate estates.</figcaption>
                 </figure>
             </d-figure>
@@ -222,12 +226,12 @@
         <div id="slider-img-rx399" class="slider-img-container">
             <div class="my-slides">
               <!-- <div class="numbertext">1 / 2</div> -->
-              <img src="virl_images/rx-399/rx-399_clean_ny.png" style="width:100%">
+              <img class="modal-trigger" src="virl_images/rx-399/rx-399_clean_ny.png" style="width:100%">
             </div>
           
             <div class="my-slides">
               <!-- <div class="numbertext">2 / 2</div> -->
-              <img src="virl_images/rx-399/rx-399_clean_hk.png" style="width:100%">
+              <img class="modal-trigger" src="virl_images/rx-399/rx-399_clean_hk.png" style="width:100%">
             </div>
               
             <a class="prev" onclick="plusSlides('slider-img-rx399', -1)">❮</a>
@@ -277,7 +281,7 @@
             <!-- Imani can also zoom in to specific regions, where lighter colors represent positions with more unique instances identified.  -->
         </p>
         <div class="img-magnifier-container">
-            <img id="urban_planner_img" style="width: 100%" src="virl_images/urban_planner.png" alt="Urban Planner agent visualization">
+            <img class="modal-trigger" id="urban_planner_img" style="width: 100%" src="virl_images/urban_planner.png" alt="Urban Planner agent visualization">
             <figcaption>Imani's visualization of trash bins, fire hydrants, park benches in NYC's Central Park using data collected by RX-399. The coarsest level shows general distributions of trash bins, hydrants, and benches in the park.
             Imani can also zoom in to specific regions, where lighter colors represent positions with more unique instances identified.</figcaption>
         </div>
@@ -843,7 +847,7 @@
 
         <d-figure>
             <figure style="margin-top: 5px; margin-bottom: 15px">
-                <img src="virl_images/bm_local_matching.png" alt="V-IRL Place Localization" style="width: 80%;display: block; margin: auto;">
+                <img class="modal-trigger" src="virl_images/bm_local_matching.png" alt="V-IRL Place Localization" style="width: 80%;display: block; margin: auto;">
                 <figcaption style="width: 100%;">Matching between 2D object proposal and street place. we first <i>project</i> the bounding box of each object proposal onto a frustum in the 3D space, subject to a radius.
                 We then determine if any <i>nearby places</i> fall within this frustum and radius. 
                 If any nearby place is found, the closest one is assigned as the <i>ground truth</i> for the object proposal. Otherwise, the object proposal is regarded as a <i>false positive</i>. 
@@ -889,15 +893,15 @@
         </p>
         <div id="slider-img-street-place" class="slider-img-container">
             <div class="my-slides">
-                <img src="virl_images/streetview_vs_place/streetview_vs_placeimage_1.png" style="width:100%">
+                <img class="modal-trigger" src="virl_images/streetview_vs_place/streetview_vs_placeimage_1.png" style="width:100%">
             </div>
             
             <div class="my-slides">
-                <img src="virl_images/streetview_vs_place/streetview_vs_placecentric_2.png" style="width:100%">
+                <img class="modal-trigger" src="virl_images/streetview_vs_place/streetview_vs_placecentric_2.png" style="width:100%">
             </div>
 
             <div class="my-slides">
-                <img src="virl_images/streetview_vs_place/streetview_vs_placecentric_3.png" style="width:100%">    
+                <img class="modal-trigger" src="virl_images/streetview_vs_place/streetview_vs_placecentric_3.png" style="width:100%">    
             </div>
                 
             <a class="prev" onclick="plusSlides('slider-img-street-place', -1)">❮</a>
@@ -970,25 +974,25 @@
             This suggests that existing vision models face challenges with multilingual image data.
         </p>
         <aside class="img-magnifier-container">
-            <img id="street_lagos" src="virl_images/bm_city/street_lagos.png" style="width: 250px; height: auto">
+            <img id="street_lagos" class="modal-trigger" src="virl_images/bm_city/street_lagos.png" style="width: 250px; height: auto">
             <figcaption style="width: 250px; text-align: center">Lagos, Nigeria.</figcaption>
         </aside>
 
         <div>
-            <img id="bm_city_img" src="virl_images/bm_city_analysis.png" alt="City level analysis" style="width: 100%">
+            <img id="bm_city_img" class="modal-trigger" src="virl_images/bm_city_analysis.png" alt="City level analysis" style="width: 100%">
             <figcaption style="width: 100%; text-align: center">City-level visualization of <i>V-IRL</i> benchmark results.</figcaption>
         </div>
         <aside>
             <div class="img-magnifier-container">
-                <img id="street_tokyo" src="virl_images/bm_city/street_tokyo.png" style="width: 250px; height: auto">
+                <img class="modal-trigger" id="street_tokyo" src="virl_images/bm_city/street_tokyo.png" style="width: 250px; height: auto">
                 <figcaption style="width: 250px; text-align: center; margin-bottom:10px">Tokyo, Japan </figcaption>
             </div>
             <div class="img-magnifier-container">
-                <img id="street_hk" src="virl_images/bm_city/street_hk.png" style="width: 250px; height: auto">
+                <img class="modal-trigger" id="street_hk" src="virl_images/bm_city/street_hk.png" style="width: 250px; height: auto">
                 <figcaption style="width: 250px; text-align: center; margin-bottom:10px">Hong Kong, China.</figcaption>
             </div>
             <div class="img-magnifier-container">
-                <img id="street_ba" src="virl_images/bm_city/street_Buenos_Aires.png" style="width: 250px; height: auto">
+                <img  class="modal-trigger" id="street_ba" src="virl_images/bm_city/street_Buenos_Aires.png" style="width: 250px; height: auto">
                 <figcaption style="width: 250px; text-align: center; margin-bottom:10px">Buenos Aires, Argentina.</figcaption>
             </div>
         </aside>
@@ -1020,6 +1024,7 @@
         
         </script> -->
         <script src="contents_bar.js"></script>
+        <script src="modal_image.js"></script>
         
         <script type="text/javascript">
             changeContent('Place1');
@@ -1027,7 +1032,7 @@
             switchVideo('UrbanPlanner', 'video1Container', 'video1Preview');
             switchVideo('Tourist', 'video1Container', 'video1Preview');
 
-            magnify("urban_planner_img", 2);
+            // magnify("urban_planner_img", 2);
             // magnify("bm_city_img", 1.5);
             // magnify("street_lagos", 2, 80, 80);
             // magnify("street_tokyo", 2, 80, 80);
@@ -1040,7 +1045,6 @@
             showSlides("slider-img-photographer", slideIndex);
             showSlides("slider-img-street-place", slideIndex);
             showSlides("slider-img-explorer", slideIndex, 'explorer-aside');
-   
         </script>
     </body>
 </html>

@@ -29,7 +29,6 @@ function changeContent(place) {
   textElement.textContent = texts[place];
   
   // Update the button status
-  console.log(buttonElement);
   let index = 0;
   for (var cur_place in images) {
     buttonElement[index].className = buttonElement[index].className.replace("active-button", "");
