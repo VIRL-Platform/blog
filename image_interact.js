@@ -1,7 +1,9 @@
 // JavaScript to change the content based on button click
 function changeContent(place) {
-  var imgElement = document.querySelector('#image-text-container d-figure figure img');
-  var textElement = document.querySelector('#image-text-container d-figure figure figcaption');
+  var imgElement = document.querySelector('#image-text-container div img');
+  var textElement = document.querySelector('#image-text-container > blockquote');
+  var buttonElement = document.querySelectorAll('#image-text-container div button');
+  var placeReview = document.querySelectorAll('.place-review');
 
   // Here you can add the image URLs and text for each place
   var images = {
@@ -25,25 +27,48 @@ function changeContent(place) {
 
   // Update the text content
   textElement.textContent = texts[place];
+  
+  // Update the button status
+  console.log(buttonElement);
+  let index = 0;
+  for (var cur_place in images) {
+    buttonElement[index].className = buttonElement[index].className.replace("active-button", "");
+    placeReview[index].style.display = "none";
+
+    if (cur_place == place) {
+      buttonElement[index].className += "active-button";
+      placeReview[index].style.display = "block";
+    }
+    index++;
+  }
 }
 
 // image slider
 
-function plusSlides(container_id, n) {
-  showSlides(container_id, slideIndex += n);
+function plusSlides(container_id, n, aside_class = null ) {
+  showSlides(container_id, slideIndex += n, aside_class);
 }
 
-function currentSlide(container_id, n) {
-  showSlides(container_id, slideIndex = n);
+function currentSlide(container_id, n, aside_class = null ) {
+  showSlides(container_id, slideIndex = n, aside_class);
 }
 
-function showSlides(container_id, n) {
+function showSlides(container_id, n, aside_class = null ) {
   let i;
   let slides = document.querySelectorAll("#" + container_id + " .my-slides");
   let dots = document.querySelectorAll("#" + container_id + " .demo");
   let captionText = document.querySelector("#" + container_id + " #caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
+
+  if (aside_class != null) {
+    let asides = document.querySelectorAll("." + aside_class);
+    for (i = 0; i < asides.length; i++) {
+      asides[i].style.display = "none";
+    }
+    asides[slideIndex-1].style.display = "block";
+  }
+
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }

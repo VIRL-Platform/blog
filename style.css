@@ -272,6 +272,7 @@ d-article section{
   margin-left: 10px;
 }
 
+div .preview-video-active,
 .preview:hover {
   opacity: 1.0; /* Fully opaque on hover */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow effect on hover */
@@ -296,19 +297,23 @@ d-article section{
   vertical-align: -0.4em;
 } */
 
-blockquote {
+blockquote.storytext {
   border-left: 6px solid #4a90e2; /* Brighter border color */
   background-color: #f9f9f9;      /* Subtle background */
-  margin: 1em auto;
+  /* margin: 1em auto; */
   padding: 1em 10px;
   color: #333;                    /* Darker font color */
   font-style: italic;
   font-weight: bold;              /* Bolder font */
   width: 85%;
   box-shadow: 2px 2px 8px #ccc;   /* Box shadow */
+  padding-left: 2em;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 15px;
 }
 
-blockquote:before {
+blockquote.storytext:before {
   color: #4a90e2;                 /* Matching the border color */
   content: open-quote;
   font-size: 4em;
@@ -328,7 +333,19 @@ blockquote:before {
 #image-text-container {
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
+}
+
+.image-review-container {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.text-box {
+  width: 50%; /* Adjust the width as needed */
+  margin-left: 0%; /* Space between image and text box */
+  height: 100%; /* Make the text box the same height as the image */
 }
 
 .button-bar button {
@@ -350,6 +367,7 @@ blockquote:before {
   transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
+div .active-button,
 .button-bar button:hover {
   background-color: #45a049; /* Slightly darker shade on hover */
   box-shadow: 0 6px #666; /* Change in shadow */
@@ -550,41 +568,49 @@ img {
   position: absolute;
   top: 45%;
   width: auto;
-  padding: 16px;
+  padding: 10px;
   margin-top: -50px;
   color: rgb(148, 143, 143, 0.8);
   font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
+  font-size: 30px;
+  border-radius: 3px 3px 3px 3px;
   user-select: none;
   -webkit-user-select: none;
+  border-bottom: none;
 }
 
 .prev {
-  left: -3%;
+  left: -5%;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: -3%;
-  border-radius: 3px 0 0 3px;
+  right: -5%;
+  border-radius: 3px 3px 3px 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   color: rgb(255, 255, 255);
 }
 
 /* Number text (1/3 etc) */
-/* .numbertext {
-  color: #0e0d0d;
-  font-size: 12px;
-  padding: 8px 12px;
+.numbertext {
+  color: #f8f9fa; /* Light color for better visibility */
+  font-family: 'Arial', sans-serif; /* A more modern font */
+  font-size: 16px; /* Slightly larger for readability */
+  font-weight: bold; /* Make it bold */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 5px 15px; /* Increased padding for better spacing */
   position: absolute;
-  top: 0;
-} */
+  top: 10px; /* Adjusted to not be too close to the edge */
+  left: 50%;
+  transform: translateX(-50%); /* Center it horizontally */
+  text-shadow: 1px 1px 2px black; /* Text shadow for better readability */
+  border-radius: 5px; /* Rounded corners for a softer look */
+}
 
 .row {
   margin-bottom: 20px;
@@ -608,7 +634,7 @@ img {
 
 /* Add a transparency effect for thumnbail images */
 .demo {
-  opacity: 0.6;
+  opacity: 0.5;
   height: 50px; /* Fixed height */
   width: auto; /* Auto width to maintain aspect ratio */
 }
@@ -640,7 +666,7 @@ img {
   border: 1px solid #ccc;
   padding: 10px;
   z-index: 100;
-  width: 240px;
+  width: 300px;
   color: rgb(0, 0, 0);
   font-size: 13px;
   height: fit-content;
@@ -649,13 +675,13 @@ img {
 .clickable-region {
   position: absolute;
   /* border: 2px solid rgba(255, 255, 255, 0.5); */
-  background: rgba(255, 255, 0, 0.5); 
+  /* background: rgba(255, 255, 0, 0.5);  */
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
 }
 
 .clickable-region:hover {
-  background: rgba(255, 255, 0, 0.2); /* More visible on hover */
+  background: rgba(255, 255, 0, 0.2);
   border-color: rgba(255, 255, 255, 0.75); /* Brighter border on hover */
 }
 
@@ -677,5 +703,37 @@ img {
 }
 
 .inline-tag {
-  height: 18px; width: auto
+  height: 18px;
+  width: auto
+}
+
+.explorer-aside, .tourist-aside {
+  display: none;
+  background-color: #F3F8FF;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 100;
+  width: 300px;
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  height: fit-content;
+}
+
+blockquote.place-review {
+  border-left: 2px solid #FFAE42; /* Brighter border color */
+  padding-left: 5px !important;
+  color: #333;                    /* Darker font color */
+  font-style: italic;
+  box-shadow: 2px 2px 8px #ccc;   /* Box shadow */
+  padding-left: 2em;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  text-overflow: ellipsis; /* Add ellipsis to clipped content */
+  margin-bottom: 0px;
+}
+
+aside blockquote {
+  padding-left: 10px;
+  color: #505050;                   
 }
