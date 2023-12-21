@@ -552,6 +552,20 @@ img {
   display: none;
 }
 
+#slider-img-tourist .my-slides img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 75%;
+}
+
+#slider-img-photographer .my-slides img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 90%;
+}
+
 .my-slides:hover .overlay {
   opacity: 1;
 }
@@ -646,12 +660,14 @@ img {
 
 
 .overlay {
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
   position: absolute; 
   top: 0; 
-  background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
   color: #f1f1f1; 
-  width: 100%;
+  width: 90%;
   transition: .5s ease;
   opacity:0;
   color: white;
@@ -814,3 +830,89 @@ aside blockquote {
   }
 }
 
+
+.avatar-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5%;
+  margin: 20px;
+}
+
+.avatar {
+  text-align: center;
+}
+
+.avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avatar img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.avatar figcaption {
+  /* display: inline-block; */
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #333;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 80px; /* Adjust as needed */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.left-aside-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.left-side-bar {
+  /* Adjust the width as needed */
+  /* width: 200px; */
+  /* Optional: add some styling */
+  /* background-color: #f0f0f0; */
+  padding: 5px;
+}
+
+.left-aside-content {
+  flex-grow: 1;
+  /* Optional: add some styling */
+  background-color: #fff;
+}
+
+#click-hint{
+  display: block;
+  margin: auto;
+  width: 80%;
+  font-size: 16px; /* Adjust the font size */
+  color: #333333; /* Set text color */
+  background-color: #f2f2f2; /* Set background color */
+  border: 1px solid #cccccc; /* Add border */
+  padding: 10px; /* Add padding around text */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  text-align: center; /* Center the text */
+  margin-bottom: 20px; /* Add some margin at the bottom */
+}
+
+#click-hint strong {
+  color: #007bff; /* Highlight the 'strong' element with a different color */
+  /* text-decoration: underline; Underline the 'strong' text */
+}

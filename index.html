@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <title>V-IRL: Grounding Virtual Intelligence in Real Life</title>
+        <link rel="icon" type="image/x-icon" href="virl_images/icons/earth_icon.png">
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="template.v2.js"></script>
@@ -100,10 +103,56 @@
             To show the versatility of the <strong><i>V-IRL</i></strong> platform, we use it to instantiate several exemplar agents in our virtual real-world environment. For illustration, we give <strong><i>V-IRL</i></strong> agents character metadata, including an 8-bit avatar, a name, a short bio, and an intention they are trying to accomplish.
         </p>
 
-        <h3 id="agent-earthbound">Earthbound Agents</h3>
+        <div class="l-page avatar-row">
+            <div class="avatar">
+                <a href="#peng">
+                    <img src="virl_images/avatars/courier.png" alt="Route optimizer Peng">
+                </a>
+                <figcaption>Peng</figcaption>
+            </div>
+            <div class="avatar">
+                <a href="#aria">
+                    <img src="virl_images/avatars/recommender.png" alt="Place recommender">
+                    <figcaption>Aria</figcaption>
+                </a>
+            </div>
+            <div class="avatar">
+                <img src="virl_images/avatars/real_estate.png" alt="Estate recommender">
+                <figcaption>Vivek</figcaption>
+            </div>
+            <div class="avatar">
+                <img src="virl_images/avatars/robot.png" alt="Robot RX-399">
+                <figcaption>RX-399</figcaption>
+            </div>
+            <div class="avatar">
+                <img src="virl_images/avatars/urban_planner.png" alt="Urban planner">
+                <figcaption>Imani</figcaption>
+            </div>
+            <div class="avatar">
+                <img src="virl_images/avatars/explorer.png" alt="Intentional explorer">
+                <figcaption>Hiro</figcaption>
+            </div>
+            <div class="avatar">
+                <img src="virl_images/avatars/tourist.png" alt="Tourist">
+                <figcaption>Ling</figcaption>
+            </div>
+            <div class="avatar">
+                <img src="virl_images/avatars/concierge.png" alt="Concierge">
+                <figcaption>Diego</figcaption>
+            </div>
+        </div>
+
+        <!-- <h3 id="agent-earthbound">Earthbound Agents</h3>
         <p>
         Agents in the <i>V-IRL</i> platform inhabit virtual representations of real cities around the globe. At the core of this representation are <em>geographic coordinates</em> corresponding to points on the Earth's surface. Using these coordinates, <i>V-IRL</i> allows agents to <i>ground</i> themselves in the world using maps, <em>real</em> street view imagery, information about nearby destinations, and additional data from arbitrary geospatial APIs
-        </p>
+        </p> -->
+
+        <h3 id="peng">Peng: Visiting Student</h3>
+        <d-contents class="left-aside-container">
+            <aside class="left-side-bar">
+                <img style="width: 120px" src="virl_images/avatars/courier.png">
+            </aside>
+        </d-contents>
         <p class="l-body">
             <img src="character_card/courier.png" class="character-card-img">
         </p>
@@ -127,16 +176,24 @@
         </div>
         
 
-        <h3 id="agent-language">Language-Driven Agents</h3>
+        <!-- <h3 id="agent-language">Language-Driven Agents</h3>
         <p>
             To tackle more complex tasks, we follow the pattern of language-driven agents <d-cite key="xi2023rise"></d-cite>. LLMs
             enable agents to reason, plan  
             and use external tools & APIs.
-        </p>
+        </p> -->
+
+        <!-- place recommender agent -->
+        <h3 id="aria">Aria: Place Recommender</h3>
+        <d-contents class="left-aside-container">
+            <aside class="left-side-bar">
+                <img style="width: 120px" src="virl_images/avatars/recommender.png">
+            </aside>
+        </d-contents>
         <p class="l-body">
             <img src="character_card/place_recommender.png" class="character-card-img">
         </p>
-        <!-- place recommender agent -->
+        
         <blockquote class="storytext"> 
             Peng is starving for some lunch but doesn't know where to eat...
             Luckily, he met a nice grad student Aria during his errands who might be able to help him find a good spot...
@@ -175,6 +232,12 @@
         </div>
         
         <!-- Real estate agent -->
+        <h3 id="vivek">Vivek: Estate Agent</h3>
+        <d-contents class="left-aside-container">
+            <aside class="left-side-bar">
+                <img style="width: 120px" src="virl_images/avatars/real_estate.png">
+            </aside>
+        </d-contents>
         <blockquote class="storytext"> 
             Peng hires Vivek to help him find an apartment in East Village, Jersey City, or Long Island City for $1k--$3k per month close to a gym, supermarket, and public transit...
         </blockquote> 
@@ -196,15 +259,21 @@
         </div>
         
         <!-- Vision agents -->
-        <h3 id="agent-vision">Visually Grounded Agents</h3>
+        <!-- <h3 id="agent-vision">Visually Grounded Agents</h3>
         <p>
             Although language-driven agents can address some real-world tasks using external tools, their reliance on solely text-based information limits their applicability to tasks where <em>visual grounding</em> is required.
             In contrast, <em>real sensory input</em> is integral to many daily human activities---allowing a deep connection to and understanding of the 
             real world around us.
             Agents can leverage street view imagery through the <i>V-IRL</i> platform to <em>visually ground</em> themselves in the real world---opening up a wide range of <em>perception-driven tasks</em>.
-        </p>
-
+        </p> -->
+        
         <!-- RX-399 -->
+        <h3 id="rx-399">RX-399: Urban Assistance Robot</h3>
+        <d-contents class="left-aside-container">
+            <aside class="left-side-bar">
+                <img style="width: 120px" src="virl_images/avatars/robot.png">
+            </aside>
+        </d-contents>
         <p class="l-body">
             <img src="character_card/rx399.png" class="character-card-img">
         </p>
@@ -267,6 +336,12 @@
         
         
         <!-- Urban Planner -->
+        <h3 id="imani">Imani: Urban Planner</h3>
+        <d-contents class="left-aside-container">
+            <aside class="left-side-bar">
+                <img style="width: 120px" src="virl_images/avatars/urban_planner.png">
+            </aside>
+        </d-contents>
         <p class="l-body">
             <img src="character_card/urban_planner.png" class="character-card-img">
         </p>
@@ -325,6 +400,12 @@
         </div>
 
         <!-- Intentional explorer -->
+        <h3 id="hiro">Hiro: Seasoned Traveler (Intentional Explorer)</h3>
+        <d-contents class="left-aside-container">
+            <aside class="left-side-bar">
+                <img style="width: 120px" src="virl_images/avatars/explorer.png">
+            </aside>
+        </d-contents>
         <p class="l-body">
             <img src="character_card/intentional_explorer.png" class="character-card-img">
         </p>
@@ -334,7 +415,7 @@
         </blockquote>
         <hr class="l-body fancybreak">
         <p>
-            As depicted in the following figure and video, driven by his intention, Hiro uses VQA to select proper roads; uses open-world detection to find a restaurant; uses place reviews and LLM to decide whether a place is suitable for his purpose.
+            Driven by his intention, Hiro uses open-world detection to find a restaurant; uses VQA to select proper roads; uses place reviews and LLM to decide whether a place is suitable for his purpose.
         </p>
 
         <!-- <d-figure>
@@ -429,11 +510,18 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/bOGa7eI-K_I?si=MPPoxbxf8S7Dj7Tp" title="Intentional Explorer agent exploration procedure" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
         </p>
         
-        <h3 id="agent-agent-col">Agent-Agent Collaborative Agents</h3>
+        <!-- <h3 id="agent-agent-col">Agent-Agent Collaborative Agents</h3>
         <p>
             As with previous agents, collaborative agents are designed for specific tasks; however, they can handle objectives beyond their expertise through collaboration with each other.
-        </p>
+        </p> -->
         
+        <h3 id="ling">Ling: Tourist</h3>
+        <d-contents class="left-aside-container">
+            <aside class="left-side-bar">
+                <img style="width: 120px" src="virl_images/avatars/tourist.png">
+            </aside>
+        </d-contents>
+
         <p class="l-body">
             <img src="character_card/tourist.png" class="character-card-img">
         </p>
@@ -456,21 +544,21 @@
         <div id="slider-img-tourist" class="slider-img-container">
             <div class="my-slides">
               <!-- <div class="numbertext">1 / 4</div> -->
-              <img src="virl_images/tourist/tourist_nyc_1.png" style="width:100%">
+              <img class="modal-trigger" src="virl_images/tourist/tourist_nyc_1.png">
             </div>
           
             <div class="my-slides">
               <!-- <div class="numbertext">2 / 4</div> -->
-              <img src="virl_images/tourist/tourist_nyc_2.png" style="width:100%">
+              <img class="modal-trigger" src="virl_images/tourist/tourist_nyc_2.png">
             </div>
 
             <div class="my-slides">
-                <img src="virl_images/tourist/tourist_sf.png" style="width:100%">
+                <img class="modal-trigger" src="virl_images/tourist/tourist_sf.png">
                 <!-- <div class="numbertext">3 / 4</div> -->
             </div>
 
             <div class="my-slides">
-                <img src="virl_images/tourist/tourist_hk.png" style="width:100%">
+                <img class="modal-trigger" src="virl_images/tourist/tourist_hk.png">
                 <!-- <div class="numbertext">4 / 4</div> -->
             </div>
               
@@ -524,10 +612,16 @@
             </div>
         </div>
 
-        <h3 id="agent-human-col">Human-Agent Collaborative Agents</h3>
+        <!-- <h3 id="agent-human-col">Human-Agent Collaborative Agents</h3>
         <p>
             Grounded in the same real-world as humans, agents are also capable of collaborating with humans to serve as assistants.
-        </p>
+        </p> -->
+        <h3 id="diego">Diego: Expert Concierge</h3>
+        <d-contents class="left-aside-container">
+            <aside class="left-side-bar">
+                <img style="width: 120px" src="virl_images/avatars/concierge.png">
+            </aside>
+        </d-contents>
         <p class="l-body">
             <img src="character_card/interactive_concierge.png" class="character-card-img">
         </p>
@@ -571,25 +665,25 @@
         <div id="slider-img-photographer" class="slider-img-container">
             <div class="my-slides">
                 <!-- <div class="numbertext">1 / 5</div> -->
-                <img src="virl_images/photographer/photographer_1.png" style="width:100%">
+                <img src="virl_images/photographer/photographer_1.png">
                 <div class="overlay"><i>Geo Location: [40.8649162, -73.9311561]</i></div>
             </div>
           
             <div class="my-slides">
                 <!-- <div class="numbertext">2 / 5</div> -->
-                <img src="virl_images/photographer/photographer_2.png" style="width:100%">
+                <img src="virl_images/photographer/photographer_2.png">
                 <div class="overlay"><i>Geo Location: [40.8647205, -73.9325163]</i></div>
             </div>
 
             <div class="my-slides">
-                <img src="virl_images/photographer/photographer_3.png" style="width:100%">
+                <img src="virl_images/photographer/photographer_3.png">
                 <!-- <div class="numbertext">3 / 5</div> -->
                 <div class="overlay"><i>Geo Location: [40.8653388, -73.9322499]</i></div>
 
             </div>
 
             <div class="my-slides">
-                <img src="virl_images/photographer/photographer_4.png" style="width:100%">
+                <img src="virl_images/photographer/photographer_4.png">
                 <!-- <div class="numbertext">4 / 5</div> -->
                 <div class="overlay"><i>Geo Location: [40.8609142,-73.9324818]</i></div>
             </div>
@@ -646,7 +740,7 @@
             Higher level <i>capabilities</i> of <em>Perception</em>, <em>Reasoning</em>, </em>Action</em>, and <em>Collaboration</em> emerge from the platform's components.
             Finally, <em>agents</em> leverage these capabilities and user-defined metadata in task-specific routines to solve tasks.
         </p>
-        <p><strong>Click interested modules to see explanations:</strong></p>
+        <p id="click-hint"><strong>Click interested modules to see explanations:</strong></p>
         <div class="clickable-image-container">
             <img src="virl_images/architecture.png" alt="Architecture figure" style="width: 100%">
 
@@ -1023,7 +1117,7 @@
         <!-- <script type="text/bibliography">
         
         </script> -->
-        <script src="contents_bar.js"></script>
+        <!-- <script src="contents_bar.js"></script> -->
         <script src="modal_image.js"></script>
         
         <script type="text/javascript">
