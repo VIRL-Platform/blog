@@ -75,8 +75,10 @@ function showSlides(container_id, n, aside_class = null ) {
     dots[i].className = dots[i].className.replace(" active-slide-img", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active-slide-img";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  if (dots.length > 0) {
+    dots[slideIndex-1].className += " active-slide-img";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
 }
 
 

@@ -636,20 +636,75 @@
         </p>
         <d-figure class="l-page">
             <figure>
-                <img src="virl_images/interactive_concierge.png" alt="Interactive Concierge Diego" style="width: 100%">
+                <!-- <img src="virl_images/interactive_concierge.png" alt="Interactive Concierge Diego" style="width: 100%"> -->
+                <video playsinline autoplay loop muted style="width: 100%">
+                    <source src="videos/interactive_concierge_gif.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
                 <figcaption style="width: 100%"><em>The Perfect Day Itinerary</em>: Crafted by Diego, our iterative concierge agent, this schedule is meticulously tailored, accounting for your mental and physical well-being and budget variations as your day unfolds.</figcaption>
             </figure>
         </d-figure>
         <p>
-            As shown in the following figure, you can intervene Diego's planning process by adjusting your interoception status or providing verbal feedback for Diego.
-            In response, Diego promptly revises his original plan to make it accommodate your demands, and re-estimate your state changes after revision.
+            You can intervene Diego's planning process by adjusting your interoception status or providing verbal feedback for Diego.
+            In response, Diego promptly revises his original plan to make it accommodate your demands, and re-estimate your state changes after revision. (see the following figures)
         </p>
-        <d-figure>
+
+        <!-- <d-figure>
             <figure>
                 <img src="virl_images/interactive_concierge_revise.png" alt="Interactive Concierge Diego Revise" style="width: 100%">
                 <figcaption style="width: 100%; text-align: center">Diego adapts original plan to suit user's intervention.</figcaption>
             </figure>
-        </d-figure>
+        </d-figure> -->
+
+        <div>
+            <img src="virl_images/diego_intervent/diego_origin.png" style="width: 100%;">
+        </div>
+        <div id="slider-img-diego-revise-state" class="slider-img-container">
+            <div class="my-slides">
+                <img src="virl_images/diego_intervent/adjust_state_1.png">
+            </div>
+          
+            <div class="my-slides">
+                <img src="virl_images/diego_intervent/adjust_state_2.png">
+            </div>
+
+            <div class="my-slides">
+                <img src="virl_images/diego_intervent/adjust_state_3.png">
+            </div>
+              
+            <a class="prev" style="top: 75%;" onclick="plusSlides('slider-img-diego-revise-state', -1)">❮</a>
+            <a class="next" style="top: 75%;" onclick="plusSlides('slider-img-diego-revise-state', 1)">❯</a>
+        </div>
+
+        <div id="slider-img-diego-revise-verbal" class="slider-img-container">
+            <div class="my-slides">
+                <img src="virl_images/diego_intervent/verbal_1.png">
+            </div>
+          
+            <div class="my-slides">
+                <img src="virl_images/diego_intervent/verbal_2.png">
+            </div>
+
+            <div class="my-slides">
+                <img src="virl_images/diego_intervent/verbal_3.png">
+            </div>
+              
+            <a class="prev" style="top: 75%;" onclick="plusSlides('slider-img-diego-revise-verbal', -1)">❮</a>
+            <a class="next" style="top: 75%;" onclick="plusSlides('slider-img-diego-revise-verbal', 1)">❯</a>
+        </div>
+        <figcaption style="width: 100%; text-align: center; margin-bottom: 20px;">Diego adapts original plan to suit user's intervention.</figcaption>
+        
+        <p>
+            Behind Diego's proficiency in developing itineraries is his iterative planning pipeline.
+            The process begins with Diego creating an initial draft plan for the first activity using <i>GPT-4</i>, taking into account the user's biography, requirements, and previous activities in working memory. This draft is then meticulously refined by <i>hierarchical coordination</i> (real geospatial/place information), <i>interoceptive estimation</i> (activity cost and influence for human states) and <i>supervisor</i> (human interoception, budget and potential intervention).
+        </p>
+        <div>
+            <video playsinline autoplay loop muted style="width: 100%">
+                <source src="videos/interactive_conciege_pipeline_gif.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption style="width: 100%; text-align: center">Pipeline overview of interactive concierge agent Diego.</figcaption>
+        </div>
 
         <p>
             Additionally, grounded on tightly related street views and Map in <i>V-IRL</i>, Diego travels places in his itinerary to scout for potential scenic viewpoints for you as shown in the following figure. 
@@ -689,7 +744,7 @@
             </div>
 
             <div class="my-slides">
-                <img src="virl_images/photographer/photographer_5.png" style="width:100%">
+                <img src="virl_images/photographer/photographer_5.png">
                 <!-- <div class="numbertext">5 / 5</div> -->
                 <div class="overlay"><i>Geo Location: [40.8642401,-73.9325958]</i></div>
             </div>
@@ -724,13 +779,6 @@
                 <figcaption style="width: 100%; text-align: center">Pipeline overview of interactive concierge agent Diego.</figcaption>
             </figure>
         </d-figure> -->
-        <div>
-            <video playsinline autoplay loop muted style="width: 100%">
-                <source src="videos/interactive_conciege_pipeline_gif.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <figcaption style="width: 100%; text-align: center">Pipeline overview of interactive concierge agent Diego.</figcaption>
-        </div>
         
 
         <!-- Part 2: System fundamental -->
@@ -1045,7 +1093,7 @@
 
         <p>
             <strong>Setups:</strong> We adapt the Tourist agent implementation and replace its recognition component with the various benchmarked models. These methods are tasked to identify visual landmarks during navigation. Subsequently, GPT-4 <d-cite key="openai2023gpt"></d-cite> predicts the next action according to the recognition results. Navigation instructions are generated using the Local agent.<br> 
-            Four approaches are evaluated to recognize landmarks during navigation: <i>(i)</i> Approximate oracle by searching nearby landmarks; <i>(ii)</i> Zero-shot recognizers CLIP <d-cite key="radford2021learning"></d-cite> and EVA-02-CLIP <d-cite>EVA-CLIP</d-cite>; <i>(iii)</i> Multi-modal LLM LLaVA-1.5 <d-cite key="liu2023improvedllava"></d-cite>
+            Four approaches are evaluated to recognize landmarks during navigation: <i>(i)</i> Approximate oracle by searching nearby landmarks; <i>(ii)</i> Zero-shot recognizers CLIP <d-cite key="radford2021learning"></d-cite> and EVA-02-CLIP <d-cite key="EVA-CLIP"></d-cite>; <i>(iii)</i> Multi-modal LLM LLaVA-1.5 <d-cite key="liu2023improvedllava"></d-cite>
             <i>(iv)</i> OCR model <d-cite key="du2009pp"></d-cite> to recognize potential text in street views followed by GPT answer parsing.
         </p>
 
@@ -1139,6 +1187,8 @@
             showSlides("slider-img-photographer", slideIndex);
             showSlides("slider-img-street-place", slideIndex);
             showSlides("slider-img-explorer", slideIndex, 'explorer-aside');
+            showSlides("slider-img-diego-revise-verbal", slideIndex);
+            showSlides("slider-img-diego-revise-state", slideIndex);
         </script>
     </body>
 </html>
