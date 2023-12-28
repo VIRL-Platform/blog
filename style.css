@@ -477,6 +477,7 @@ d-article .content {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   border-color: hsla(206, 95%, 20%, 0.2);
+  margin-bottom: 20px;
 }
 
 
@@ -763,6 +764,12 @@ img {
   height: fit-content;
 }
 
+.tourist-aside {
+  position: absolute;
+  top: 39%;
+  left: 105%;
+}
+
 blockquote.place-review {
   border-left: 2px solid #FFAE42; /* Brighter border color */
   padding-left: 5px !important;
@@ -949,6 +956,32 @@ aside blockquote {
   background-color: #c8c8c81d;
 }
 
-.l-body {
-  display: block;
+.grey-overlay {
+  position: absolute; /* Change to absolute positioning */
+  top: 0;
+  left: 0;
+  width: 300%; /* Full container width */
+  height: 100%; /* Full container height */
+  background-color: rgba(223, 223, 223, 0.15);
+  z-index: -1; /* Ensure it's above other content */
+  margin-left: -100%;
+}
+
+d-article h3 {
+  margin-top: 20px;
+}
+
+d-article > div > h3 {
+  width: 150%;
+  margin-left: -10%;
+}
+
+d-article > div > p.text {
+  width: 120%;
+  margin-left: -10%;
+}
+
+.text {
+  width: 130%;
+  margin-left: -10%;
 }
