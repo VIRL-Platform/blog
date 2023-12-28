@@ -92,3 +92,11 @@ function showInfo(infoId) {
   var info = document.getElementById(infoId);
   info.style.display = 'block';
 }
+
+
+function setLayoutOfText(className) {
+  var elements = document.querySelectorAll('.text');
+  for (i = 0; i < elements.length; i++) {
+    elements[i].className = elements[i].className.replace("text", className);
+  }
+}

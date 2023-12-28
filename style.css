@@ -1,9 +1,21 @@
 /* Base styles */
 .header-container {
-  background-color: #265073; /* Dark teal background */
+  /* background-color: #265073; */
+  
+  /* background: linear-gradient(127deg, #265073 0%, #596FB7 45%, #C6CF9B 80%, #F6ECA9 100%); */
+  background: linear-gradient(127deg, #265073 0%, #596FB7 45%, #C6CF9B 70%, rgb(244,234,203) 100%);
+  
+  /* background: linear-gradient(#176B87 0%, #86B6F6 45%, #B4D4FF 80%, #EEF5FF 100%); */
+  /* background: rgb(38,80,115); */
+/* background: linear-gradient(127deg, rgba(38,80,115,1) 0%, rgba(34,193,195,1) 50%, rgba(117,191,138,1) 70%, rgba(253,187,45,1) 100%); */
+  
+  /* background: rgb(7,60,105); */
+  /* background: linear-gradient(90deg, rgba(7,60,105,1) 0%, rgba(22,80,129,1) 26%, rgba(255,201,0,1) 100%); */
+  
   color: #FFC436;
   text-align: center; /* Center content on small screens */
   padding: 20px; /* Reduced padding for small screens */
+  opacity: 0.95;
 }
 
 
@@ -300,7 +312,7 @@ div .preview-video-active,
 blockquote.storytext {
   border-left: 6px solid #4a90e2; /* Brighter border color */
   background-color: #f9f9f9;      /* Subtle background */
-  /* margin: 1em auto; */
+  margin: 0px auto;
   padding: 1em 10px;
   color: #333;                    /* Darker font color */
   font-style: italic;
@@ -401,6 +413,8 @@ div .active-button,
 .character-card-img {
   width: 85%;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -779,7 +793,7 @@ aside blockquote {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 101; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
@@ -850,7 +864,7 @@ aside blockquote {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1.5%;
+  gap: 2%;
   margin: 20px;
 }
 
@@ -929,4 +943,12 @@ aside blockquote {
 #click-hint strong {
   color: #007bff; /* Highlight the 'strong' element with a different color */
   /* text-decoration: underline; Underline the 'strong' text */
+}
+
+.avatar-block-grey {
+  background-color: #c8c8c81d;
+}
+
+.l-body {
+  display: block;
 }

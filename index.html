@@ -7,6 +7,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="template.v2.js"></script>
+        <!-- <script src="https://distill.pub/template.v1.js"></script> -->
+
         <script src="https://d3js.org/d3.v5.min.js"></script>
         <script src="https://d3js.org/d3-collection.v1.min.js"></script>
         <script src="https://rawgit.com/nstrayer/slid3r/master/dist/slid3r.js"></script>
@@ -15,7 +17,7 @@
         <script defer="" src="hider.js"></script>
         <script src="image_interact.js"></script>
         <script src="switch_videos.js"></script>
-        <script src="my_magnifier.js"></script>
+        <!-- <script src="my_magnifier.js"></script> -->
 
         <link rel="stylesheet" href="style.css">
         
@@ -80,7 +82,7 @@
             </nav>
         </d-contents> -->
 
-        <p>
+        <p class="text">
         There is a sensory gulf between the Earth that humans inhabit and the imaginary, digital realms in which modern AI agents are created.
         To develop AI agents that can sense, think, and act as flexibly as humans in real-world settings, it's essential to bridge the gap between the digital and physical worlds.
         How can we embody agents in an environment as rich and diverse as the one we inhabit, without the constraints imposed by real hardware and control?
@@ -98,8 +100,8 @@
             <img class="modal-content" id="img01">
         </div>
 
-        <h2 id="agent-examplers">Virtual Intelligence in Real Life</h2>
-        <p>
+        <h2 class="text" id="agent-examplers">Virtual Intelligence in Real Life</h2>
+        <p class="text">
             To show the versatility of the <strong><i>V-IRL</i></strong> platform, we use it to instantiate several exemplar agents in our virtual real-world environment. For illustration, we give <strong><i>V-IRL</i></strong> agents character metadata, including an 8-bit avatar, a name, a short bio, and an intention they are trying to accomplish.
         </p>
 
@@ -113,31 +115,43 @@
             <div class="avatar">
                 <a href="#aria">
                     <img src="virl_images/avatars/recommender.png" alt="Place recommender">
-                    <figcaption>Aria</figcaption>
                 </a>
+                <figcaption>Aria</figcaption>
             </div>
             <div class="avatar">
+                <a href="#vivek">
                 <img src="virl_images/avatars/real_estate.png" alt="Estate recommender">
+                </a>
                 <figcaption>Vivek</figcaption>
             </div>
             <div class="avatar">
+                <a href="#rx-399">
                 <img src="virl_images/avatars/robot.png" alt="Robot RX-399">
+                </a>
                 <figcaption>RX-399</figcaption>
             </div>
             <div class="avatar">
+                <a href="#imani">
                 <img src="virl_images/avatars/urban_planner.png" alt="Urban planner">
+                </a>
                 <figcaption>Imani</figcaption>
             </div>
             <div class="avatar">
+                <a href="#hiro">
                 <img src="virl_images/avatars/explorer.png" alt="Intentional explorer">
+                </a>
                 <figcaption>Hiro</figcaption>
             </div>
             <div class="avatar">
+                <a href="#ling">
                 <img src="virl_images/avatars/tourist.png" alt="Tourist">
+                </a>
                 <figcaption>Ling</figcaption>
             </div>
             <div class="avatar">
+                <a href="#diego">
                 <img src="virl_images/avatars/concierge.png" alt="Concierge">
+                </a>
                 <figcaption>Diego</figcaption>
             </div>
         </div>
@@ -146,14 +160,14 @@
         <p>
         Agents in the <i>V-IRL</i> platform inhabit virtual representations of real cities around the globe. At the core of this representation are <em>geographic coordinates</em> corresponding to points on the Earth's surface. Using these coordinates, <i>V-IRL</i> allows agents to <i>ground</i> themselves in the world using maps, <em>real</em> street view imagery, information about nearby destinations, and additional data from arbitrary geospatial APIs
         </p> -->
-        <d-contents class="left-aside-container">
+        <!-- <d-contents class="left-aside-container">
             <aside class="left-side-bar">
                 <img style="width: 120px" src="virl_images/avatars/courier.png">
             </aside>
-        </d-contents>
+        </d-contents> -->
         <!-- <h3 id="peng">Peng: Visiting Student</h3> -->
-        <div style="background-color: #4a91e21d; margin-bottom: 40px">
-        <h3 id="peng" style="margin-top: 0px">Peng: Visiting Student</h3>
+        
+        <h3 class="text" id="peng" style="margin-top: 0px"><img style="width: 35px" src="virl_images/avatars/courier.png"> Peng: Visiting Student</h3>
         <p class="l-body">
             <img src="character_card/courier.png" class="character-card-img">
         </p>
@@ -161,7 +175,7 @@
             Peng needs to visit several locations throughout the city to get documents signed for registration as a visiting student...
         </blockquote> 
         <hr class="l-body fancybreak">
-        <p>
+        <p class="text">
             Leveraging Geolocation & Mapping capabilities, Peng saves 7 minutes by 
             walking along the shortest path as opposed to in order waypoint visitation.
         </p>
@@ -169,12 +183,11 @@
         <div class="collapsible"><h4>AGENT BEHAVIOR EXAMPLE <svg height="25px" width="25px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-51.2 -51.2 614.40 614.40" xml:space="preserve" fill="#000000" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="1.024"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#000000;} </style> <g> <path class="st0" d="M278.796,94.952c26.218,0,47.472-21.254,47.472-47.481C326.268,21.254,305.014,0,278.796,0 c-26.227,0-47.481,21.254-47.481,47.472C231.315,73.698,252.569,94.952,278.796,94.952z"></path> <path class="st0" d="M407.86,236.772l-54.377-28.589l-22.92-47.087c-11.556-23.754-33.698-40.612-59.679-45.439l-23.58-4.386 c-11.859-2.197-24.111-0.614-35.027,4.542l-68.67,32.426c-7.628,3.599-13.654,9.863-16.969,17.601l-30.539,71.308 c-1.941,4.533-1.978,9.652-0.11,14.202c1.868,4.561,5.494,8.187,10.046,10.055l0.686,0.275c9.102,3.726,19.532-0.384,23.654-9.314 l28.03-60.704l44.368-14.34l-43.964,195.39l-42.82,106.765c-2.372,5.916-2.106,12.555,0.715,18.26 c2.82,5.714,7.938,9.954,14.074,11.667l1.85,0.512c9.844,2.747,20.293-1.511,25.42-10.357l50.751-87.663l30.237-59.998 l55.182,60.896l40.76,86.354c4.596,9.734,15.466,14.834,25.887,12.133l0.458-0.128c6.053-1.566,11.163-5.586,14.13-11.09 c2.94-5.504,3.47-11.996,1.438-17.903l-29.99-86.93c-4.212-12.225-10.457-23.644-18.47-33.79l-48.699-64.394l17.866-92.92 l23.058,29.294c2.848,3.626,6.538,6.52,10.741,8.426l60.658,27.388c4.387,1.979,9.387,2.098,13.864,0.33 c4.479-1.768,8.05-5.274,9.9-9.716l0.192-0.467C419.562,250.874,416.019,241.067,407.86,236.772z"></path> </g> </g></svg></h4> <div class="collapsible-indicator"></div></div>
         <div class="content">
             <d-figure>
-                <figure style="margin-bottom: 10px">
+                <figure style="margin-bottom: 10px;">
                     <img class="modal-trigger" src="virl_images/courier.png" alt="Route optimizer figure">
                     <figcaption>Finding the shortest path for Peng to travel to five places.</figcaption>
                 </figure>
             </d-figure>
-        </div>
         </div>
         
 
@@ -186,15 +199,14 @@
         </p> -->
 
         <!-- place recommender agent -->
-        <d-contents class="left-aside-container">
+        <!-- <d-contents class="left-aside-container">
             <aside class="left-side-bar">
                 <img style="width: 120px" src="virl_images/avatars/recommender.png">
             </aside>
-        </d-contents>
-        <div style="background-color: rgba(234, 192, 233, 0.247); margin-bottom: 40px">
-        <h3 id="aria" style="margin-top: 0px;">Aria: Place Recommender</h3>
+        </d-contents> -->
+        <h3 class="text" id="aria" style="margin-top: 40px;"><img style="width: 35px" src="virl_images/avatars/recommender.png"> Aria: Place Recommender</h3>
         <p class="l-body">
-            <img src="character_card/place_recommender.png" class="character-card-img">
+            <img src="character_card/place_recommender_single.png" class="character-card-img">
         </p>
         
         <blockquote class="storytext"> 
@@ -202,7 +214,7 @@
             Luckily, he met a nice grad student Aria during his errands who might be able to help him find a good spot...
         </blockquote> 
         <hr class="l-body fancybreak">
-        <p>
+        <p class="text">
             Aria searches for possible restaurants nearby.
             She then synthesizes public reviews to make final recommendations via GPT-4. As Peng is new to the city and originally from Sichuan, she recommends the spicy Chinese joint <em>Chow House 粤德轩</em> to give him a taste of home.
         </p>
@@ -233,20 +245,22 @@
                 </div>
             </div>
         </div>
-        </div>
         
         <!-- Real estate agent -->
-        <h3 id="vivek">Vivek: Estate Agent</h3>
-        <d-contents class="left-aside-container">
+        <h3 class="text" id="vivek"><img style="width: 35px" src="virl_images/avatars/real_estate.png"> Vivek: Estate Agent</h3>
+        <p class="l-body">
+            <img src="character_card/estate_agent.png" class="character-card-img">
+        </p>
+        <!-- <d-contents class="left-aside-container">
             <aside class="left-side-bar">
                 <img style="width: 120px" src="virl_images/avatars/real_estate.png">
             </aside>
-        </d-contents>
+        </d-contents> -->
         <blockquote class="storytext"> 
             Peng hires Vivek to help him find an apartment in East Village, Jersey City, or Long Island City for $1k--$3k per month close to a gym, supermarket, and public transit...
-        </blockquote> 
+        </blockquote>
         <hr class="l-body fancybreak">
-        <p>
+        <p class="text">
             Vivek uses real estate APIs to find potential apartments in Peng's desired regions and price range.
             For each candidate, he researches its proximity to the places Peng cares about. Synthesizing these factors, Vivek provides a holistic rating and accompanying reasoning using GPT-4.
             His top recommendation is a cost-effective 1 bedroom apartment for $1986/mo, which is close to a supermarket, 2 bus stations, and a gym.
@@ -272,12 +286,12 @@
         </p> -->
         
         <!-- RX-399 -->
-        <h3 id="rx-399">RX-399: Urban Assistance Robot</h3>
-        <d-contents class="left-aside-container">
+        <h3 class="text" id="rx-399"><img style="width: 35px" src="virl_images/avatars/robot.png"> RX-399: Urban Assistance Robot</h3>
+        <!-- <d-contents class="left-aside-container">
             <aside class="left-side-bar">
                 <img style="width: 120px" src="virl_images/avatars/robot.png">
             </aside>
-        </d-contents>
+        </d-contents> -->
         <p class="l-body">
             <img src="character_card/rx399.png" class="character-card-img">
         </p>
@@ -286,14 +300,8 @@
         </blockquote>
         <hr class="l-body fancybreak">
 
-        <p>
+        <p class="text">
             RX-399 navigates along pre-defined city routes, tagging all trash bins using its open-world detector and geolocation module as depicted in the following figure and videos. 
-            <!-- <d-figure>
-                <figure>
-                    <img src="virl_images/rx-399_clean.png" alt="RX-399 detects trash bin illustration">
-                    <figcaption style="text-align: center">Portions of RX-399's system records in New York City and Hong Kong.</figcaption>
-                </figure>
-            </d-figure> -->
         </p>
 
         <div id="slider-img-rx399" class="slider-img-container">
@@ -340,12 +348,12 @@
         
         
         <!-- Urban Planner -->
-        <h3 id="imani">Imani: Urban Planner</h3>
-        <d-contents class="left-aside-container">
+        <h3 class="text" id="imani"><img style="width: 35px" src="virl_images/avatars/urban_planner.png"> Imani: Urban Planner</h3>
+        <!-- <d-contents class="left-aside-container">
             <aside class="left-side-bar">
                 <img style="width: 120px" src="virl_images/avatars/urban_planner.png">
             </aside>
-        </d-contents>
+        </d-contents> -->
         <p class="l-body">
             <img src="character_card/urban_planner.png" class="character-card-img">
         </p>
@@ -353,7 +361,7 @@
             Imani needs to analyze the distribution of trash bins, fire hydrants, and park benches in New York's Central Park for a project with the NYC Parks & Recreation department...
         </blockquote>
         <hr class="l-body fancybreak">
-        <p>
+        <p class="text">
             Imani sets routes spanning Central Park and objects of interest for RX-399, who traverses the routes and records all detected instances. 
             After RX-399 finishes its route, Imani analyzes the collected data by RX-399 at different levels of detail.
             <!-- As depicted in \cref{fig:agent_urban_plan}, the coarsest level shows general \geoul{distributions} of trash bins, hydrants, and benches in the park. -->
@@ -404,12 +412,12 @@
         </div>
 
         <!-- Intentional explorer -->
-        <h3 id="hiro">Hiro: Seasoned Traveler (Intentional Explorer)</h3>
-        <d-contents class="left-aside-container">
+        <h3 class="text" id="hiro"><img style="width: 35px" src="virl_images/avatars/explorer.png"> Hiro: Seasoned Traveler (Intentional Explorer)</h3>
+        <!-- <d-contents class="left-aside-container">
             <aside class="left-side-bar">
                 <img style="width: 120px" src="virl_images/avatars/explorer.png">
             </aside>
-        </d-contents>
+        </d-contents> -->
         <p class="l-body">
             <img src="character_card/intentional_explorer.png" class="character-card-img">
         </p>
@@ -418,7 +426,7 @@
             He decides to explore without a specific destination in mind, looking for a good local lunch spot with food that's not too spicy...
         </blockquote>
         <hr class="l-body fancybreak">
-        <p>
+        <p class="text">
             Driven by his intention, Hiro uses open-world detection to find a restaurant; uses VQA to select proper roads; uses place reviews and LLM to decide whether a place is suitable for his purpose.
         </p>
 
@@ -519,12 +527,12 @@
             As with previous agents, collaborative agents are designed for specific tasks; however, they can handle objectives beyond their expertise through collaboration with each other.
         </p> -->
         
-        <h3 id="ling">Ling: Tourist</h3>
-        <d-contents class="left-aside-container">
+        <h3 class="text" id="ling"><img style="width: 35px" src="virl_images/avatars/tourist.png"> Ling: Tourist</h3>
+        <!-- <d-contents class="left-aside-container">
             <aside class="left-side-bar">
                 <img style="width: 120px" src="virl_images/avatars/tourist.png">
             </aside>
-        </d-contents>
+        </d-contents> -->
 
         <p class="l-body">
             <img src="character_card/tourist.png" class="character-card-img">
@@ -535,35 +543,25 @@
             is always unafraid to ask for help from Locals whenever she finds herself lost...
         </blockquote>
         <hr class="l-body fancybreak">
-        <p>
+        <p class="text">
             After obtaining route descriptions from Locals, Ling starts her journey. Grounded in our embodied platform, Ling can adjust her pose and identify visual landmarks along the streets using open-world recognition and her map. Recognizing these landmarks helps GPT-4 to make correct decisions about where to turn direction, move forward and stop. Concrete examples are shown in the following figure and videos.
         </p>
-        <!-- <d-figure>
-            <figure>
-                <img src="virl_images/navigation.png" alt="Tourist-Local collaboration" style="width: 100%">
-                <figcaption style="width: 100%; text-align: center">Ling and Local collaboration examples. Trajectories in red and green mean Ling's first and second attempts, respectively.</figcaption>
-            </figure>
-        </d-figure> -->
 
         <div id="slider-img-tourist" class="slider-img-container">
             <div class="my-slides">
-              <!-- <div class="numbertext">1 / 4</div> -->
               <img class="modal-trigger" src="virl_images/tourist/tourist_nyc_1.png">
             </div>
           
             <div class="my-slides">
-              <!-- <div class="numbertext">2 / 4</div> -->
               <img class="modal-trigger" src="virl_images/tourist/tourist_nyc_2.png">
             </div>
 
             <div class="my-slides">
                 <img class="modal-trigger" src="virl_images/tourist/tourist_sf.png">
-                <!-- <div class="numbertext">3 / 4</div> -->
             </div>
 
             <div class="my-slides">
                 <img class="modal-trigger" src="virl_images/tourist/tourist_hk.png">
-                <!-- <div class="numbertext">4 / 4</div> -->
             </div>
               
             <a class="prev" onclick="plusSlides('slider-img-tourist', -1, 'tourist-aside')">❮</a>
@@ -620,12 +618,12 @@
         <p>
             Grounded in the same real-world as humans, agents are also capable of collaborating with humans to serve as assistants.
         </p> -->
-        <h3 id="diego">Diego: Expert Concierge</h3>
-        <d-contents class="left-aside-container">
+        <h3 class="text" id="diego"><img style="width: 35px" src="virl_images/avatars/concierge.png"> Diego: Expert Concierge</h3>
+        <!-- <d-contents class="left-aside-container">
             <aside class="left-side-bar">
                 <img style="width: 120px" src="virl_images/avatars/concierge.png">
             </aside>
-        </d-contents>
+        </d-contents> -->
         <p class="l-body">
             <img src="character_card/interactive_concierge.png" class="character-card-img">
         </p>
@@ -633,7 +631,7 @@
             As a university student in NYC, you're excited to spend a day exploring lesser-known and tranquil places. Your friend recommended Diego, who is known for his professionalism in planning practical and personalized itineraries...
         </blockquote>
         <hr class="l-body fancybreak">
-        <p>
+        <p class="text">
         As depicted in the following figure, Diego's itinerary is tailored to your needs. Diego not only considers your physical and mental interoception status, budget for each activity, but also anticipates your status changes and cost when you follow each event. 
         He is able to take into account <em>real</em> travel times from the <i>V-IRL</i> platform and select suitable dining options by collaborating with another 
         restaurant recommendation agent.
@@ -648,7 +646,7 @@
                 <figcaption style="width: 100%"><em>The Perfect Day Itinerary</em>: Crafted by Diego, our iterative concierge agent, this schedule is meticulously tailored, accounting for your mental and physical well-being and budget variations as your day unfolds.</figcaption>
             </figure>
         </d-figure>
-        <p>
+        <p class="text">
             You can intervene Diego's planning process by adjusting your interoception status or providing verbal feedback for Diego.
             In response, Diego promptly revises his original plan to make it accommodate your demands, and re-estimate your state changes after revision. (see the following figures)
         </p>
@@ -698,7 +696,7 @@
         </div>
         <figcaption style="width: 100%; text-align: center; margin-bottom: 20px;">Diego adapts original plan to suit user's intervention.</figcaption>
         
-        <p>
+        <p class="text">
             Behind Diego's proficiency in developing itineraries is his iterative planning pipeline.
             The process begins with Diego creating an initial draft plan for the first activity using <i>GPT-4</i>, taking into account the user's biography, requirements, and previous activities in working memory. This draft is then meticulously refined by <i>hierarchical coordination</i> (real geospatial/place information), <i>interoceptive estimation</i> (activity cost and influence for human states) and <i>supervisor</i> (human interoception, budget and potential intervention).
         </p>
@@ -710,7 +708,7 @@
             <figcaption style="width: 100%; text-align: center">Pipeline overview of interactive concierge agent Diego.</figcaption>
         </div>
 
-        <p>
+        <p class="text">
             Additionally, grounded on tightly related street views and Map in <i>V-IRL</i>, Diego travels places in his itinerary to scout for potential scenic viewpoints for you as shown in the following figure. 
             He uses VQA to assess each captured views, attaching highly rated positions to your itinerary.
         </p>
@@ -786,8 +784,8 @@
         
 
         <!-- Part 2: System fundamental -->
-        <h2 id="system">System Fundamental</h2>
-        <p>
+        <h2 class="text" id="system">System Fundamental</h2>
+        <p class="text">
             This section introduces our system's core: a platform designed for perception-driven agents that transforms real-world cities around the world into a vast virtual playground where agents can be constructed to solve practical tasks. At its heart, <i>V-IRL</i> is comprised of a hierarchical architecture. The <i>platform</i> lies at the foundation---providing the underlying components and infrastructure for agents to employ.
             Higher level <i>capabilities</i> of <em>Perception</em>, <em>Reasoning</em>, </em>Action</em>, and <em>Collaboration</em> emerge from the platform's components.
             Finally, <em>agents</em> leverage these capabilities and user-defined metadata in task-specific routines to solve tasks.
@@ -933,18 +931,18 @@
 
 
         <!-- Part 3: Benchmark -->
-        <h2 id="virlbenchmark"><em>V-IRL</em> Benchmark</h2>
-        <p>
+        <h2 class="text" id="virlbenchmark"><em>V-IRL</em> Benchmark</h2>
+        <p class="text">
             The essential attributes of <i>V-IRL</i> include its ability to access geographically diverse data derived from real-world sensory input, and its API that facilitates interaction with Google Map Platform (GMP) <d-cite key="google_map_platform"></d-cite>. 
             This enables us to develop three <i>V-IRL</i> benchmarks to assess the capabilities of existing vision models in such open-world data distribution.
         </p>
 
-        <h3><em>V-IRL Place:</em> Localization</h3>
-        <p>
+        <h3 class="text"><em>V-IRL Place:</em> Localization</h3>
+        <p class="text">
             <strong>Motivation:</strong> Every day, humans traverse through cities, moving between diverse places to fulfil a range of goals, like the Intentional Explorer agent.
             We assess the performance of vision models on the everyday human activity <i>place localization</i> using street view imagery and associated place data.
         </p>
-        <p>
+        <p class="text">
             <strong>Setups:</strong> We modify RX-399 agent to traverse polygonal areas while localizing & identifying 20 types of places.
             We evaluate three prominent open-world detection models:  GroundingDINO <d-cite key="liu2023grounding"></d-cite>, GLIP <d-cite key="li2022grounded"></d-cite> and Owl-ViT <d-cite key="minderer2022simple"></d-cite>. We also implement a straightforward baseline, CLIP (w/ GLIP proposal), which involves reclassifying the categories
             of GLIP proposals with CLIP <d-cite key="radford2021learning"></d-cite>.
@@ -1001,7 +999,7 @@
             </figure>
         </d-figure>
 
-        <p>
+        <p class="text">
             <strong>Results:</strong> Following table shows that open-world detectors like GroundingDINO <d-cite key="liu2023grounding"></d-cite>, Owl-ViT <d-cite key="minderer2022simple"></d-cite> and GLIP <d-cite key="li2022grounded"></d-cite> are biased towards certain place types such as <code>school</code>, <code>cafe</code>, and <code>convenience store</code>, respectively. 
             In contrast, CLIP (w/ GLIP proposal) can identify a broader spectrum of place types.
             This is mainly caused by the category bias in object detection datasets with a limited vocabulary. 
@@ -1028,13 +1026,13 @@
             </figure>
         </d-figure>
 
-        <h3><em>V-IRL Place:</em> Recognition and VQA</h3>
-        <p>
+        <h3 class="text"><em>V-IRL Place:</em> Recognition and VQA</h3>
+        <p class="text">
             <strong>Motivation:</strong> In contrast to the challenging <i>V-IRL</i> place localization task on street view imagery, in real life, humans can recognize businesses by taking a closer, <strong>place-centric</strong> look.
             In this regard, we assess existing vision models on two perception tasks based on place-centric images: <i>i)</i> recognizing specific place types; <i>ii)</i> identifying human intentions by Vision Question Answering (VQA), named intention VQA.
         </p>
 
-        <p style="margin-bottom: 5px;">
+        <p class="text" style="margin-bottom: 5px;">
             <strong>Setups:</strong> For recognition, we assess 10 open-world recognition models, for place type recognition from 96 options, using <i>place-centric images</i> (see below imagery illustration).
         </p>
         <div id="slider-img-street-place" class="slider-img-container">
@@ -1069,15 +1067,15 @@
                 </div>
             </div>
         </div>
-        <p>
+        <p class="text">
         For intention VQA, we also evaluate 8 multi-modal large language models (MM-LLM) to determine viable human intentions from a four-option multiple-choice VQA. The <i>V-IRL Place</i> VQA process is illustrated in following image, where the candidate and true choices are generated by GPT-4 <d-cite key="openai2023gpt"></d-cite> given the place types and place names corresponding to the image.
+        </p>
         <figure style="margin-top: 0px; margin-bottom: 0px">
             <img src="virl_images/bm_vqa_example.png" alt="V-IRL Place VQA" style="width: 80%; display: block; margin: auto;">
             <figcaption style="width: 100%; text-align: center">Example of <i>V-IRL Place</i> VQA process.</figcaption>
         </figure>
-        </p>
 
-        <p>
+        <p class="text">
             <strong>Results:</strong> Following table shows that CLIP (L/14@336px) outperforms even the biggest version of Eva-02-CLIP and SigLIP in the <i>V-IRL Place</i> recognition task, emphasizing the high-quality data of CLIP. 
             The bottom of the table shows that in the intention VQA, 
             BLIP2 <d-cite key="li2023blip"></d-cite>, InstructBLIP <d-cite key="dai2023instructblip"></d-cite> and LLaVA-1.5 <d-cite key="liu2023improvedllava"></d-cite> excel, whereas others struggle. 
@@ -1088,20 +1086,20 @@
             <figcaption style="width: 100%; text-align: left">Benchmark results on <i>V-IRL Place</i> recognition and <i>V-IRL Place</i> VQA. <span class="resscolor">Green</span> indicates increased resolution models, while <span class="sizescolor">Blue</span> denotes model parameter scaling.</figcaption>
         </figure>
 
-        <h3><em>V-IRL</em> Vision Language Navigation</h3>
-        <p>
+        <h3 class="text"><em>V-IRL</em> Vision Language Navigation</h3>
+        <p class="text">
             <strong>Motivation:</strong> As discussed in the <i>V-IRL</i> agents section, Intentional Explorer and Tourist agents require collaboration between vision models and language models to accomplish complex tasks. Therefore, this motivates us to investigate the performance of vision-language collaboration, with environmental information acquired through visual perception models from real-world images. 
             This prompts us to build an embodied task for jointly leveraging vision and language models along with the realistic street views in <i>V-IRL</i>. 
             In this regard, we build this <i>V-IRL</i> Vision Language Navigation (VLN) benchmark.
         </p>
 
-        <p>
+        <p class="text">
             <strong>Setups:</strong> We adapt the Tourist agent implementation and replace its recognition component with the various benchmarked models. These methods are tasked to identify visual landmarks during navigation. Subsequently, GPT-4 <d-cite key="openai2023gpt"></d-cite> predicts the next action according to the recognition results. Navigation instructions are generated using the Local agent.<br> 
             Four approaches are evaluated to recognize landmarks during navigation: <i>(i)</i> Approximate oracle by searching nearby landmarks; <i>(ii)</i> Zero-shot recognizers CLIP <d-cite key="radford2021learning"></d-cite> and EVA-02-CLIP <d-cite key="EVA-CLIP"></d-cite>; <i>(iii)</i> Multi-modal LLM LLaVA-1.5 <d-cite key="liu2023improvedllava"></d-cite>
             <i>(iv)</i> OCR model <d-cite key="du2009pp"></d-cite> to recognize potential text in street views followed by GPT answer parsing.
         </p>
 
-        <p>
+        <p class="text">
             <strong>Results:</strong> Following table shows that, with <em>oracle landmark information</em>, powerful LLMs can impressively comprehend navigation instructions and thus make accurate decisions. However, when using vision models to fetch landmark information from street views, the success rate drops dramatically, suggesting that the perception of vision models is noisy and misguides LLMs' decision making. Among these recognizers, larger variants of CLIP <d-cite key="radford2021learning"></d-cite> and EVA-02-CLIP <d-cite key="EVA-CLIP"></d-cite> perform better, highlighting the benefits of model scaling. LLaVA-1.5 <d-cite key="liu2023improvedllava"></d-cite> shows inferior performance with CLIP (L/14@336px) as its vision encoder, possibly due to the alignment tax <d-cite key="openai2023gpt"></d-cite> during instruction tuning. 
             Further, PP-OCR <d-cite key="du2009pp"></d-cite> (+ GPT-3.5) achieves a 28% success rate, signifying that OCR is crucial for visual landmark recognition. 
         </p>
@@ -1113,17 +1111,23 @@
             </figure>
         </d-figure>
 
-        <h3>Geographic Diversity</h3>
-        <p>
+        <h3 class="text">Geographic Diversity</h3>
+        <p class="text">
             Spanning 12 cities across the globe, our <i>V-IRL</i> benchmarks provide an opportunity to analyze the inherent model biases in different regions. As depicted in the following figure, vision models demonstrate subpar performance on all three benchmark tasks in Lagos, Tokyo, Hong Kong, and Buenos Aires.
             In Lagos, vision models might struggle due to its non-traditional street views relative to more developed cities (see street views in aside figures). For cities like Tokyo, Hong Kong and Buenos Aires, an intriguing observation is their primary use of non-English languages in street views.
             This suggests that existing vision models face challenges with multilingual image data.
         </p>
-        <aside class="img-magnifier-container">
+        <!-- <aside class="img-magnifier-container">
             <img id="street_lagos" class="modal-trigger" src="virl_images/bm_city/street_lagos.png" style="width: 250px; height: auto">
             <figcaption style="width: 250px; text-align: center">Lagos, Nigeria.</figcaption>
-        </aside>
+        </aside> -->
 
+        <d-contents class="left-aside-container">
+            <aside class="left-side-bar">
+                <img id="street_lagos" class="modal-trigger" src="virl_images/bm_city/street_lagos.png" style="width: 250px; height: auto">
+                <figcaption style="width: 250px; text-align: center">Lagos, Nigeria.</figcaption>
+            </aside>
+        </d-contents>
         <div>
             <img id="bm_city_img" class="modal-trigger" src="virl_images/bm_city_analysis.png" alt="City level analysis" style="width: 100%">
             <figcaption style="width: 100%; text-align: center">City-level visualization of <i>V-IRL</i> benchmark results.</figcaption>
@@ -1193,6 +1197,8 @@
             showSlides("slider-img-explorer", slideIndex, 'explorer-aside');
             showSlides("slider-img-diego-revise-verbal", slideIndex);
             showSlides("slider-img-diego-revise-state", slideIndex);
+
+            setLayoutOfText("l-body-outset")
         </script>
     </body>
 </html>
