@@ -18,7 +18,9 @@ body {
   color: #FFC436;
   text-align: center; /* Center content on small screens */
   padding: 20px; /* Reduced padding for small screens */
-  opacity: 0.95;
+  opacity: 1.0;
+  z-index: 1000;
+  position: relative;
 }
 
 
@@ -153,6 +155,7 @@ body {
 
 d-article {
   contain: none;
+  position: relative;
 }
 
 d-article d-contents {
@@ -722,6 +725,9 @@ img {
   color: rgb(0, 0, 0);
   font-size: 14px;
   height: fit-content;
+  position: absolute;
+  top: 39.5%;
+  left: 105%;
 }
 
 .clickable-region {
@@ -774,6 +780,12 @@ img {
 .tourist-aside {
   position: absolute;
   top: 39%;
+  left: 105%;
+}
+
+.explorer-aside {
+  position: absolute;
+  top: 37%;
   left: 105%;
 }
 
@@ -926,9 +938,9 @@ aside blockquote {
 }
 
 .left-side-bar {
-  position: relative;
-  top: 0;
-  left: -650%;
+  position: absolute;
+  top: 90%;
+  left: -35%;
 }
 
 #click-hint{
@@ -976,3 +988,48 @@ d-article > div > h3 {
   width: 150%;
   margin-left: -20%;
 }
+
+
+.nav-bar {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  width: 110px;
+  height: fit-content;
+  background-color: #dbdbdb39;
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+
+#nav-sub-agents {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+div.nav-bar a {
+  border: none;
+  opacity: 0.5;
+}
+
+div.nav-bar a:hover {
+  background-color: #ddd;
+  color: black;
+  opacity: 1.0;
+}
+
+div.nav-bar img:hover {
+  transform: scale(1.1);
+}
+
+a.active-link {
+  color: #007bff; /* Change to your preferred color */
+    /* If you're using images inside <a>, you might want to apply a filter instead */
+  /* filter: brightness(1.2); */
+  opacity: 1.0 !important;
+}
+
+/* a.active-link img {
+  border: 2px solid #007bff;
+  border-radius: 4px;
+} */
+

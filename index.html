@@ -81,6 +81,30 @@
                 <div><a href="#virlbenchmark"><em>V-IRL</em> Benchmark</a></div>
             </nav>
         </d-contents> -->
+        <div class="nav-bar">
+            <a href="#agent-examplers" class="nav-link" style="margin-left: 10px">Agents</a>
+            <div id="nav-sub-agents" style="margin-bottom: 10px">
+                <a class="nav-link" href="#peng"><img src="virl_images/avatars/courier.png" style="width: 50px; margin-bottom: 10px;">
+                </a>
+                <a class="nav-link" href="#aria"><img src="virl_images/avatars/recommender.png" style="width: 50px; margin-bottom: 10px;">
+                </a>
+                <a class="nav-link" href="#vivek"><img src="virl_images/avatars/real_estate.png" style="width: 50px; margin-bottom: 10px;">
+                </a>
+                <a class="nav-link" href="#rx-399"><img src="virl_images/avatars/robot.png" style="width: 50px; margin-bottom: 10px;">
+                </a>
+                <a class="nav-link" href="#imani"><img src="virl_images/avatars/urban_planner.png" style="width: 50px; margin-bottom: 10px;">
+                </a>
+                <a class="nav-link" href="#hiro"><img src="virl_images/avatars/explorer.png" style="width: 50px; margin-bottom: 10px;">
+                </a>
+                <a class="nav-link" href="#ling"><img src="virl_images/avatars/tourist.png" style="width: 50px; margin-bottom: 10px;">
+                </a>
+                <a class="nav-link" href="#diego"><img src="virl_images/avatars/concierge.png" style="width: 50px;">
+                </a>
+            </div>
+            <a class="nav-link" href="#system" style="margin-bottom: 20px; margin-left: 10px">System</a>
+            <a class="nav-link" href="#virlbenchmark" style="margin-left: 10px;">Benchmarks</a>
+            <div style="margin-top: 10px;"></div>
+        </div>
 
         <p class="text">
         There is a sensory gulf between the Earth that humans inhabit and the imaginary, digital realms in which modern AI agents are created.
@@ -100,12 +124,13 @@
             <img class="modal-content" id="img01">
         </div>
 
-        <h2 class="text" id="agent-examplers">Virtual Intelligence in Real Life</h2>
+        <div id="agent-examplers" style="position: relative;">
+        <h2 class="text">Virtual Intelligence in Real Life</h2>
         <p class="text">
             To show the versatility of the <strong><i>V-IRL</i></strong> platform, we use it to instantiate several exemplar agents in our virtual real-world environment. For illustration, we give <strong><i>V-IRL</i></strong> agents character metadata, including an 8-bit avatar, a name, a short bio, and an intention they are trying to accomplish.
         </p>
 
-        <div class="l-page avatar-row" style="margin-bottom: 50px">
+        <div class="avatar-row" style="width: 150%; margin-left: -25%; margin-bottom: 50px">
             <div class="avatar">
                 <a href="#peng">
                     <img src="virl_images/avatars/courier.png" alt="Route optimizer Peng">
@@ -155,7 +180,7 @@
                 <figcaption>Diego</figcaption>
             </div>
         </div>
-
+        
         <!-- <h3 id="agent-earthbound">Earthbound Agents</h3>
         <p>
         Agents in the <i>V-IRL</i> platform inhabit virtual representations of real cities around the globe. At the core of this representation are <em>geographic coordinates</em> corresponding to points on the Earth's surface. Using these coordinates, <i>V-IRL</i> allows agents to <i>ground</i> themselves in the world using maps, <em>real</em> street view imagery, information about nearby destinations, and additional data from arbitrary geospatial APIs
@@ -167,9 +192,9 @@
         </d-contents> -->
         <!-- <h3 id="peng">Peng: Visiting Student</h3> -->
         
-        <div style="position: relative;">
+        <div id="peng" style="position: relative;">
             <div class="l-screen grey-overlay"></div>
-            <h3 class="text" id="peng"><img style="width: 35px" src="virl_images/avatars/courier.png"> Peng: Visiting Student</h3>
+            <h3 class="text"><img style="width: 35px" src="virl_images/avatars/courier.png"> Peng: Visiting Student</h3>
             <p class="l-body">
                 <img src="character_card/courier.png" class="character-card-img">
             </p>
@@ -201,7 +226,8 @@
             and use external tools & APIs.
         </p> -->
 
-        <!-- place recommender agent -->        
+        <!-- place recommender agent -->
+        <div id="aria" style="position: relative;">
         <h3 class="text" id="aria" style="margin-top: 40px;"><img style="width: 35px" src="virl_images/avatars/recommender.png"> Aria: Place Recommender</h3>
         <p class="l-body">
             <img src="character_card/place_recommender_single.png" class="character-card-img">
@@ -243,11 +269,12 @@
                 </div>
             </div>
         </div>
+        </div>
         
         <!-- Real estate agent -->
-        <div style="position: relative;">
+        <div id="vivek" style="position: relative;">
             <div class="l-screen grey-overlay"></div>
-            <h3 class="text" id="vivek"><img style="width: 35px" src="virl_images/avatars/real_estate.png"> Vivek: Estate Agent</h3>
+            <h3 class="text"><img style="width: 35px" src="virl_images/avatars/real_estate.png"> Vivek: Estate Agent</h3>
             <p class="l-body">
                 <img src="character_card/estate_agent.png" class="character-card-img">
             </p>
@@ -286,46 +313,48 @@
         </p> -->
         
         <!-- RX-399 -->
-        <h3 class="text" id="rx-399"><img style="width: 35px" src="virl_images/avatars/robot.png"> RX-399: Urban Assistance Robot</h3>
-        <!-- <d-contents class="left-aside-container">
-            <aside class="left-side-bar">
-                <img style="width: 120px" src="virl_images/avatars/robot.png">
-            </aside>
-        </d-contents> -->
-        <p class="l-body">
-            <img src="character_card/rx399.png" class="character-card-img">
-        </p>
-        <blockquote class="storytext"> 
-            RX-399 is a state-of-the-art robot agent with advanced navigation and sensing capabilities. Its manufacturer is running a pilot program with sanitation departments in Hong Kong and New York City to assess its readiness for garbage duty...
-        </blockquote>
-        <hr class="l-body fancybreak">
+        <div id="rx-399" style="position: relative;">
+            <h3 class="text"><img style="width: 35px" src="virl_images/avatars/robot.png"> RX-399: Urban Assistance Robot</h3>
+            <!-- <d-contents class="left-aside-container">
+                <aside class="left-side-bar">
+                    <img style="width: 120px" src="virl_images/avatars/robot.png">
+                </aside>
+            </d-contents> -->
+            <p class="l-body">
+                <img src="character_card/rx399.png" class="character-card-img">
+            </p>
+            <blockquote class="storytext"> 
+                RX-399 is a state-of-the-art robot agent with advanced navigation and sensing capabilities. Its manufacturer is running a pilot program with sanitation departments in Hong Kong and New York City to assess its readiness for garbage duty...
+            </blockquote>
+            <hr class="l-body fancybreak">
 
-        <p class="text">
-            RX-399 navigates along pre-defined city routes, tagging all trash bins using its open-world detector and geolocation module as depicted in the following figure and videos. 
-        </p>
+            <p class="text">
+                RX-399 navigates along pre-defined city routes, tagging all trash bins using its open-world detector and geolocation module as depicted in the following figure and videos. 
+            </p>
 
-        <div id="slider-img-rx399" class="slider-img-container">
-            <div class="my-slides">
-              <!-- <div class="numbertext">1 / 2</div> -->
-              <img class="modal-trigger" src="virl_images/rx-399/rx-399_clean_ny.png" style="width:100%">
-            </div>
-          
-            <div class="my-slides">
-              <!-- <div class="numbertext">2 / 2</div> -->
-              <img class="modal-trigger" src="virl_images/rx-399/rx-399_clean_hk.png" style="width:100%">
-            </div>
-              
-            <a class="prev" onclick="plusSlides('slider-img-rx399', -1)">❮</a>
-            <a class="next" onclick="plusSlides('slider-img-rx399', 1)">❯</a>
-            
-            <figcaption id="caption" style="margin-bottom: 10px; text-align: center"></figcaption>
-          
-            <div class="row">
-                <div class="column">
-                    <img class="demo cursor" src="virl_images/rx-399/rx-399_clean_ny.png" style="width:100%" onclick="currentSlide('slider-img-rx399', 1)" alt="Portions of RX-399's system records in New York City.">
+            <div id="slider-img-rx399" class="slider-img-container">
+                <div class="my-slides">
+                <!-- <div class="numbertext">1 / 2</div> -->
+                <img class="modal-trigger" src="virl_images/rx-399/rx-399_clean_ny.png" style="width:100%">
                 </div>
-                <div class="column">
-                    <img class="demo cursor" src="virl_images/rx-399/rx-399_clean_hk.png" style="width:100%" onclick="currentSlide('slider-img-rx399', 2)" alt="Portions of RX-399's system records in Hong Kong">
+            
+                <div class="my-slides">
+                <!-- <div class="numbertext">2 / 2</div> -->
+                <img class="modal-trigger" src="virl_images/rx-399/rx-399_clean_hk.png" style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides('slider-img-rx399', -1)">❮</a>
+                <a class="next" onclick="plusSlides('slider-img-rx399', 1)">❯</a>
+                
+                <figcaption id="caption" style="margin-bottom: 10px; text-align: center"></figcaption>
+            
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="virl_images/rx-399/rx-399_clean_ny.png" style="width:100%" onclick="currentSlide('slider-img-rx399', 1)" alt="Portions of RX-399's system records in New York City.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="virl_images/rx-399/rx-399_clean_hk.png" style="width:100%" onclick="currentSlide('slider-img-rx399', 2)" alt="Portions of RX-399's system records in Hong Kong">
+                    </div>
                 </div>
             </div>
         </div>
@@ -333,14 +362,14 @@
         <div class="l-body">
             <div id="RX399video1Container" class="video-container">
                 <!-- <iframe src="https://www.youtube.com/embed/Q6Hty1BTLdw?si=XAK_3qkchKgrDVit" title="RX-399 in New York City" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe> -->
-                <video controls preload="none">
+                <video controls preload="metadata">
                     <source src="videos/rx-399_ny_v2.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
             <div id="RX399video2Container" class="video-container" style="display:none;">
                 <!-- <iframe src="https://www.youtube.com/embed/9gudvNT5Ces?si=j4K_7ULDvNMIt5dp" title="RX-399 in Hong Kong" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe> -->
-                <video controls preload="none">
+                <video controls preload="metadata">
                     <source src="videos/rx-399_hk_v2.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -356,9 +385,9 @@
         
         
         <!-- Urban Planner -->
-        <div style="position: relative;">
+        <div id="imani" style="position: relative;">
             <div class="l-screen grey-overlay"></div>
-            <h3 class="text" id="imani"><img style="width: 35px" src="virl_images/avatars/urban_planner.png"> Imani: Urban Planner</h3>
+            <h3 class="text"><img style="width: 35px" src="virl_images/avatars/urban_planner.png"> Imani: Urban Planner</h3>
             <!-- <d-contents class="left-aside-container">
                 <aside class="left-side-bar">
                     <img style="width: 120px" src="virl_images/avatars/urban_planner.png">
@@ -408,14 +437,14 @@
             <div class="l-body">
                 <div id="UrbanPlannervideo1Container" class="video-container">
                     <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Tq4fkKXrxYo?si=663Xhkzoq6XOONgF" title="Urban Planner agent video illustration" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe> -->
-                    <video controls preload="none">
+                    <video controls preload="metadata">
                         <source src="videos/urban_planner_v2.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <div id="UrbanPlannervideo2Container" class="video-container" style="display:none;">
                     <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Tj_3A1vHUZU?si=d78eIoIIBZjPbvEB" title="Play on heatmap" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe> -->
-                    <video controls preload="none">
+                    <video controls preload="metadata">
                         <source src="videos/urban_planner_play_v2.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -431,127 +460,129 @@
         </div>
 
         <!-- Intentional explorer -->
-        <h3 class="text" id="hiro"><img style="width: 35px" src="virl_images/avatars/explorer.png"> Hiro: Seasoned Traveler (Intentional Explorer)</h3>
-        <!-- <d-contents class="left-aside-container">
-            <aside class="left-side-bar">
-                <img style="width: 120px" src="virl_images/avatars/explorer.png">
-            </aside>
-        </d-contents> -->
-        <p class="l-body">
-            <img src="character_card/intentional_explorer.png" class="character-card-img">
-        </p>
-        <blockquote class="storytext">
-            Hiro is starting a new journey in Hong Kong.
-            He decides to explore without a specific destination in mind, looking for a good local lunch spot with food that's not too spicy...
-        </blockquote>
-        <hr class="l-body fancybreak">
-        <p class="text">
-            Driven by his intention, Hiro uses open-world detection to find a restaurant; uses VQA to select proper roads; uses place reviews and LLM to decide whether a place is suitable for his purpose.
-        </p>
-
-        <!-- <d-figure>
-            <figure>
-                <img src="virl_images/intentional_explorer.png" style="width: 100%" alt="Intentional Explorer agent exploring">
-                <figcaption style="width: 100%; text-align: center">Visualization for Hiro's lunch exploration in HK. Concrete procedure is depicted in the following video.</figcaption>
-            </figure>
-        </d-figure> -->
-        
-        <div id="slider-img-explorer" class="slider-img-container">
-            <div class="my-slides">
-              <div class="numbertext">Milestone 1 / 5</div>
-              <img src="virl_images/intentional_explorer/intentional_explorer_split_1.png" style="width:100%">
-            </div>
-          
-            <div class="my-slides">
-              <div class="numbertext">Milestone 2 / 5</div>
-              <img src="virl_images/intentional_explorer/intentional_explorer_split_2.png" style="width:100%">
-            </div>
-
-            <div class="my-slides">
-                <img src="virl_images/intentional_explorer/intentional_explorer_split_3.png" style="width:100%">
-                <div class="numbertext">Milestone 3 / 5</div>
-            </div>
-
-            <div class="my-slides">
-                <img src="virl_images/intentional_explorer/intentional_explorer_split_4.png" style="width:100%">
-                <div class="numbertext">Milestone 4 / 5</div>
-            </div>
-
-            <div class="my-slides">
-                <img src="virl_images/intentional_explorer/intentional_explorer_split_5.png" style="width:100%">
-                <div class="numbertext">Milestone 5 / 5</div>
-            </div>
-              
-            <a class="prev" onclick="plusSlides('slider-img-explorer', -1, 'explorer-aside')">❮</a>
-            <a class="next" onclick="plusSlides('slider-img-explorer', 1, 'explorer-aside')">❯</a>
-            
-            <figcaption id="caption" style="margin-bottom: 10px; text-align: center">Visualization for Hiro's lunch exploration in HK. Concrete procedure is depicted in the following video.</figcaption>
-          
-            <div class="row">
-                <div class="column">
-                    <img class="demo cursor" src="virl_images/intentional_explorer/intentional_explorer_split_1.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-explorer', 1, 'explorer-aside')" alt="Visualization for Hiro's lunch exploration in HK. Concrete procedure is depicted in the following video.">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="virl_images/intentional_explorer/intentional_explorer_split_2.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-explorer', 2, 'explorer-aside')" alt="Visualization for Hiro's lunch exploration in HK. Concrete procedure is depicted in the following video.">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="virl_images/intentional_explorer/intentional_explorer_split_3.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-explorer', 3, 'explorer-aside')" alt="Visualization for Hiro's lunch exploration in HK. Concrete procedure is depicted in the following video.">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="virl_images/intentional_explorer/intentional_explorer_split_4.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-explorer', 4, 'explorer-aside')" alt="Visualization for Hiro's lunch exploration in HK. Concrete procedure is depicted in the following video.">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="virl_images/intentional_explorer/intentional_explorer_split_5.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-explorer', 5, 'explorer-aside')" alt="Visualization for Hiro's lunch exploration in HK. Concrete procedure is depicted in the following video.">
-                </div>
-            </div>
-        </div>
-        <aside class="explorer-aside">
-            Starting at the user-defined location<img src="virl_images/icons/start_icon.jpg" class="inline-tag" style="height: 16px;">, Hiro walks down the street to find a place can fulfil his intention: "<i>Hiro is hungry and looking for a place where he can explore great local food. He cannot handle spicy food.</i>"</aside>
-        <aside class="explorer-aside">
-            <p>When he meets the first intersection, thanks to the interactive and sensor-rich environment, he adjusts his pose to fetch real street views for each possible path at the crossroads. He then uses these with <em>VQA</em> to <em>decide</em> to turn left:</p>
-            <blockquote style="font-size: 12px">
-                <img src="virl_images/icons/star.png" class="inline-tag" style="height: 16px;"> Road 1 has this homey, residential feel to it, which usually means cozy, family-run spots serving up the real-deal local food. It's got that quiet, laid-back dining scene that lets you really soak in the experience, take your time, and eat like one of the locals.
-            </blockquote>
-        </aside>
-        <aside class="explorer-aside">
-            <p>Then, after exploring for a block, he encounters the second intersection where he <em>looks around</em> and <em>decides</em> to turn right:</p>
-            <blockquote style="font-size: 12px">
-                <img src="virl_images/icons/star.png" class="inline-tag" style="height: 16px;"> I'm leaning towards taking Road 2. It looks promising with all those signs pointing to eateries and local food joints. That's got to mean there's a good selection of local dishes to try out. And with more places to choose from, I bet I'll have a better shot at finding something that isn't too spicy. That's a big deal for me. Road 1 just doesn't seem to cut it; it's more of a residential vibe and doesn't really shout 'food' like Road 2 does.
-            </blockquote>
-        </aside>
-        <aside class="explorer-aside">
-            <p>After a few steps, Hiro finds <i>"A One Chinese Noodles 阿一豬扒酸辣米線"</i>
-                using his <em>open-world detector</em>, and looks up 
-                its information and reviews using our <i>real-world environment</i> which <i>connects street views to places</i>. Hiro <i>decides</i> to pass on it because:</p>
-            <blockquote style="font-size: 12px">
-                <img src="virl_images/icons/star.png" class="inline-tag" style="height: 16px;">Hmm, spicy food is a no-go for me, and this place seems to be all about pork chop noodles. That might be tricky with my dietary needs. I should probably keep looking for something that fits what I can eat.
-            </blockquote>
-        </aside>
-        <aside class="explorer-aside">
-            <p>
-                Finally, at the end of this street block <img src="virl_images/icons/end_icon.jpg" class="inline-tag" style="height: 16px;">, Hiro discovers another lunch spot called <i>Xintianfa 新天發</i>. He decides to dine there after <em>reading</em> <em>online reviews</em> praising its authentic cuisine and diverse menu:
+        <div id="hiro" style="position: relative;">
+            <h3 class="text"><img style="width: 35px" src="virl_images/avatars/explorer.png"> Hiro: Seasoned Traveler (Intentional Explorer)</h3>
+            <!-- <d-contents class="left-aside-container">
+                <aside class="left-side-bar">
+                    <img style="width: 120px" src="virl_images/avatars/explorer.png">
+                </aside>
+            </d-contents> -->
+            <p class="l-body">
+                <img src="character_card/intentional_explorer.png" class="character-card-img">
             </p>
-            <blockquote>
-                Even though opinions vary, Xintianfa presents an array of local cuisine that beckons to my desire for authentic culinary experiences. My seasoned traveler's spirit thrives on novelty and the thrill of discovery, so a restaurant with a diverse menu naturally draws me in. Additionally, the absence of any emphasis on spicy fare is a relief, given my inability to tolerate heat in my meals.
+            <blockquote class="storytext">
+                Hiro is starting a new journey in Hong Kong.
+                He decides to explore without a specific destination in mind, looking for a good local lunch spot with food that's not too spicy...
             </blockquote>
-        </aside>
+            <hr class="l-body fancybreak">
+            <p class="text">
+                Driven by his intention, Hiro uses open-world detection to find a restaurant; uses VQA to select proper roads; uses place reviews and LLM to decide whether a place is suitable for his purpose.
+            </p>
+
+            <!-- <d-figure>
+                <figure>
+                    <img src="virl_images/intentional_explorer.png" style="width: 100%" alt="Intentional Explorer agent exploring">
+                    <figcaption style="width: 100%; text-align: center">Visualization for Hiro's lunch exploration in HK. Concrete procedure is depicted in the following video.</figcaption>
+                </figure>
+            </d-figure> -->
+            
+            <div id="slider-img-explorer" class="slider-img-container">
+                <div class="my-slides">
+                <div class="numbertext">Milestone 1 / 5</div>
+                <img src="virl_images/intentional_explorer/intentional_explorer_split_1.png" style="width:100%">
+                </div>
+            
+                <div class="my-slides">
+                <div class="numbertext">Milestone 2 / 5</div>
+                <img src="virl_images/intentional_explorer/intentional_explorer_split_2.png" style="width:100%">
+                </div>
+
+                <div class="my-slides">
+                    <img src="virl_images/intentional_explorer/intentional_explorer_split_3.png" style="width:100%">
+                    <div class="numbertext">Milestone 3 / 5</div>
+                </div>
+
+                <div class="my-slides">
+                    <img src="virl_images/intentional_explorer/intentional_explorer_split_4.png" style="width:100%">
+                    <div class="numbertext">Milestone 4 / 5</div>
+                </div>
+
+                <div class="my-slides">
+                    <img src="virl_images/intentional_explorer/intentional_explorer_split_5.png" style="width:100%">
+                    <div class="numbertext">Milestone 5 / 5</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides('slider-img-explorer', -1, 'explorer-aside')">❮</a>
+                <a class="next" onclick="plusSlides('slider-img-explorer', 1, 'explorer-aside')">❯</a>
+                
+                <figcaption id="caption" style="margin-bottom: 10px; text-align: center">Visualization for Hiro's lunch exploration in HK. Concrete procedure is depicted in the following video.</figcaption>
+            
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="virl_images/intentional_explorer/intentional_explorer_split_1.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-explorer', 1, 'explorer-aside')" alt="Visualization for Hiro's lunch exploration in HK. Concrete procedure is depicted in the following video.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="virl_images/intentional_explorer/intentional_explorer_split_2.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-explorer', 2, 'explorer-aside')" alt="Visualization for Hiro's lunch exploration in HK. Concrete procedure is depicted in the following video.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="virl_images/intentional_explorer/intentional_explorer_split_3.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-explorer', 3, 'explorer-aside')" alt="Visualization for Hiro's lunch exploration in HK. Concrete procedure is depicted in the following video.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="virl_images/intentional_explorer/intentional_explorer_split_4.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-explorer', 4, 'explorer-aside')" alt="Visualization for Hiro's lunch exploration in HK. Concrete procedure is depicted in the following video.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="virl_images/intentional_explorer/intentional_explorer_split_5.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-explorer', 5, 'explorer-aside')" alt="Visualization for Hiro's lunch exploration in HK. Concrete procedure is depicted in the following video.">
+                    </div>
+                </div>
+            </div>
+            <aside class="explorer-aside">
+                Starting at the user-defined location<img src="virl_images/icons/start_icon.jpg" class="inline-tag" style="height: 16px;">, Hiro walks down the street to find a place can fulfil his intention: "<i>Hiro is hungry and looking for a place where he can explore great local food. He cannot handle spicy food.</i>"</aside>
+            <aside class="explorer-aside">
+                <p>When he meets the first intersection, thanks to the interactive and sensor-rich environment, he adjusts his pose to fetch real street views for each possible path at the crossroads. He then uses these with <em>VQA</em> to <em>decide</em> to turn left:</p>
+                <blockquote style="font-size: 12px">
+                    <img src="virl_images/icons/star.png" class="inline-tag" style="height: 16px;"> Road 1 has this homey, residential feel to it, which usually means cozy, family-run spots serving up the real-deal local food. It's got that quiet, laid-back dining scene that lets you really soak in the experience, take your time, and eat like one of the locals.
+                </blockquote>
+            </aside>
+            <aside class="explorer-aside">
+                <p>Then, after exploring for a block, he encounters the second intersection where he <em>looks around</em> and <em>decides</em> to turn right:</p>
+                <blockquote style="font-size: 12px">
+                    <img src="virl_images/icons/star.png" class="inline-tag" style="height: 16px;"> I'm leaning towards taking Road 2. It looks promising with all those signs pointing to eateries and local food joints. That's got to mean there's a good selection of local dishes to try out. And with more places to choose from, I bet I'll have a better shot at finding something that isn't too spicy. That's a big deal for me. Road 1 just doesn't seem to cut it; it's more of a residential vibe and doesn't really shout 'food' like Road 2 does.
+                </blockquote>
+            </aside>
+            <aside class="explorer-aside">
+                <p>After a few steps, Hiro finds <i>"A One Chinese Noodles 阿一豬扒酸辣米線"</i>
+                    using his <em>open-world detector</em>, and looks up 
+                    its information and reviews using our <i>real-world environment</i> which <i>connects street views to places</i>. Hiro <i>decides</i> to pass on it because:</p>
+                <blockquote style="font-size: 12px">
+                    <img src="virl_images/icons/star.png" class="inline-tag" style="height: 16px;">Hmm, spicy food is a no-go for me, and this place seems to be all about pork chop noodles. That might be tricky with my dietary needs. I should probably keep looking for something that fits what I can eat.
+                </blockquote>
+            </aside>
+            <aside class="explorer-aside">
+                <p>
+                    Finally, at the end of this street block <img src="virl_images/icons/end_icon.jpg" class="inline-tag" style="height: 16px;">, Hiro discovers another lunch spot called <i>Xintianfa 新天發</i>. He decides to dine there after <em>reading</em> <em>online reviews</em> praising its authentic cuisine and diverse menu:
+                </p>
+                <blockquote>
+                    Even though opinions vary, Xintianfa presents an array of local cuisine that beckons to my desire for authentic culinary experiences. My seasoned traveler's spirit thrives on novelty and the thrill of discovery, so a restaurant with a diverse menu naturally draws me in. Additionally, the absence of any emphasis on spicy fare is a relief, given my inability to tolerate heat in my meals.
+                </blockquote>
+            </aside>
 
 
-        <p class="video-container">
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/bOGa7eI-K_I?si=MPPoxbxf8S7Dj7Tp" title="Intentional Explorer agent exploration procedure" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe> -->
-            <video controls preload="none">
-                <source src="videos/intentional_explorer_v2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </p>
+            <p class="video-container">
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/bOGa7eI-K_I?si=MPPoxbxf8S7Dj7Tp" title="Intentional Explorer agent exploration procedure" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe> -->
+                <video controls preload="metadata">
+                    <source src="videos/intentional_explorer_v2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </p>
+        </div>
         
         <!-- <h3 id="agent-agent-col">Agent-Agent Collaborative Agents</h3>
         <p>
             As with previous agents, collaborative agents are designed for specific tasks; however, they can handle objectives beyond their expertise through collaboration with each other.
         </p> -->
-        <div style="position: relative">
+        <div id="ling" style="position: relative">
             <div class="l-screen grey-overlay"></div>
-            <h3 class="text" id="ling"><img style="width: 35px" src="virl_images/avatars/tourist.png"> Ling: Tourist</h3>
+            <h3 class="text"><img style="width: 35px" src="virl_images/avatars/tourist.png"> Ling: Tourist</h3>
             <!-- <d-contents class="left-aside-container">
                 <aside class="left-side-bar">
                     <img style="width: 120px" src="virl_images/avatars/tourist.png">
@@ -624,14 +655,14 @@
             <div class="l-body">
                 <div id="Touristvideo1Container" class="video-container">
                     <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/H_F-_NoHDLk?si=7TcYGkiFOIBaCHZo" title="Tourist-Local collaboration in San Francisco" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe> -->
-                    <video controls preload="none">
+                    <video controls preload="metadata">
                         <source src="videos/tourist_sf_v2.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <div id="Touristvideo2Container" class="video-container" style="display:none;">
                     <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/kS2zIDyVvSU?si=hoA4oI4sKXWDk1Wy" title="Tourist-Local collaboration in Hong Kong" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe> -->
-                    <video controls preload="none">
+                    <video controls preload="metadata">
                         <source src="videos/tourist_hk_v3.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -650,160 +681,163 @@
         <p>
             Grounded in the same real-world as humans, agents are also capable of collaborating with humans to serve as assistants.
         </p> -->
-        <h3 class="text" id="diego"><img style="width: 35px" src="virl_images/avatars/concierge.png"> Diego: Expert Concierge</h3>
-        <!-- <d-contents class="left-aside-container">
-            <aside class="left-side-bar">
-                <img style="width: 120px" src="virl_images/avatars/concierge.png">
-            </aside>
-        </d-contents> -->
-        <p class="l-body">
-            <img src="character_card/interactive_concierge.png" class="character-card-img">
-        </p>
-        <blockquote class="storytext">
-            As a university student in NYC, you're excited to spend a day exploring lesser-known and tranquil places. Your friend recommended Diego, who is known for his professionalism in planning practical and personalized itineraries...
-        </blockquote>
-        <hr class="l-body fancybreak">
-        <p class="text">
-        As depicted in the following figure, Diego's itinerary is tailored to your needs. Diego not only considers your physical and mental interoception status, budget for each activity, but also anticipates your status changes and cost when you follow each event. 
-        He is able to take into account <em>real</em> travel times from the <i>V-IRL</i> platform and select suitable dining options by collaborating with another 
-        restaurant recommendation agent.
-        </p>
-        <d-figure class="l-page">
-            <figure>
-                <!-- <img src="virl_images/interactive_concierge.png" alt="Interactive Concierge Diego" style="width: 100%"> -->
+        <div id="diego" style="position: relative">
+            <h3 class="text"><img style="width: 35px" src="virl_images/avatars/concierge.png"> Diego: Expert Concierge</h3>
+            <!-- <d-contents class="left-aside-container">
+                <aside class="left-side-bar">
+                    <img style="width: 120px" src="virl_images/avatars/concierge.png">
+                </aside>
+            </d-contents> -->
+            <p class="l-body">
+                <img src="character_card/interactive_concierge.png" class="character-card-img">
+            </p>
+            <blockquote class="storytext">
+                As a university student in NYC, you're excited to spend a day exploring lesser-known and tranquil places. Your friend recommended Diego, who is known for his professionalism in planning practical and personalized itineraries...
+            </blockquote>
+            <hr class="l-body fancybreak">
+            <p class="text">
+            As depicted in the following figure, Diego's itinerary is tailored to your needs. Diego not only considers your physical and mental interoception status, budget for each activity, but also anticipates your status changes and cost when you follow each event. 
+            He is able to take into account <em>real</em> travel times from the <i>V-IRL</i> platform and select suitable dining options by collaborating with another 
+            restaurant recommendation agent.
+            </p>
+            <d-figure class="l-page">
+                <figure>
+                    <!-- <img src="virl_images/interactive_concierge.png" alt="Interactive Concierge Diego" style="width: 100%"> -->
+                    <video playsinline autoplay loop muted style="width: 100%">
+                        <source src="videos/interactive_concierge_gif.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption style="width: 100%"><em>The Perfect Day Itinerary</em>: Crafted by Diego, our iterative concierge agent, this schedule is meticulously tailored, accounting for your mental and physical well-being and budget variations as your day unfolds.</figcaption>
+                </figure>
+            </d-figure>
+            <p class="text">
+                You can intervene Diego's planning process by adjusting your interoception status or providing verbal feedback for Diego.
+                In response, Diego promptly revises his original plan to make it accommodate your demands, and re-estimate your state changes after revision. (see the following figures)
+            </p>
+
+            <!-- <d-figure>
+                <figure>
+                    <img src="virl_images/interactive_concierge_revise.png" alt="Interactive Concierge Diego Revise" style="width: 100%">
+                    <figcaption style="width: 100%; text-align: center">Diego adapts original plan to suit user's intervention.</figcaption>
+                </figure>
+            </d-figure> -->
+
+            <div>
+                <img src="virl_images/diego_intervent/diego_origin.png" style="width: 130%; margin-left: -15%">
+            </div>
+            <div id="slider-img-diego-revise-state" class="slider-img-container">
+                <div class="my-slides">
+                    <img src="virl_images/diego_intervent/adjust_state_1.png" style="width: 130%; margin-left: -15%">
+                </div>
+            
+                <div class="my-slides">
+                    <img src="virl_images/diego_intervent/adjust_state_2.png" style="width: 130%; margin-left: -15%">
+                </div>
+
+                <div class="my-slides">
+                    <img src="virl_images/diego_intervent/adjust_state_3.png" style="width: 130%; margin-left: -15%">
+                </div>
+                
+                <a class="prev" style="top: 75%; left: -20%" onclick="plusSlides('slider-img-diego-revise-state', -1)">❮</a>
+                <a class="next" style="top: 75%; right: -20%" onclick="plusSlides('slider-img-diego-revise-state', 1)">❯</a>
+            </div>
+
+            <div id="slider-img-diego-revise-verbal" class="slider-img-container">
+                <div class="my-slides">
+                    <img src="virl_images/diego_intervent/verbal_1.png" style="width: 130%; margin-left: -15%">
+                </div>
+            
+                <div class="my-slides">
+                    <img src="virl_images/diego_intervent/verbal_2.png" style="width: 130%; margin-left: -15%">
+                </div>
+
+                <div class="my-slides">
+                    <img src="virl_images/diego_intervent/verbal_3.png" style="width: 130%; margin-left: -15%">
+                </div>
+                
+                <a class="prev" style="top: 75%; left: -20%" onclick="plusSlides('slider-img-diego-revise-verbal', -1)">❮</a>
+                <a class="next" style="top: 75%; right: -20%" onclick="plusSlides('slider-img-diego-revise-verbal', 1)">❯</a>
+            </div>
+            <figcaption style="width: 100%; text-align: center; margin-bottom: 20px;">Diego adapts original plan to suit user's intervention.</figcaption>
+            
+            <p class="text">
+                Behind Diego's proficiency in developing itineraries is his iterative planning pipeline.
+                The process begins with Diego creating an initial draft plan for the first activity using <i>GPT-4</i>, taking into account the user's biography, requirements, and previous activities in working memory. This draft is then meticulously refined by <i>hierarchical coordination</i> (real geospatial/place information), <i>interoceptive estimation</i> (activity cost and influence for human states) and <i>supervisor</i> (human interoception, budget and potential intervention).
+            </p>
+            <div>
                 <video playsinline autoplay loop muted style="width: 100%">
-                    <source src="videos/interactive_concierge_gif.mp4" type="video/mp4">
+                    <source src="videos/interactive_conciege_pipeline_gif.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <figcaption style="width: 100%"><em>The Perfect Day Itinerary</em>: Crafted by Diego, our iterative concierge agent, this schedule is meticulously tailored, accounting for your mental and physical well-being and budget variations as your day unfolds.</figcaption>
-            </figure>
-        </d-figure>
-        <p class="text">
-            You can intervene Diego's planning process by adjusting your interoception status or providing verbal feedback for Diego.
-            In response, Diego promptly revises his original plan to make it accommodate your demands, and re-estimate your state changes after revision. (see the following figures)
-        </p>
-
-        <!-- <d-figure>
-            <figure>
-                <img src="virl_images/interactive_concierge_revise.png" alt="Interactive Concierge Diego Revise" style="width: 100%">
-                <figcaption style="width: 100%; text-align: center">Diego adapts original plan to suit user's intervention.</figcaption>
-            </figure>
-        </d-figure> -->
-
-        <div>
-            <img src="virl_images/diego_intervent/diego_origin.png" style="width: 130%; margin-left: -15%">
-        </div>
-        <div id="slider-img-diego-revise-state" class="slider-img-container">
-            <div class="my-slides">
-                <img src="virl_images/diego_intervent/adjust_state_1.png" style="width: 130%; margin-left: -15%">
-            </div>
-          
-            <div class="my-slides">
-                <img src="virl_images/diego_intervent/adjust_state_2.png" style="width: 130%; margin-left: -15%">
+                <figcaption style="width: 100%; text-align: center">Pipeline overview of interactive concierge agent Diego.</figcaption>
             </div>
 
-            <div class="my-slides">
-                <img src="virl_images/diego_intervent/adjust_state_3.png" style="width: 130%; margin-left: -15%">
-            </div>
-              
-            <a class="prev" style="top: 75%; left: -20%" onclick="plusSlides('slider-img-diego-revise-state', -1)">❮</a>
-            <a class="next" style="top: 75%; right: -20%" onclick="plusSlides('slider-img-diego-revise-state', 1)">❯</a>
-        </div>
+            <p class="text">
+                Additionally, grounded on tightly related street views and Map in <i>V-IRL</i>, Diego travels places in his itinerary to scout for potential scenic viewpoints for you as shown in the following figure. 
+                He uses VQA to assess each captured views, attaching highly rated positions to your itinerary.
+            </p>
+            <!-- <d-figure>
+                <figure>
+                    <img src="virl_images/photographer.png" alt="Interactive Concierge Diego takes photos" style="width: 130%">
+                    <figcaption style="width: 130%; text-align: center">Diego records attractive locations in your itinerary.</figcaption>
+                </figure>
+            </d-figure> -->
 
-        <div id="slider-img-diego-revise-verbal" class="slider-img-container">
-            <div class="my-slides">
-                <img src="virl_images/diego_intervent/verbal_1.png" style="width: 130%; margin-left: -15%">
-            </div>
-          
-            <div class="my-slides">
-                <img src="virl_images/diego_intervent/verbal_2.png" style="width: 130%; margin-left: -15%">
-            </div>
-
-            <div class="my-slides">
-                <img src="virl_images/diego_intervent/verbal_3.png" style="width: 130%; margin-left: -15%">
-            </div>
-              
-            <a class="prev" style="top: 75%; left: -20%" onclick="plusSlides('slider-img-diego-revise-verbal', -1)">❮</a>
-            <a class="next" style="top: 75%; right: -20%" onclick="plusSlides('slider-img-diego-revise-verbal', 1)">❯</a>
-        </div>
-        <figcaption style="width: 100%; text-align: center; margin-bottom: 20px;">Diego adapts original plan to suit user's intervention.</figcaption>
-        
-        <p class="text">
-            Behind Diego's proficiency in developing itineraries is his iterative planning pipeline.
-            The process begins with Diego creating an initial draft plan for the first activity using <i>GPT-4</i>, taking into account the user's biography, requirements, and previous activities in working memory. This draft is then meticulously refined by <i>hierarchical coordination</i> (real geospatial/place information), <i>interoceptive estimation</i> (activity cost and influence for human states) and <i>supervisor</i> (human interoception, budget and potential intervention).
-        </p>
-        <div>
-            <video playsinline autoplay loop muted style="width: 100%">
-                <source src="videos/interactive_conciege_pipeline_gif.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <figcaption style="width: 100%; text-align: center">Pipeline overview of interactive concierge agent Diego.</figcaption>
-        </div>
-
-        <p class="text">
-            Additionally, grounded on tightly related street views and Map in <i>V-IRL</i>, Diego travels places in his itinerary to scout for potential scenic viewpoints for you as shown in the following figure. 
-            He uses VQA to assess each captured views, attaching highly rated positions to your itinerary.
-        </p>
-        <!-- <d-figure>
-            <figure>
-                <img src="virl_images/photographer.png" alt="Interactive Concierge Diego takes photos" style="width: 130%">
-                <figcaption style="width: 130%; text-align: center">Diego records attractive locations in your itinerary.</figcaption>
-            </figure>
-        </d-figure> -->
-
-        <div id="slider-img-photographer" class="slider-img-container">
-            <div class="my-slides">
-                <!-- <div class="numbertext">1 / 5</div> -->
-                <img src="virl_images/photographer/photographer_1.png">
-                <div class="overlay"><i>Geo Location: [40.8649162, -73.9311561]</i></div>
-            </div>
-          
-            <div class="my-slides">
-                <!-- <div class="numbertext">2 / 5</div> -->
-                <img src="virl_images/photographer/photographer_2.png">
-                <div class="overlay"><i>Geo Location: [40.8647205, -73.9325163]</i></div>
-            </div>
-
-            <div class="my-slides">
-                <img src="virl_images/photographer/photographer_3.png">
-                <!-- <div class="numbertext">3 / 5</div> -->
-                <div class="overlay"><i>Geo Location: [40.8653388, -73.9322499]</i></div>
-            </div>
-
-            <div class="my-slides">
-                <img src="virl_images/photographer/photographer_4.png">
-                <!-- <div class="numbertext">4 / 5</div> -->
-                <div class="overlay"><i>Geo Location: [40.8609142,-73.9324818]</i></div>
-            </div>
-
-            <div class="my-slides">
-                <img src="virl_images/photographer/photographer_5.png">
-                <!-- <div class="numbertext">5 / 5</div> -->
-                <div class="overlay"><i>Geo Location: [40.8642401,-73.9325958]</i></div>
-            </div>
-              
-            <a class="prev" onclick="plusSlides('slider-img-photographer', -1)">❮</a>
-            <a class="next" onclick="plusSlides('slider-img-photographer', 1)">❯</a>
+            <div id="slider-img-photographer" class="slider-img-container">
+                <div class="my-slides">
+                    <!-- <div class="numbertext">1 / 5</div> -->
+                    <img src="virl_images/photographer/photographer_1.png">
+                    <div class="overlay"><i>Geo Location: [40.8649162, -73.9311561]</i></div>
+                </div>
             
-            <figcaption id="caption" style="margin-bottom: 10px; text-align: center">Diego rates scenery and records attractive locations in your itinerary.</figcaption>
+                <div class="my-slides">
+                    <!-- <div class="numbertext">2 / 5</div> -->
+                    <img src="virl_images/photographer/photographer_2.png">
+                    <div class="overlay"><i>Geo Location: [40.8647205, -73.9325163]</i></div>
+                </div>
 
-            <div class="row">
-                <div class="column">
-                    <img class="demo cursor" src="virl_images/photographer/photographer_1.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-photographer', 1)" alt="Diego rates scenery and records attractive locations in your itinerary.">
+                <div class="my-slides">
+                    <img src="virl_images/photographer/photographer_3.png">
+                    <!-- <div class="numbertext">3 / 5</div> -->
+                    <div class="overlay"><i>Geo Location: [40.8653388, -73.9322499]</i></div>
                 </div>
-                <div class="column">
-                    <img class="demo cursor" src="virl_images/photographer/photographer_2.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-photographer', 2)" alt="Diego rates scenery and records attractive locations in your itinerary.">
+
+                <div class="my-slides">
+                    <img src="virl_images/photographer/photographer_4.png">
+                    <!-- <div class="numbertext">4 / 5</div> -->
+                    <div class="overlay"><i>Geo Location: [40.8609142,-73.9324818]</i></div>
                 </div>
-                <div class="column">
-                    <img class="demo cursor" src="virl_images/photographer/photographer_3.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-photographer', 3)" alt="Diego rates scenery and records attractive locations in your itinerary.">
+
+                <div class="my-slides">
+                    <img src="virl_images/photographer/photographer_5.png">
+                    <!-- <div class="numbertext">5 / 5</div> -->
+                    <div class="overlay"><i>Geo Location: [40.8642401,-73.9325958]</i></div>
                 </div>
-                <div class="column">
-                    <img class="demo cursor" src="virl_images/photographer/photographer_4.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-photographer', 4)" alt="Diego rates scenery and records attractive locations in your itinerary.">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="virl_images/photographer/photographer_5.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-photographer', 5)" alt="Diego rates scenery and records attractive locations in your itinerary.">
+                
+                <a class="prev" onclick="plusSlides('slider-img-photographer', -1)">❮</a>
+                <a class="next" onclick="plusSlides('slider-img-photographer', 1)">❯</a>
+                
+                <figcaption id="caption" style="margin-bottom: 10px; text-align: center">Diego rates scenery and records attractive locations in your itinerary.</figcaption>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="virl_images/photographer/photographer_1.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-photographer', 1)" alt="Diego rates scenery and records attractive locations in your itinerary.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="virl_images/photographer/photographer_2.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-photographer', 2)" alt="Diego rates scenery and records attractive locations in your itinerary.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="virl_images/photographer/photographer_3.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-photographer', 3)" alt="Diego rates scenery and records attractive locations in your itinerary.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="virl_images/photographer/photographer_4.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-photographer', 4)" alt="Diego rates scenery and records attractive locations in your itinerary.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="virl_images/photographer/photographer_5.png" style="height: 60px; width: auto" onclick="currentSlide('slider-img-photographer', 5)" alt="Diego rates scenery and records attractive locations in your itinerary.">
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
 
         <!-- <d-figure>
@@ -815,7 +849,8 @@
         
 
         <!-- Part 2: System fundamental -->
-        <h2 class="text" id="system">System Fundamental</h2>
+        <div id="system" style="position: relative">
+        <h2 class="text">System Fundamental</h2>
         <p class="text">
             This section introduces our system's core: a platform designed for perception-driven agents that transforms real-world cities around the world into a vast virtual playground where agents can be constructed to solve practical tasks. At its heart, <i>V-IRL</i> is comprised of a hierarchical architecture. The <i>platform</i> lies at the foundation---providing the underlying components and infrastructure for agents to employ.
             Higher level <i>capabilities</i> of <em>Perception</em>, <em>Reasoning</em>, </em>Action</em>, and <em>Collaboration</em> emerge from the platform's components.
@@ -959,10 +994,12 @@
 
 
         <figcaption style="width: 100%; text-align: center">Hierarchical <i>V-IRL</i> architecture.</figcaption>
+        </div>
 
 
         <!-- Part 3: Benchmark -->
-        <h2 class="text" id="virlbenchmark"><em>V-IRL</em> Benchmark</h2>
+        <div id="virlbenchmark" style="position: relative">
+        <h2 class="text"><em>V-IRL</em> Benchmark</h2>
         <p class="text">
             The essential attributes of <i>V-IRL</i> include its ability to access geographically diverse data derived from real-world sensory input, and its API that facilitates interaction with Google Map Platform (GMP) <d-cite key="google_map_platform"></d-cite>. 
             This enables us to develop three <i>V-IRL</i> benchmarks to assess the capabilities of existing vision models in such open-world data distribution.
@@ -1156,31 +1193,28 @@
         <div>
             <img id="bm_city_img" class="modal-trigger" src="virl_images/bm_city_analysis.png" alt="City level analysis" style="width: 100%;">
             <figcaption style="width: 100%; text-align: center">City-level visualization of <i>V-IRL</i> benchmark results.</figcaption>
+            <aside class="left-side-bar">
+                <img id="street_lagos" class="modal-trigger" src="virl_images/bm_city/street_lagos.png" style="width: 240px; height: auto; ">
+                <figcaption style="width: 240px; text-align: center; margin-bottom:5px">Lagos, Nigeria.</figcaption>
+                <img class="modal-trigger" id="street_tokyo" src="virl_images/bm_city/street_tokyo.png" style="width: 240px; height: auto">
+                <figcaption style="width: 240px; text-align: center; margin-bottom:5px">Tokyo, Japan </figcaption>
+                <img class="modal-trigger" id="street_tokyo" src="virl_images/bm_city/street_ny.png" style="width: 240px; height: auto">
+                <figcaption style="width: 240px; text-align: center; margin-bottom:5px">New York City, USA </figcaption>
+            </aside>
+            <aside style="position: absolute; top: 90%; left: 105%;">
+                <img class="modal-trigger" id="street_hk" src="virl_images/bm_city/street_hk.png" style="width: 240px; height: auto">
+                <figcaption style="width: 240px; text-align: center; margin-bottom:5px">Hong Kong, China.</figcaption>
+                <img  class="modal-trigger" id="street_ba" src="virl_images/bm_city/street_Buenos_Aires.png" style="width: 240px; height: auto">
+                <figcaption style="width: 240px; text-align: center; margin-bottom:5px">Buenos Aires, Argentina.</figcaption>
+                <img  class="modal-trigger" id="street_ba" src="virl_images/bm_city/street_mumbai.png" style="width: 240px; height: auto">
+                <figcaption style="width: 240px; text-align: center; margin-bottom:5px">Mumbai, India.</figcaption>
+            </aside>
         </div>
-        <aside class="left-side-bar">
-            <img id="street_lagos" class="modal-trigger" src="virl_images/bm_city/street_lagos.png" style="width: 250px; height: auto; ">
-            <figcaption style="width: 250px; text-align: center; margin-bottom:20px">Lagos, Nigeria.</figcaption>
-            <img class="modal-trigger" id="street_tokyo" src="virl_images/bm_city/street_tokyo.png" style="width: 250px; height: auto">
-            <figcaption style="width: 250px; text-align: center; margin-bottom:20px">Tokyo, Japan </figcaption>
-            <img class="modal-trigger" id="street_tokyo" src="virl_images/bm_city/street_ny.png" style="width: 250px; height: auto">
-            <figcaption style="width: 250px; text-align: center; margin-bottom:20px">New York City, USA </figcaption>
-        </aside>
         
-        <aside style="position: relative; top: -103%">
-            <!-- <div class="img-magnifier-container">
-                <img class="modal-trigger" id="street_tokyo" src="virl_images/bm_city/street_tokyo.png" style="width: 250px; height: auto">
-                <figcaption style="width: 250px; text-align: center; margin-bottom:10px">Tokyo, Japan </figcaption>
-            </div> -->
-            <img class="modal-trigger" id="street_hk" src="virl_images/bm_city/street_hk.png" style="width: 250px; height: auto">
-            <figcaption style="width: 250px; text-align: center; margin-bottom:20px">Hong Kong, China.</figcaption>
-            <img  class="modal-trigger" id="street_ba" src="virl_images/bm_city/street_Buenos_Aires.png" style="width: 250px; height: auto">
-            <figcaption style="width: 250px; text-align: center; margin-bottom:20px">Buenos Aires, Argentina.</figcaption>
-            <img  class="modal-trigger" id="street_ba" src="virl_images/bm_city/street_mumbai.png" style="width: 250px; height: auto">
-            <figcaption style="width: 250px; text-align: center; margin-bottom:20px">Mumbai, India.</figcaption>
-        </aside>
         
+        </div>
         </d-article>
-        <d-appendix style="margin-top: -20%;">
+        <d-appendix>
             <h3>BibTeX</h3>
             <p class="bibtex">
                 @article{VIRL,<br>
@@ -1207,6 +1241,7 @@
         </script> -->
         <!-- <script src="contents_bar.js"></script> -->
         <script src="modal_image.js"></script>
+        <script src="nav-bar.js"></script>
         
         <script type="text/javascript">
             changeContent('Place1');
@@ -1229,8 +1264,6 @@
             showSlides("slider-img-explorer", slideIndex, 'explorer-aside');
             showSlides("slider-img-diego-revise-verbal", slideIndex);
             showSlides("slider-img-diego-revise-state", slideIndex);
-
-            // setLayoutOfText("l-body-outset")
         </script>
     </body>
 </html>
