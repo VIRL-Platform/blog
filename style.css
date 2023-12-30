@@ -914,16 +914,16 @@ aside blockquote {
 
 .avatar figcaption {
   /* display: inline-block; */
-  margin-top: 8px;
+  /* margin-top: 8px; */
   margin-left: auto;
   margin-right: auto;
   padding: 5px 10px;
   font-size: 14px;
   color: #333;
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* background-color: #f8f8f8; */
+  /* border: 1px solid #ddd; */
+  /* border-radius: 5px; */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   text-align: center;
   width: 80px; /* Adjust as needed */
   overflow: hidden;
@@ -994,7 +994,7 @@ d-article > div > h3 {
   position: fixed;
   left: 20px;
   top: 20px;
-  width: 110px;
+  width: 80px;
   height: fit-content;
   background-color: #dbdbdb39;
   overflow-x: hidden;
@@ -1002,7 +1002,7 @@ d-article > div > h3 {
 }
 
 #nav-sub-agents {
-  margin-left: 30px;
+  margin-left: 15px;
   margin-bottom: 20px;
 }
 
