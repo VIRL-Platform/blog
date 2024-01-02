@@ -1,11 +1,28 @@
 function switchVideo(prefix, videoContainerId, preview_id) {
-    // Hide all video containers first
-    document.getElementById(prefix + 'video1Container').style.display = 'none';
-    document.getElementById(prefix + 'video2Container').style.display = 'none';
-  
-    // Show the selected video container
-    document.getElementById(prefix + videoContainerId).style.display = 'block';
+    // Reference to all video containers
+    var video1Container = document.getElementById(prefix + 'video1Container');
+    var video2Container = document.getElementById(prefix + 'video2Container');
 
+    // Hide all video containers first
+    video1Container.style.display = 'none';
+    video2Container.style.display = 'none';
+
+    // Stop and reset videos
+    var videos = video1Container.getElementsByTagName('video');
+    for (var i = 0; i < videos.length; i++) {
+        videos[i].pause();
+    }
+
+    videos = video2Container.getElementsByTagName('video');
+    for (var i = 0; i < videos.length; i++) {
+        videos[i].pause();
+    }
+
+    // Show the selected video container
+    var selectedVideoContainer = document.getElementById(prefix + videoContainerId);
+    selectedVideoContainer.style.display = 'block';
+
+    // Update preview images
     var videoPreview1 = document.getElementById(prefix + 'video1Preview');
     var videoPreview2 = document.getElementById(prefix + 'video2Preview');
 
@@ -15,6 +32,27 @@ function switchVideo(prefix, videoContainerId, preview_id) {
     document.getElementById(prefix + preview_id).className += " preview-video-active";
 }
 
+
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function checkVideoVisibility() {
+    var videos = document.querySelectorAll('.video-music');
+    videos.forEach(function(video) {
+        if (!isElementInViewport(video)) {
+            video.pause();
+        }
+    });
+}
+
+window.addEventListener('scroll', checkVideoVisibility);
 
 document.addEventListener("DOMContentLoaded", function() {
     // Get all video elements with class 'video-music'
