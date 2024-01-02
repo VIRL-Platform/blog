@@ -43,10 +43,26 @@ function isElementInViewport(el) {
     );
 }
 
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
 function checkVideoVisibility() {
-    var videos = document.querySelectorAll('.video-music');
+    var videos = document.querySelectorAll('.auto-video');
     videos.forEach(function(video) {
-        if (!isElementInViewport(video)) {
+        // Check if the video is in the viewport
+        if (isElementInViewport(video)) {
+            if (video.paused) {
+                video.currentTime = 0; // Reset to start
+                video.play();
+            }
+        } else {
             video.pause();
         }
     });
@@ -63,3 +79,5 @@ document.addEventListener("DOMContentLoaded", function() {
         video.volume = 0.5; // 50% volume
     });
 });
+
+

@@ -1034,3 +1034,51 @@ a.active-link {
   border-radius: 4px;
 } */
 
+.takeaway-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: left;
+  padding: 0px;
+  border-radius: 15px;
+  line-height: 1.6;
+}
+
+.takeaway-head {
+  display: flex;
+  justify-content: space-between; /* Aligns items in a row with space between them */
+  text-align: left;
+  padding: 10px;
+  background-color: rgb(113, 115, 148);
+  border-radius: 15px 15px 0px 0px;
+  line-height: 1.6;
+  color: white;
+  font-size: 20px;
+}
+
+.takeaway-tags {
+  display: flex; /* Ensures the images are lined up horizontally */
+  align-items: center; /* Vertically centers the tags within the div */
+  /* Additional styling, if necessary, can go here */
+}
+
+div.takeaway-tags img {
+  height: 28px;
+  margin-right: 5px;
+}
+
+.takeaway-content {
+  font-size: 17px; /* Adjusts the font size */
+  color: #333; /* Sets the text color; choose a color that fits your design */
+  margin: 0px; /* Adds space around the paragraph */
+  padding: 10px;
+  background-color: #f9f9f9; /* Optional background color */
+  border-radius: 5px; /* Rounds the corners if there's a background color */
+  line-height: 1.4; /* Adjusts the line height for better readability */
+  /* Additional styling like text-align, letter-spacing, etc., can be added as per your preference */
+  border-radius: 0px 0px 15px 15px;
+}
+
+.agent-block {
+  position: relative;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
