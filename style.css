@@ -999,6 +999,7 @@ d-article > div > h3 {
   background-color: #dbdbdb39;
   overflow-x: hidden;
   padding-top: 10px;
+  z-index: 101;
 }
 
 #nav-sub-agents {

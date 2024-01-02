@@ -14,3 +14,14 @@ function switchVideo(prefix, videoContainerId, preview_id) {
 
     document.getElementById(prefix + preview_id).className += " preview-video-active";
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Get all video elements with class 'video-music'
+    var videos = document.querySelectorAll('.video-music');
+
+    // Loop through each video and set the volume
+    videos.forEach(function(video) {
+        video.volume = 0.5; // 50% volume
+    });
+});
