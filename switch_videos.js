@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Loop through each video and set the volume
     videos.forEach(function(video) {
-        video.volume = 0.5; // 50% volume
+        video.volume = 0.25; // 25% volume
     });
 });
 
