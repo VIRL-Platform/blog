@@ -1,6 +1,17 @@
 document.addEventListener("scroll", function() {
     let navLinks = document.querySelectorAll('.nav-bar .nav-link');
 
+    let navBar = document.getElementById('nav-bar');
+    let header = document.getElementById('header-container');
+
+    // Check the scroll position\
+    headerBottom = header.getBoundingClientRect().bottom;
+    if (headerBottom > 0) {
+        navBar.style.display = 'none';
+    } else {
+        navBar.style.display = 'block';
+    }
+
     navLinks.forEach(link => {
         let section = document.querySelector(link.getAttribute('href'));
         if (!section) return; // Skip if the section doesn't exist
