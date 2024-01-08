@@ -12,6 +12,11 @@ document.addEventListener("scroll", function() {
         navBar.style.display = 'block';
     }
 
+    // check for mobile window size
+    if (window.innerWidth < 768) {
+        navBar.style.display = 'none';
+    }
+
     navLinks.forEach(link => {
         let section = document.querySelector(link.getAttribute('href'));
         if (!section) return; // Skip if the section doesn't exist
