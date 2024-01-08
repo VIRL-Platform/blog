@@ -984,11 +984,23 @@ d-article > div > h3 {
   margin-left: -10%;
 }
 
+
 .text {
   width: 150%;
   margin: 1em 0 1em -20%;
 }
 
+@media (max-width: 768px) {
+  d-article > div > h3 {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .text {
+    width: 100%;
+    margin: 1em 0 1em 0;
+  }
+}
 
 .nav-bar {
   position: fixed;
@@ -1000,6 +1012,22 @@ d-article > div > h3 {
   overflow-x: hidden;
   padding-top: 10px;
   z-index: 101;
+}
+
+.figure {
+    width: 150%;
+    margin-left: -25%
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .figure {
+        width: 100%;
+        margin-left: -1%;
+    }
 }
 
 #nav-sub-agents {
