@@ -986,7 +986,7 @@ d-article > div > h3 {
 
 .text {
   width: 150%;
-  margin-left: -20%;
+  margin: 1em 0 1em -20%;
 }
 
 
@@ -1038,6 +1038,7 @@ a.active-link {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: left;
   padding: 0px;
+  margin-bottom: 1em;
   border-radius: 15px;
   line-height: 1.6;
 }
