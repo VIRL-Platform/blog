@@ -591,20 +591,6 @@ img {
   width: 90%;
 }
 
-#slider-img-diego-revise-state .my-slides img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 100%;
-}
-
-#slider-img-diego-revise-verbal .my-slides img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 100%;
-}
-
 .my-slides:hover .overlay {
   opacity: 1;
 }
@@ -990,16 +976,14 @@ d-article > div > h3 {
   margin: 1em 0 1em -20%;
 }
 
-@media (max-width: 768px) {
-  d-article > div > h3 {
-    width: 100%;
-    margin-left: 0%;
-  }
+.auto-video {
+  width: 130%;
+  margin-left: -15%;
+}
 
-  .text {
-    width: 100%;
-    margin: 1em 0 1em 0;
-  }
+#diego-plan-video, #diego-plan-video-cap {
+  width: 150%; 
+  margin-left: -20%;
 }
 
 .nav-bar {
@@ -1110,4 +1094,52 @@ div.takeaway-tags img {
   position: relative;
   padding-bottom: 10px;
   padding-top: 5px;
+}
+
+.diego-revise-img {
+  width: 130%;
+  margin-left: -15%;
+}
+
+#prev-diego-revise-1, #prev-diego-revise-2 {
+  top: 75%;
+  left: -20%
+}
+
+#next-diego-revise-1, #next-diego-revise-2 {
+  top: 75%;
+  right: -20%
+}
+
+@media (max-width: 768px) {
+  d-article > div > h3 {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .text {
+    width: 100%;
+    margin: 1em 0 1em 0;
+  }
+
+  .auto-video, .diego-revise-img,
+  #diego-plan-video, #diego-plan-video-cap {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  div.takeaway-tags img {
+    height: 22px;
+    margin-right: 2px;
+  }
+
+  #prev-diego-revise-1, #prev-diego-revise-2 {
+    top: 115%;
+    left: -7%
+  }
+  
+  #next-diego-revise-1, #next-diego-revise-2 {
+    top: 115%;
+    right: -7%
+  }
 }
