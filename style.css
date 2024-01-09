@@ -1153,4 +1153,8 @@ div.takeaway-tags img {
     top: 115%;
     right: -7%
   }
+
+  aside {
+    display: none;
+  }
 }
