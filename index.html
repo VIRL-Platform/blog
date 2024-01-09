@@ -114,7 +114,7 @@
         </div>
 
 
-<!--         <div class="l-page video-container" style="margin-left: 5%; margin-bottom: 20px">
+        <!-- <div class="l-page video-container" style="margin-left: 5%; margin-bottom: 20px">
             <iframe src="https://drive.google.com/file/d/1WtCWjrFd_pJW2PDUCjDAvl9xX12dT5st/preview" width="1920" height="1080" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
         </div> -->
         <p class="text">
@@ -214,7 +214,7 @@
                 Peng needs to visit several locations throughout the city to get documents signed for registration as a visiting student...
             </blockquote> 
             <hr class="l-body fancybreak"> -->
-            <video class="auto-video" style="width: 130%; margin-left: -15%" muted autoplay>
+            <video class="auto-video l-page" muted autoplay>
                 <source src="story/peng_v2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -268,7 +268,7 @@
         </blockquote>  -->
         <!-- <hr class="l-body fancybreak"> -->
         
-        <video class="auto-video" style="width: 130%; margin-left: -15%" muted autoplay>
+        <video class="auto-video" muted autoplay>
             <source src="story/aria.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -329,7 +329,7 @@
                 Peng hires Vivek to help him find an apartment in East Village, Jersey City, or Long Island City for $1k--$3k per month close to a gym, supermarket, and public transit...
             </blockquote>
             <hr class="l-body fancybreak"> -->
-            <video class="auto-video" style="width: 130%; margin-left: -15%" muted autoplay>
+            <video class="auto-video" muted autoplay>
                 <source src="story/vivek.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -387,7 +387,7 @@
             </blockquote>
             <hr class="l-body fancybreak"> -->
 
-            <video class="auto-video" style="width: 130%; margin-left: -15%" muted autoplay>
+            <video class="auto-video" muted autoplay>
                 <source src="story/rx399.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -478,7 +478,7 @@
             </blockquote> -->
             <!-- <hr class="l-body fancybreak"> -->
             
-            <video class="auto-video" style="width: 130%; margin-left: -15%" muted autoplay>
+            <video class="auto-video" muted autoplay>
                 <source src="story/imani.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -573,7 +573,7 @@
             </blockquote>
             <hr class="l-body fancybreak"> -->
 
-            <video class="auto-video" style="width: 130%; margin-left: -15%" muted autoplay>
+            <video class="auto-video" muted autoplay>
                 <source src="story/hiro_v3.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -714,7 +714,7 @@
                 is always unafraid to ask for help from Locals whenever she finds herself lost...
             </blockquote>
             <hr class="l-body fancybreak"> -->
-            <video class="auto-video" style="width: 130%; margin-left: -15%" muted autoplay>
+            <video class="auto-video" muted autoplay>
                 <source src="story/ling_v3.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -791,8 +791,8 @@
                 <!-- Preview Images in a Flex Container -->
                 <div class="preview-container">
                     <text x="165" y="-12.5" text-anchor="middle" style="font-weight: 700; font-size: 15px; font-family: sans-serif;">Switch videos between SF and HK journeys:</text>
-                    <img id="Touristvideo1Preview" class="preview" src="virl_images/previews/video_toursit_sf_preview.webp" alt="Preview image of tourist-local SF" onclick="switchVideo('Tourist', 'video1Container', 'video1Preview')">
-                    <img id="Touristvideo2Preview" class="preview" src="virl_images/previews/video_tourist_hk_preview.webp" alt="Preview image of tourist-local HK" onclick="switchVideo('Tourist','video2Container', 'video2Preview')">
+                    <img id="Touristvideo1Preview" class="preview" src="virl_images/previews/video_toursit_sf_preview.png" alt="Preview image of tourist-local SF" onclick="switchVideo('Tourist', 'video1Container', 'video1Preview')">
+                    <img id="Touristvideo2Preview" class="preview" src="virl_images/previews/video_tourist_hk_preview.png" alt="Preview image of tourist-local HK" onclick="switchVideo('Tourist','video2Container', 'video2Preview')">
                 </div>
             </div>
 
@@ -831,7 +831,7 @@
                 As a university student in NYC, you're excited to spend a day exploring lesser-known and tranquil places. Your friend recommended Diego, who is known for his professionalism in planning practical and personalized itineraries...
             </blockquote>
             <hr class="l-body fancybreak"> -->
-            <video class="auto-video" style="width: 130%; margin-left: -15%" muted autoplay>
+            <video class="auto-video" muted autoplay>
                 <source src="story/diego.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -843,11 +843,11 @@
             <d-figure class="l-page">
                 <figure>
                     <!-- <img src="virl_images/interactive_concierge.png" alt="Interactive Concierge Diego" style="width: 100%"> -->
-                    <video playsinline autoplay loop muted style="width: 150%; margin-left: -20%">
+                    <video id="diego-plan-video" playsinline autoplay loop muted>
                         <source src="videos/interactive_concierge_gif.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <figcaption style="width: 150%; margin-left: -20%"><em>The Perfect Day Itinerary</em>: Crafted by Diego, our iterative concierge agent, this schedule is meticulously tailored, accounting for your mental and physical well-being and budget variations as your day unfolds.</figcaption>
+                    <figcaption id="diego-plan-video-cap"><em>The Perfect Day Itinerary</em>: Crafted by Diego, our iterative concierge agent, this schedule is meticulously tailored, accounting for your mental and physical well-being and budget variations as your day unfolds.</figcaption>
                 </figure>
             </d-figure>
             <p class="text">
@@ -863,40 +863,40 @@
             </d-figure> -->
 
             <div>
-                <img src="virl_images/diego_intervent/diego_origin.png" style="width: 130%; margin-left: -15%">
+                <img src="virl_images/diego_intervent/diego_origin.png" class="diego-revise-img">
             </div>
             <div id="slider-img-diego-revise-state" class="slider-img-container">
                 <div class="my-slides">
-                    <img src="virl_images/diego_intervent/adjust_state_1.png" style="width: 130%; margin-left: -15%">
+                    <img src="virl_images/diego_intervent/adjust_state_1.png" class="diego-revise-img">
                 </div>
             
                 <div class="my-slides">
-                    <img src="virl_images/diego_intervent/adjust_state_2.png" style="width: 130%; margin-left: -15%">
+                    <img src="virl_images/diego_intervent/adjust_state_2.png" class="diego-revise-img">
                 </div>
 
                 <div class="my-slides">
-                    <img src="virl_images/diego_intervent/adjust_state_3.png" style="width: 130%; margin-left: -15%">
+                    <img src="virl_images/diego_intervent/adjust_state_3.png" class="diego-revise-img">
                 </div>
                 
-                <a class="prev" style="top: 75%; left: -20%" onclick="plusSlides('slider-img-diego-revise-state', -1)">❮</a>
-                <a class="next" style="top: 75%; right: -20%" onclick="plusSlides('slider-img-diego-revise-state', 1)">❯</a>
+                <a class="prev" id="prev-diego-revise-1" onclick="plusSlides('slider-img-diego-revise-state', -1)">❮</a>
+                <a class="next" id="next-diego-revise-2" onclick="plusSlides('slider-img-diego-revise-state', 1)">❯</a>
             </div>
 
             <div id="slider-img-diego-revise-verbal" class="slider-img-container">
                 <div class="my-slides">
-                    <img src="virl_images/diego_intervent/verbal_1.png" style="width: 130%; margin-left: -15%">
+                    <img src="virl_images/diego_intervent/verbal_1.png" class="diego-revise-img">
                 </div>
             
                 <div class="my-slides">
-                    <img src="virl_images/diego_intervent/verbal_2.png" style="width: 130%; margin-left: -15%">
+                    <img src="virl_images/diego_intervent/verbal_2.png" class="diego-revise-img">
                 </div>
 
                 <div class="my-slides">
-                    <img src="virl_images/diego_intervent/verbal_3.png" style="width: 130%; margin-left: -15%">
+                    <img src="virl_images/diego_intervent/verbal_3.png" class="diego-revise-img">
                 </div>
                 
-                <a class="prev" style="top: 75%; left: -20%" onclick="plusSlides('slider-img-diego-revise-verbal', -1)">❮</a>
-                <a class="next" style="top: 75%; right: -20%" onclick="plusSlides('slider-img-diego-revise-verbal', 1)">❯</a>
+                <a class="prev" id="prev-diego-revise-2" onclick="plusSlides('slider-img-diego-revise-verbal', -1)">❮</a>
+                <a class="next" id="next-diego-revise-2" onclick="plusSlides('slider-img-diego-revise-verbal', 1)">❯</a>
             </div>
             <figcaption style="width: 100%; text-align: center; margin-bottom: 20px;">Diego adapts original plan to suit user's intervention.</figcaption>
             
