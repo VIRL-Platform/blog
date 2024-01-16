@@ -31,12 +31,14 @@ body {
 }
 
 .header-container p {
-    font-size: 1.06rem;
+    /* font-size: 1.06rem; */
+    font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {
   .header-container {
     padding: 16px;
+    padding-top: 32px;
   }
 
   .header-content h1 {
@@ -539,6 +541,10 @@ d-article .content {
   margin-bottom: 20px;
 }
 
+/* assign the final paragraph of an aside no bottom margin */
+aside p:last-child {
+  margin-bottom: 0;
+}
 
 
 aside.counting-table {
@@ -793,7 +799,7 @@ img {
 
 .inline-tag {
   height: 18px;
-  width: auto
+  width: auto;
 }
 
 .explorer-aside, .tourist-aside {
@@ -1020,7 +1026,7 @@ d-article > div > h3 {
   /* width: 150%; */
   width: 150%;
   margin: 1em 0 1em -20%;
-  font-size: 1.2rem;
+  font-size: 1.2rem; 
 }
 
 .abstract {
