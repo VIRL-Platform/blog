@@ -152,14 +152,23 @@
             Towards this end, we introduce <strong><i>V-IRL</i></strong>: a platform that enables agents to scalably interact with the real-world in a virtual yet realistic environment.
             Our platorm serves as a playground for developing agents that can accomplish a variety of practical tasks, and as a vast testbed for measuring progress in capabilities spanning perception, decision-making, and interaction with real-world data spanning the entire globe. -->
             <!-- Blog Version: -->
-            There's a massive gap between the simplistic digital environments of current AI agents and the sensory rich world we humans inhabit.
-            To develop agents that can operate flexibly and reliably in real-world settings, it's essential to bridge this gap.
-            This problem has long been studied in robotics, but the physical constraints and cost of real hardware and control make scaling up difficult.
+            There's a massive gap between the simplistic digital environments of current AI agents and the sensory-rich world we humans inhabit.
+            To develop agents that can operate flexibly and reliably in real-world settings, we must bridge this gap and embody agents in an environment that <em>necessitates</em> the nuanced perceptual understanding required in the real world.
+            Naturally, this problem has long been studied in robotics, with agents physically embodied in the world; however, the physical constraints and cost of real hardware prohibit scaling up agents and testing them in diverse environments beyond the lab.
+            <!-- This problem has long been studied in robotics, but the physical constraints and cost of real hardware and control make scaling up difficult. -->
             <br><br>
-            As a step towards addressing this goal, we introduce <strong><i>V-IRL</i></strong>:
-            a platform that enables agents to scalably interact with the real-world in a virtual yet realistic environment.
-            Leveraging mapping, geospatial, and street-view imagery APIs, <i>V-IRL</i> exposes granular, sensory-rich information about real cities that agents can use for practical tasks.
-            Additionally, this platform and data source provide a vast testbed for measuring progress in agent capabilities spanning perception, decision-making, and interaction with real-world data spanning the entire globe.
+            To address this challenge, we introduce <strong><i>V-IRL</i></strong>:
+            a <em>scalable</em> platform enabling agents to interact
+            <!-- with the real-world in a virtual yet realistic environment. -->
+            with a virtual facsimile of the real world.
+            Leveraging mapping, geospatial, and street-view imagery APIs, <i>V-IRL</i> 
+            <!-- embeds agents on Earth in real cities, enabling them to ground themselves using granular, sensory-rich perceptual data and 
+            exposes granular, sensory-rich perceptual data from real cities that agents can use for practical tasks. -->
+            grounds agents in real cities on Earth with sensory-rich perceptual data and access to various descriptive data for solving practical tasks.
+            Furthermore, our platform serves as a vast testbed for measuring progress in agent perception, decision-making, and interaction capabilities with hundreds of billions of images spanning the entire globe.<d-footnote>
+                Google Street View alone has >220 billion images as of May 2022, and there are many other sources of imagery and data that can be incorporated to enrich the environment.
+                <a href="https://blog.google/products/maps/street-view-15-new-features/" target="_blank">https://blog.google/products/maps/street-view-15-new-features/</a>
+            </d-footnote>
         </p>
         <div class="l-page teaser-video">
             <video autoplay loop muted style="width:100%" preload="auto">
