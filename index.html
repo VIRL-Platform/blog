@@ -6,31 +6,55 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="template.v2.js"></script>
-        <!-- <script src="https://distill.pub/template.v1.js"></script> -->
+        <script src="./static/js/distill_template.v2.js"></script>
+
 
         <script src="https://d3js.org/d3.v5.min.js"></script>
         <script src="https://d3js.org/d3-collection.v1.min.js"></script>
         <script src="https://rawgit.com/nstrayer/slid3r/master/dist/slid3r.js"></script>
 
-        <script src="cross_fade.js"></script>
-        <script defer="" src="hider.js"></script>
-        <script src="image_interact.js"></script>
-        <script src="switch_videos.js"></script>
-        <!-- <script src="my_magnifier.js"></script> -->
+        <script src="./static/js/cross_fade.js"></script>
+        <script defer="" src="./static/js/hider.js"></script>
+        <script src="./static/js/image_interact.js"></script>
+        <script src="./static/js/switch_videos.js"></script>
+        <!-- <script src="./static/js/my_magnifier.js"></script> -->
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./static/css/style.css">
+        <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
         
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
         <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
             onload="renderMathInElement(document.body);"></script>
+        <script defer src="./static/js/fontawesome.all.min.js"></script>
     </head>
     <body>
         <div class="header-container" id="header-container">
             <div class="header-content">
                 <h1 style="margin-top: 0px"><em>V-IRL</em>: Grounding Virtual Intelligence in Real Life</h1>
-                <p style="color: #FFF7D4">We build a platform that enables agents to scalably interact with the real-world in a virtual yet realistic environment.</p>
+                <p style="color: #FFF7D4">A platform enabling agents to scalably interact with the real-world in a virtual yet realistic environment.</p>
+                <div class="button-container">
+                    <a href="" class="button paper-link" target="_blank">
+                        <span class="icon is-small">
+                            <i class="ai ai-arxiv"></i>
+                        </span>
+                        arXiv
+                    </a>
+                    <a href="./static/VIRL.pdf" class="button paper-link" target="_blank">
+                        <span class="icon is-small">
+                            <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>pdf</span>
+                    </a>
+                    <a href="https://github.com/VIRL-Platform/VIRL" class="button" target="_blank">
+                        <span class="icon is-small">
+                            <i class="fab fa-github"></i>
+                        </span>
+                        <span>Code</span>
+                    </a>
+                </div>
             </div>
             <div class="header-image">
                 <img src="virl_images/teaser_img_v3.png" alt="Teaser Image" class="teaser-image">
@@ -41,27 +65,28 @@
             <div class="byline-container">
                 <div class="byline-column">
                     <h3>Authors</h3>
-                    <p><a href="https://jihanyang.github.io/" class="author-link">Jihan Yang</a></p>
-                    <p><a href="https://dingry.github.io/" class="author-link">Runyu Ding</a></p>
-                    <p><a href="https://ellisbrown.github.io/" class="author-link">Ellis Brown</a></p>
-                    <p><a href="https://xjqi.github.io/" class="author-link">Xiaojuan Qi</a></p>
-                    <p><a href="https://www.sainingxie.com/" class="author-link">Saining Xie</a></p>
+                    <p><a href="https://jihanyang.github.io/" class="author-link" target="_blank">Jihan Yang</a> <sup>△</sup></p>
+                    <p><a href="https://dingry.github.io/" class="author-link" target="_blank">Runyu Ding</a> <sup>△</sup></p>
+                    <p><a href="https://ellisbrown.github.io/" class="author-link" target="_blank">Ellis Brown</a> <sup>▼</sup></p>
+                    <p><a href="https://xjqi.github.io/" class="author-link" target="_blank">Xiaojuan Qi</a> <sup>△</sup></p>
+                    <p><a href="https://www.sainingxie.com/" class="author-link" target="_blank">Saining Xie</a> <sup>▼</sup></p>
                 </div>
                 <div class="byline-column">
                     <h3>Affiliations</h3>
-                    <p><a href="https://www.eee.hku.hk/" class="affiliation-link">University of Hong Kong</a></p>
-                    <p><a href="https://www.eee.hku.hk/" class="affiliation-link">University of Hong Kong</a></p>
-                    <p><a href="https://cs.nyu.edu/home/index.html" class="affiliation-link">New York University</a></p>
-                    <p><a href="https://www.eee.hku.hk/" class="affiliation-link">University of Hong Kong</a></p>
-                    <p><a href="https://cs.nyu.edu/home/index.html" class="affiliation-link">New York University</a></p>
+                    <p>
+                        <sup>△</sup>
+                        <a href="https://www.eee.hku.hk/" class="affiliation-link" target="_blank">University of Hong Kong</a>
+                    </p>
+                    <p>
+                        <sup>▼</sup>
+                        <a href="https://cs.nyu.edu/home/index.html" class="affiliation-link" target="_blank">New York University</a>
+                    </p>
                 </div>
                 <div class="byline-column">
-                    <h3>Code</h3>
-                    <p><a href="https://github.com/VIRL-Platform/VIRL">Github</a></p>
-                </div>
-                <div class="byline-column">
-                    <h3>Paper</h3>
-                    <p><a href="#">arXiv</a></p>
+                    <h3>Date</h3>
+                    <p>
+                        January 15<sup>th</sup>, 2024
+                    </p>
                 </div>
             </div>
         </div>
@@ -1394,9 +1419,9 @@
         <!-- <script type="text/bibliography">
         
         </script> -->
-        <!-- <script src="contents_bar.js"></script> -->
-        <script src="modal_image.js"></script>
-        <script src="nav-bar.js"></script>
+        <!-- <script src="./static/js/contents_bar.js"></script> -->
+        <script src="./static/js/modal_image.js"></script>
+        <script src="./static/js/nav-bar.js"></script>
         
         <script type="text/javascript">
             changeContent('Place1');
