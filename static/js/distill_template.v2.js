@@ -1964,7 +1964,7 @@ d-appendix > distill-appendix {
       .replace(/{\\([a-zA-Z])}/g, (full, char) => char);
   }
 
-  function parseBibtex(bibtex) {
+function parseBibtex(bibtex) {
     const bibliography = new Map();
     const parsedEntries = bibtexParse.toJSON(bibtex);
     for (const entry of parsedEntries) {
