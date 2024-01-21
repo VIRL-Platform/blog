@@ -1167,6 +1167,25 @@ div.takeaway-tags img {
   right: -20%
 }
 
+
+.img-grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  width: 120%;
+  margin-left: -10%;
+}
+
+.img-grid-column {
+  flex: 16%;
+  padding: 0 4px;
+}
+
+.img-grid-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
 @media (max-width: 768px) {
   d-article > div > h3 {
     width: 100%;
