@@ -30,33 +30,35 @@
         <script defer src="./static/js/fontawesome.all.min.js"></script>
     </head>
     <body>
-        <div class="header-container" id="header-container">
-            <div class="header-content">
-                <h1 style="margin-top: 0px"><em>V-IRL</em>: Grounding Virtual Intelligence in Real Life</h1>
-                <p style="color: #FFF7D4">A platform enabling agents to scalably interact with the real-world in a virtual yet realistic environment.</p>
-                <div class="button-container">
-                    <a href="" class="button paper-link" target="_blank">
-                        <span class="icon is-small">
-                            <i class="ai ai-arxiv"></i>
-                        </span>
-                        arXiv
-                    </a>
-                    <a href="./static/VIRL.pdf" class="button paper-link" target="_blank">
-                        <span class="icon is-small">
-                            <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>pdf</span>
-                    </a>
-                    <a href="https://github.com/VIRL-Platform/VIRL" class="button" target="_blank">
-                        <span class="icon is-small">
-                            <i class="fab fa-github"></i>
-                        </span>
-                        <span>Code</span>
-                    </a>
+        <div class="header-wrapper">
+            <div class="header-container" id="header-container">
+                <div class="header-content">
+                    <h1 style="margin-top: 0px"><em>V-IRL</em>: Grounding Virtual Intelligence in Real Life</h1>
+                    <p style="color: #FFF7D4">A platform enabling agents to scalably interact with the real-world in a virtual yet realistic environment.</p>
+                    <div class="button-container">
+                        <a href="" class="button paper-link" target="_blank">
+                            <span class="icon is-small">
+                                <i class="ai ai-arxiv"></i>
+                            </span>
+                            arXiv
+                        </a>
+                        <a href="./static/VIRL.pdf" class="button paper-link" target="_blank">
+                            <span class="icon is-small">
+                                <i class="fas fa-file-pdf"></i>
+                            </span>
+                            <span>pdf</span>
+                        </a>
+                        <a href="https://github.com/VIRL-Platform/VIRL" class="button" target="_blank">
+                            <span class="icon is-small">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>Code</span>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="header-image">
-                <img src="virl_images/teaser_img_v3.png" alt="Teaser Image" class="teaser-image">
+                <div class="header-image">
+                    <img src="virl_images/teaser_img_v3.png" alt="Teaser Image" class="teaser-image">
+                </div>
             </div>
         </div>
     <d-article>
@@ -66,9 +68,9 @@
                     <h3>Authors</h3>
                     <p><a href="https://jihanyang.github.io/" class="author-link" target="_blank">Jihan Yang</a> <sup>△</sup></p>
                     <p><a href="https://dingry.github.io/" class="author-link" target="_blank">Runyu Ding</a> <sup>△</sup></p>
-                    <p><a href="https://ellisbrown.github.io/" class="author-link" target="_blank">Ellis Brown</a> <sup>▼</sup></p>
+                    <p><a href="https://ellisbrown.github.io/" class="author-link" target="_blank">Ellis Brown</a> <sup>▲</sup></p>
                     <p><a href="https://xjqi.github.io/" class="author-link" target="_blank">Xiaojuan Qi</a> <sup>△</sup></p>
-                    <p><a href="https://www.sainingxie.com/" class="author-link" target="_blank">Saining Xie</a> <sup>▼</sup></p>
+                    <p><a href="https://www.sainingxie.com/" class="author-link" target="_blank">Saining Xie</a> <sup>▲</sup></p>
                 </div>
                 <div class="byline-column">
                     <h3>Affiliations</h3>
@@ -77,7 +79,7 @@
                         <a href="https://www.eee.hku.hk/" class="affiliation-link" target="_blank">University of Hong Kong</a>
                     </p>
                     <p>
-                        <sup>▼</sup>
+                        <sup>▲</sup>
                         <a href="https://cs.nyu.edu/home/index.html" class="affiliation-link" target="_blank">New York University</a>
                     </p>
                 </div>
@@ -93,7 +95,7 @@
         <!-- <d-contents style="margin-top: 5px; position: relative;">
             <nav>
                 <h4>Contents</h4>
-                <div><a href="#agent-examplers">Virtual Intelligence in Real Life</a></div>
+                <div><a href="#agent-exemplars">Virtual Intelligence in Real Life</a></div>
                 <ul>
                     <li><a href="#agent-earthbound" style="font-size: 12px;">Earthbound Agents</a></li>
                     <li><a href="#agent-language" style="font-size: 12px;">Language-Driven Agents</a></li>
@@ -102,7 +104,7 @@
                     <li><a href="#agent-human-col" style="font-size: 12px;">Human-Agent Collaboration</a></li>
                 </ul>
                 <div><a href="#system">System Fundamental</a></div>
-                <div><a href="#virlbenchmark"><em>V-IRL</em> Benchmark</a></div>
+                <div><a href="#benchmark"><em>V-IRL</em> Benchmark</a></div>
             </nav>
         </d-contents> -->
         <div class="nav-bar" id="nav-bar">
@@ -136,7 +138,7 @@
             </div>
             <hr style="display: block; margin: auto;">
             <div id="nav-bar-benchmark">
-                <a class="nav-link" href="#virlbenchmark" style="margin-left: 15px;"><img src="virl_images/icons/benchmark.png" style="width: 50px; margin-top: 10px" title="V-IRL Benchmark"></a>
+                <a class="nav-link" href="#benchmark" style="margin-left: 15px;"><img src="virl_images/icons/benchmark.png" style="width: 50px; margin-top: 10px" title="V-IRL Benchmark"></a>
             </div>
         </div>
 
@@ -144,12 +146,32 @@
         <!-- <div class="l-page video-container" style="margin-left: 5%; margin-bottom: 20px">
             <iframe src="https://drive.google.com/file/d/1WtCWjrFd_pJW2PDUCjDAvl9xX12dT5st/preview" width="1920" height="1080" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
         </div> -->
-        <p class="text">
-        There is a sensory gulf between the Earth that humans inhabit and the imaginary, digital realms in which modern AI agents are created.
-        To develop AI agents that can sense, think, and act as flexibly as humans in real-world settings, it's essential to bridge the gap between the digital and physical worlds.
-        How can we embody agents in an environment as rich and diverse as the one we inhabit, without the constraints imposed by real hardware and control?
-        Towards this end, we introduce <strong><i>V-IRL</i></strong>: a platform that enables agents to scalably interact with the real-world in a virtual yet realistic environment.
-        Our platorm serves as a playground for developing agents that can accomplish a variety of practical tasks, and as a vast testbed for measuring progress in capabilities spanning perception, decision-making, and interaction with real-world data spanning the entire globe.
+        <p class="text abstract">
+            <!-- There is a sensory gulf between the Earth that humans inhabit and the imaginary, digital realms in which modern AI agents are created.
+            To develop AI agents that can sense, think, and act as flexibly as humans in real-world settings, it's essential to bridge the gap between the digital and physical worlds.
+            How can we embody agents in an environment as rich and diverse as the one we inhabit, without the constraints imposed by real hardware and control?
+            Towards this end, we introduce <strong><i>V-IRL</i></strong>: a platform that enables agents to scalably interact with the real-world in a virtual yet realistic environment.
+            Our platorm serves as a playground for developing agents that can accomplish a variety of practical tasks, and as a vast testbed for measuring progress in capabilities spanning perception, decision-making, and interaction with real-world data spanning the entire globe. -->
+            <!-- Blog Version: -->
+            There's a massive gap between the text-centric digital environments of current AI agents and the sensory-rich world we humans inhabit.
+            To develop agents that can operate flexibly and reliably in real-world settings, we must bridge this gap and embody agents in an environment that <em>necessitates</em> the nuanced perceptual understanding required in the real world.
+            Naturally, this problem has long been studied in robotics, with agents physically embodied in the world; however, the physical constraints and cost of real hardware prohibit scaling up agents and testing them in diverse environments beyond the lab.
+            <!-- This problem has long been studied in robotics, but the physical constraints and cost of real hardware and control make scaling up difficult. -->
+            <br><br>
+            To address this challenge, we introduce <strong><i>V-IRL</i></strong>:
+            a <em>scalable</em> platform enabling agents to interact
+            <!-- with the real-world in a virtual yet realistic environment. -->
+            with a virtual facsimile of the real world.
+            Leveraging mapping, geospatial, and street-view imagery APIs (see <a href="#system">System Fundamentals</a>), <i>V-IRL</i> 
+            <!-- embeds agents on Earth in real cities, enabling them to ground themselves using granular, sensory-rich perceptual data and 
+            exposes granular, sensory-rich perceptual data from real cities that agents can use for practical tasks. -->
+            grounds agents in real cities on Earth with sensory-rich perceptual data and access to various descriptive data for solving practical tasks.
+            Furthermore, our platform serves as a vast testbed for measuring progress in agent perception, decision-making, and interaction capabilities with hundreds of billions of images spanning the entire globe.<d-footnote>
+                Google Street View alone has >220 billion images as of May 2022, and there are many other sources of imagery and data that can be incorporated to enrich the environment.
+                <a href="https://blog.google/products/maps/street-view-15-new-features/" target="_blank">https://blog.google/products/maps/street-view-15-new-features/</a>
+            </d-footnote>
+            <!-- initial benchmark = virl benchmark, but many more can be made -->
+            <!-- We use <i>V-IRL</i> to construct an initial benchmark of these  -->
         </p>
         <div class="l-page teaser-video">
             <video autoplay loop muted style="width:100%" preload="auto">
@@ -162,10 +184,11 @@
             <img class="modal-content" id="img01">
         </div>
 
-        <div id="agent-examplers" style="position: relative;">
+        <div id="agent-exemplars" style="position: relative;">
         <h2 class="text">Virtual Intelligence in Real Life</h2>
         <p class="text">
-            To show the versatility of the <strong><i>V-IRL</i></strong> platform, we use it to instantiate several exemplar agents in our virtual real-world environment. For illustration, we give <strong><i>V-IRL</i></strong> agents character metadata, including an 8-bit avatar, a name, a short bio, and an intention they are trying to accomplish.
+            To demonstrate the versatility of the <strong><i>V-IRL</i></strong> platform, we use it to instantiate several exemplar agents in virtual representations of real cities around the globe and engage them in a variety of practical tasks.
+            For illustration, we give <strong><i>V-IRL</i></strong> agents character metadata, including an 8-bit avatar, a name, a short bio, and an intention they are trying to accomplish.
         </p>
 
         <div class="avatar-row figure" style="margin-bottom: 50px">
@@ -220,10 +243,7 @@
         </div>
         
         <!-- <h3 id="agent-earthbound">Earthbound Agents</h3>
-        <p>
-        Agents in the <i>V-IRL</i> platform inhabit virtual representations of real cities around the globe. At the core of this representation are <em>geographic coordinates</em> corresponding to points on the Earth's surface. Using these coordinates, <i>V-IRL</i> allows agents to <i>ground</i> themselves in the world using maps, <em>real</em> street view imagery, information about nearby destinations, and additional data from arbitrary geospatial APIs
-        </p> -->
-        <!-- <d-contents class="left-aside-container">
+        <d-contents class="left-aside-container">
             <aside class="left-side-bar">
                 <img style="width: 120px" src="virl_images/avatars/courier.png">
             </aside>
@@ -234,13 +254,19 @@
             <div class="l-screen grey-overlay"></div>
             <h3 class="text"><img style="width: 35px" src="virl_images/avatars/courier.png"> Peng: Visiting Student</h3>
 
+            <!-- <p class="text">
+                Agents in the <i>V-IRL</i> platform inhabit virtual representations of real cities around the globe. At the core of this representation are <em>geographic coordinates</em> corresponding to points on the Earth's surface. Using these coordinates, <i>V-IRL</i> allows agents to <i>ground</i> themselves in the world using maps, <em>real</em> street view imagery, information about nearby destinations, and additional data from arbitrary geospatial APIs
+            </p> -->
             <!-- <p class="l-body">
                 <img src="character_card/courier.png" class="character-card-img">
             </p>
             <blockquote class="storytext"> 
                 Peng needs to visit several locations throughout the city to get documents signed for registration as a visiting student...
             </blockquote> 
-            <hr class="l-body fancybreak"> -->
+        -->
+            <!-- <hr class="l-body fancybreak">  -->
+
+            
             <video class="auto-video l-page" muted autoplay preload="auto">
                 <source src="story/peng_v2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -665,17 +691,17 @@
                 </div>
             </div>
             <aside class="explorer-aside">
-                Starting at the user-defined location<img src="virl_images/icons/start_icon.jpg" class="inline-tag" style="height: 16px;">, Hiro walks down the street to find a place can fulfil his intention: "<i>Hiro is hungry and looking for a place where he can explore great local food. He cannot handle spicy food.</i>"</aside>
+                Starting at the user-defined location<img src="virl_images/icons/start_icon.jpg" class="inline-tag" draggable="false" style="height: 16px;">, Hiro walks down the street to find a place can fulfil his intention: "<i>Hiro is hungry and looking for a place where he can explore great local food. He cannot handle spicy food.</i>"</aside>
             <aside class="explorer-aside">
                 <p>When he meets the first intersection, thanks to the interactive and sensor-rich environment, he adjusts his pose to fetch real street views for each possible path at the crossroads. He then uses these with <em>VQA</em> to <em>decide</em> to turn left:</p>
                 <blockquote style="font-size: 12px">
-                    <img src="virl_images/icons/star.png" class="inline-tag" style="height: 16px;"> Road 1 has this homey, residential feel to it, which usually means cozy, family-run spots serving up the real-deal local food. It's got that quiet, laid-back dining scene that lets you really soak in the experience, take your time, and eat like one of the locals.
+                    <img src="virl_images/icons/star.png" class="inline-tag" draggable="false" style="height: 16px;"> Road 1 has this homey, residential feel to it, which usually means cozy, family-run spots serving up the real-deal local food. It's got that quiet, laid-back dining scene that lets you really soak in the experience, take your time, and eat like one of the locals.
                 </blockquote>
             </aside>
             <aside class="explorer-aside">
                 <p>Then, after exploring for a block, he encounters the second intersection where he <em>looks around</em> and <em>decides</em> to turn right:</p>
                 <blockquote style="font-size: 12px">
-                    <img src="virl_images/icons/star.png" class="inline-tag" style="height: 16px;"> I'm leaning towards taking Road 2. It looks promising with all those signs pointing to eateries and local food joints. That's got to mean there's a good selection of local dishes to try out. And with more places to choose from, I bet I'll have a better shot at finding something that isn't too spicy. That's a big deal for me. Road 1 just doesn't seem to cut it; it's more of a residential vibe and doesn't really shout 'food' like Road 2 does.
+                    <img src="virl_images/icons/star.png" class="inline-tag" draggable="false" style="height: 16px;"> I'm leaning towards taking Road 2. It looks promising with all those signs pointing to eateries and local food joints. That's got to mean there's a good selection of local dishes to try out. And with more places to choose from, I bet I'll have a better shot at finding something that isn't too spicy. That's a big deal for me. Road 1 just doesn't seem to cut it; it's more of a residential vibe and doesn't really shout 'food' like Road 2 does.
                 </blockquote>
             </aside>
             <aside class="explorer-aside">
@@ -683,12 +709,12 @@
                     using his <em>open-world detector</em>, and looks up 
                     its information and reviews using our <i>real-world environment</i> which <i>connects street views to places</i>. Hiro <i>decides</i> to pass on it because:</p>
                 <blockquote style="font-size: 12px">
-                    <img src="virl_images/icons/star.png" class="inline-tag" style="height: 16px;">Hmm, spicy food is a no-go for me, and this place seems to be all about pork chop noodles. That might be tricky with my dietary needs. I should probably keep looking for something that fits what I can eat.
+                    <img src="virl_images/icons/star.png" class="inline-tag" draggable="false" style="height: 16px;">Hmm, spicy food is a no-go for me, and this place seems to be all about pork chop noodles. That might be tricky with my dietary needs. I should probably keep looking for something that fits what I can eat.
                 </blockquote>
             </aside>
             <aside class="explorer-aside">
                 <p>
-                    Finally, at the end of this street block <img src="virl_images/icons/end_icon.jpg" class="inline-tag" style="height: 16px;">, Hiro discovers another lunch spot called <i>Xintianfa 新天發</i>. He decides to dine there after <em>reading</em> <em>online reviews</em> praising its authentic cuisine and diverse menu:
+                    Finally, at the end of this street block <img src="virl_images/icons/end_icon.jpg" class="inline-tag" draggable="false" style="height: 16px;">, Hiro discovers another lunch spot called <i>Xintianfa 新天發</i>. He decides to dine there after <em>reading</em> <em>online reviews</em> praising its authentic cuisine and diverse menu:
                 </p>
                 <blockquote>
                     Even though opinions vary, Xintianfa presents an array of local cuisine that beckons to my desire for authentic culinary experiences. My seasoned traveler's spirit thrives on novelty and the thrill of discovery, so a restaurant with a diverse menu naturally draws me in. Additionally, the absence of any emphasis on spicy fare is a relief, given my inability to tolerate heat in my meals.
@@ -1033,11 +1059,13 @@
 
         <!-- Part 2: System fundamental -->
         <div id="system" style="position: relative">
-        <h2 class="text"><img src="virl_images/icons/system.png" width="50px"> System Fundamental</h2>
+        <h2 class="text"><img src="virl_images/icons/system.png" width="50px"> System Fundamentals</h2>
         <p class="text">
-            This section introduces our system's core: a platform designed for perception-driven agents that transforms real-world cities around the world into a vast virtual playground where agents can be constructed to solve practical tasks. At its heart, <i>V-IRL</i> is comprised of a hierarchical architecture. The <i>platform</i> lies at the foundation---providing the underlying components and infrastructure for agents to employ.
-            Higher level <i>capabilities</i> of <em>Perception</em>, <em>Reasoning</em>, </em>Action</em>, and <em>Collaboration</em> emerge from the platform's components.
-            Finally, <em>agents</em> leverage these capabilities and user-defined metadata in task-specific routines to solve tasks.
+            <!-- This section introduces our system's core: a platform designed for perception-driven agents that transforms real-world cities around the world into a vast virtual playground where agents can be constructed to solve practical tasks. At its heart, <i>V-IRL</i> is comprised of a hierarchical architecture. -->
+            Here we describe <strong><i>V-IRL</i></strong>'s hierarchical architecture that transforms real cities around the world into a vast virtual playground in which agents can be constructed to solve practical tasks.
+            The <i><u>platform</u></i> lies at the foundation&mdash;providing the underlying components and infrastructure for agents to employ.
+            Higher level <i><u>capabilities</u></i> of <em>Perception</em>, <em>Reasoning</em>, </em>Action</em>, and <em>Collaboration</em> emerge from the platform's components.
+            Finally, <i><u>agents</u></i> leverage these capabilities along with user-defined metadata in task-specific routines to solve tasks.
         </p>
         <p id="click-hint"><strong><img src="virl_images/icons/click.gif" style="width: 35px"> Click on any individual module to view its detailed description</strong></p>
         <div class="clickable-image-container">
@@ -1087,101 +1115,118 @@
         <aside class="system-fundamental-aside" id="backgroundInfo">
             The <strong>background</strong> provides the context necessary to instantiate the agent in the real world (location), and to guide its reasoning and decision making (biography).
         </aside>
-        <aside class="system-fundamental-aside" id="intentionInfo"> <strong>Intentions</strong> outline agents' purpose within the environment.</aside>
-        <aside class="system-fundamental-aside" id="interoceptiveInfo">An agent's <strong>interoceptive state</strong> reflects its internal mental and physical status -- varying over time and influencing its behavior.</aside>
+        <aside class="system-fundamental-aside" id="intentionInfo"> <strong>Intentions</strong> outline an agents' purpose within the environment.</aside>
+        <aside class="system-fundamental-aside" id="interoceptiveInfo">An agent's <strong>interoceptive state</strong> reflects its internal mental and physical status&mdash;varying over time and influencing its behavior.</aside>
         <aside class="system-fundamental-aside" id="agent-location">
-            <p>User-defined agent's initial <strong>location</strong>, can be geolocation or address.</p> 
-            <p>All exampling <i>V-IRL</i> agents leverages on this information.</p></aside>
+            <p>Users define an agent's initial <strong>location</strong>, which can be geocoordinates or an address.</p> 
+            <p>All exemplar <i>V-IRL</i> agents leverage this information.</p></aside>
         <aside class="system-fundamental-aside" id="agent-biography">
-            <p>User-defined agent's <strong>biography</strong>, can include any information (e.g. age, job, hometown, personality, relationship, etc) about the agent.</p>
-            <p>This information typically helps agent make decisions, such as Place Recommender agents Aria and Vivek, Intentional Explorer agent Hiro and Interactive Concierge agent Diego.</p>
+            <p>Users define an agent's <strong>biography</strong>, which can include any information (e.g. age, job, hometown, personality, relationship, etc.) about the agent.</p>
+            <p>This information is typically provided as context to inform the decisions the agent makes using LLMs, such as with the Place Recommender agents <a href="#aria">Aria</a> and <a href="#vivek">Vivek</a>, Intentional Explorer agent <a href="#hiro">Hiro</a>, and the Interactive Concierge agent <a href="#diego">Diego</a>.</p>
         </aside>
         <aside class="system-fundamental-aside" id="agent-goal">
-            <p>User-defined agent's <strong>goal</strong> (intention), specifying the current goal of the agent as the "intention" term in each <i>character card</i>.</p>
-            <p>This information typically helps agent make decisions, such as Place Recommender agents Aria and Vivek, Intentional Explorer agent Hiro and Interactive Concierge agent Diego.</p>
+            <p>Users define an agent's <strong>goal</strong> (intention) in plain English to help guide the agent's behavior. Goals are specified in the "intention" term in each <i>character card</i>.</p>
+            <p>This information is typically provided as context to inform the decisions the agent makes using LLMs, such as with the Place Recommender agents <a href="#aria">Aria</a> and <a href="#vivek">Vivek</a>, Intentional Explorer agent <a href="#hiro">Hiro</a>, and the Interactive Concierge agent <a href="#diego">Diego</a>.</p>
         </aside>
         <aside class="system-fundamental-aside" id="agent-task">
-            <p>Agent's <strong>task</strong> describes its high-level behavior as the "Task" term in each <i>character card</i>.</p>
-            <p>This information will not directly influence in any concrete agent behavior, but serves as a overall definition to agent's behavior</p>
+            <p>An agent's <strong>task</strong> describes the high-level behavior expected of it. It is specified as the "Task" term in each <i>character card</i>.</p>
+            <p>This information is for expositional purposes only; it is not used in the agent's decision-making context and does not directly influence agent behavior.</p>
         </aside>
         <aside class="system-fundamental-aside" id="agent-mental">
-            <p> User-defined agent's <strong>mental state</strong>, can be custom defined to any aspects such as joy, stress, sadness, etc.</p>
-            <p> This information is mainly used in the "Interoceptive Estimator" and "Supervisor" of Interactive Concierge agent Diego.</p>
+            <p>Users define an agent's <strong>mental state</strong>, which can be custom defined to include any aspects such as joy, stress, sadness, etc.</p>
+            <p>In our examples, this information is mainly used in the "Interoceptive Estimator" and "Supervisor" of Interactive Concierge agent <a href="#diego">Diego</a>.</p>
         </aside>
         <aside class="system-fundamental-aside" id="agent-physical">
-            <p>User-defined agent's <strong>physical state</strong>, can be custom defined to any aspects such as hunger, energy, pain, etc.</p>
-            <p> This information is mainly used in the "Interoceptive Estimator" and "Supervisor" of Interactive Concierge agent Diego.</p>
+            <p>Users define an agent's <strong>physical state</strong>, which can be custom defined to include any aspects such as hunger, energy, pain, etc.</p>
+            <p>In our examples, this information is mainly used in the "Interoceptive Estimator" and "Supervisor" of Interactive Concierge agent <a href="#diego">Diego</a>.</p>
         </aside>
         <!-- aside information Capability -->
         <aside class="system-fundamental-aside" id="capability-info">
-            <p><strong>Capability</strong> bridges agent and platform. Agents are able to leverage different capabilities along with user-defined metadata to solve tasks.</p>
-            <p>Our platform's components can be flexibly combined to accomplish a multitude of tasks.
-            In <a href="#agent-examplers"><i>V-IRL agents section</i></a>, we present agents that exhibit increasingly complex behaviors, each requiring more components of the platform.
-            From simple combinations, like the Route Optimizer agent Peng, to more complex arrangements, 
-            like the Tourist, our system showcases the versatility and potential of the <i>V-IRL</i> framework to be applied to a wide range of real-world scenarios.</p>
+            <p><strong>Capabilities</strong> bridge the agent with the platform. Agents are able to leverage different capabilities along with the user-defined metadata to accomplish a multitude of tasks.</p>
+            <p>In the <a href="#agent-exemplars"><i>V-IRL agents</i></a> section, we present agents that exhibit increasingly complex behaviors, each requiring additional components from the platform.
+            From simple combinations, like the Route Optimizer agent 
+            <a href="#peng">Peng</a>, to more complex arrangements, 
+            like the Tourist agent <a href="#ling">Ling</a>,
+            we showcase the versatility of the <i>V-IRL</i> framework and its applicability to a wide range of real-world scenarios.</p>
         </aside>
         <aside class="system-fundamental-aside" id="capability-perception"> 
-            <p><strong>Perception</strong> capability enables agents to process the sensory-rich data provided by the <i>environment</i>, especially street view imagery.</p>
-            <p>This capability is used in agents with <img src="virl_images/tags/cv.png" class="inline-tag">: RX-399, Urban Planner, Intentional Explorer, Tourist and Interactive Concierge.</p>
+            <p><strong>Perception</strong> capabilities enable agents to process the sensory-rich data provided by the <i>environment</i>, especially street view imagery.</p>
+            <p>This capability is used in agents with <img src="virl_images/tags/cv.png" class="inline-tag" draggable="false">: <a href="#rx-399">RX-399</a>, Urban Planner, Intentional Explorer, Tourist, and Interactive Concierge.</p>
         </aside>
         <aside class="system-fundamental-aside" id="capability-reasoning">
-            <p><strong>Reasoning</strong> capability allows decision making based on information from perception and the environment.</p>
-            <p>This capability is used in agents with <img src="virl_images/tags/lm.png" class="inline-tag">: Place Recommender, Intentional Explorer, Tourist, Local and Interactive Concierge.</p>
+            <p><strong>Reasoning</strong> capabilities allow decision making based on information from perception and the environment.</p>
+            <p>This capability is used in agents with <img src="virl_images/tags/lm.png" class="inline-tag" draggable="false">: Place Recommender, Intentional Explorer, Tourist, Local, and Interactive Concierge.</p>
         </aside>
         <aside class="system-fundamental-aside" id="capability-action">
-            <p><strong>Action</strong> capability is responsible for grounding agents in the world around them: providing a navigable representation and geospatial information of real cities.</p>
-            <p>This capability is used in agents with <img src="virl_images/tags/geo.png" class="inline-tag"> (all agents).</p>
+            <p><strong>Action</strong> capabilities are responsible for grounding agents in the world around them; providing a navigable representation and geospatial information of real cities.</p>
+            <p>This capability is used in agents with <img src="virl_images/tags/geo.png" class="inline-tag" draggable="false"> (all agents).</p>
         </aside>
         <aside class="system-fundamental-aside" id="capability-collaboration">
-            <p><strong>Collaboration</strong> capability enables the interact between agents or with humans.</p>
-            <p>This capability is used in agents with <img src="virl_images/tags/col.png" class="inline-tag">, such as Tourist-Local and Interactive Concierge.</p>
+            <p><strong>Collaboration</strong> capabilities enable the interaction between agents or with humans.</p>
+            <p>This capability is used in agents with <img src="virl_images/tags/col.png" class="inline-tag" draggable="false">, such as Tourist-Local and Interactive Concierge.</p>
         </aside>
         <!-- aside information Platform -->
         <aside class="system-fundamental-aside" id="platform-info">
-            <p><strong>Platform</strong> components, which provide the infrastructure to instantiate capabilities, execute agent actions, and ground agents in the real world. </p>
+            <p><strong>Platform</strong> components provide the infrastructure to instantiate capabilities, execute agent actions, and ground agents in the real world.</p>
         </aside>
         <aside class="system-fundamental-aside" id="platform-cv">
-            <p><strong>Computer Vision</strong> modules instantiate concrete vision models used in <i>perception</i> capability
+            <p><strong>Computer Vision</strong> modules instantiate vision models that are used to enable <i>perception</i> capabilities.</p>
         </aside>
         <aside class="system-fundamental-aside" id="platform-lm">
-            <strong>Language Model</strong> modules instantiate LLMs which allow question answering, interaction and tool & API use.</aside>
+            <strong>Language Model</strong> modules instantiate LLMs which enable <i>reasoning</i> and <i>collaboration</i> capabilities via question answering, interaction, and tool & API use.</aside>
         <aside class="system-fundamental-aside" id="platform-env">
             <strong>Environment</strong> modules are responsible for grounding agents in the world around them: providing a navigable representation of real cities.
         </aside>
         <aside class="system-fundamental-aside" id="platform-cv-owr">
-            <strong>Open-world recognition</strong> models <d-cite key="radford2021learning"></d-cite> are more general than localization models, and allow agents to detect a wider range of objects in their field of view (e.g., Tourist searches for the Apple Store).
+            <strong>Open-world recognition</strong> models <d-cite key="radford2021learning"></d-cite> are more general than localization models, and allow agents to detect the presence of a wide range of objects in their field of view (e.g., the Tourist searches for the Apple Store).
         </aside>
         <aside class="system-fundamental-aside" id="platform-cv-loc">
             <strong>Localization</strong> models <d-cite key="li2022grounded"></d-cite> give agents a precise spatial understanding of their environment.
-            This allows RX-399 to identify and count instances of objects, and Hiro to pick out specific businesses to look up with the environment.
+            This allows <a href="#rx-399">RX-399</a> to identify and count instances of objects, and <a href="#hiro">Hiro</a> to pick out specific businesses to look up using the environment APIs.
         </aside>
         <aside class="system-fundamental-aside" id="platform-cv-fm">
-            <strong>Feature matching</strong> models <d-cite key="lindenberger2023lightglue"></d-cite> provide an understanding of continuity across views of the same location, and enable agents to identify & deduplicate instances of the same object from different viewpoints in RX-399, Urban Planner and Intentional Explorer.
+            <strong>Feature matching</strong> models <d-cite key="lindenberger2023lightglue"></d-cite> provide an understanding of continuity across views of the same location, and enable agents to identify & deduplicate instances of the same object from different viewpoints (e.g., <a href="#rx-399">RX-399</a>, Urban Planner, and Intentional Explorer <a href="#hiro">Hiro</a>).
         </aside>
         <aside class="system-fundamental-aside" id="platform-cv-vqa">
             Multimodal models with <strong>VQA</strong> capabilities <d-cite key="li2023blip"></d-cite> bridge the perceptual world with natural language, and
-            are essential for integration with <i>reasoning</i>. This allows agents to verbalize visual information to natural language in a more open-end aspect, such as Intentional Explorer Hiro asks "What is road is better?" in the intersections.
+            are essential for integration with <i>reasoning</i>.
+            They allow agents to verbalize visual information, transforming it into text that can be used for decision-making (e.g., the Intentional Explorer <a href="#hiro">Hiro</a> asks "What is road is better?" at intersections).
         </aside>
         <aside class="system-fundamental-aside" id="platform-lm-tool">
-            LLMs such as GPT-4 <d-cite key="openai2023gpt"></d-cite> and Llama~2 <d-cite key="touvron2023llama"></d-cite>
-            interface across various <strong>APIs</strong> (see <a href="#agent-language">language-driven agents examples</a>), transforming environmental data and perceptual outputs into actionable insights.
+            LLMs such as GPT-4 <d-cite key="openai2023gpt"></d-cite> and Llama&nbsp;2 <d-cite key="touvron2023llama"></d-cite>
+            enable <i>V-IRL</i> agents to <strong>use tools</strong> and
+            interface across various <strong>APIs</strong>, transforming environmental data and perceptual outputs into actionable insights.
+            For example, the Real Estate agent <a href="#vivek">Vivek</a> uses real estate APIs to find properties that match a user's preferences and the Place Recommender agent <a href="#aria">Aria</a> uses Google Maps APIs to find places that match a user's preferences.
         </aside>
         <aside class="system-fundamental-aside" id="platform-lm-interact">
-            LLMs also enable collaboration between agents or with humans through natural language (see <a href="#agent-agent-col">collaborative agents</a>). Custom prompts facilitate this interaction. 
+            LLMs enable <strong>collaboration</strong> between agents or with humans through natural language (see 
+            Tourist-Local agent <a href="#ling">Ling</a> and Interactive Concierge agent <a href="#diego">Diego</a>). Custom prompts facilitate these interactions. 
         </aside>
-        <aside class="system-fundamental-aside" id="platform-env-street">Agents can extract <strong>street view imagery</strong> by specifying its geolocation, fov and ego-pose. Besides, this module provides a one-to-one correlation between street view panorama and geolocation.</aside>
-        <aside class="system-fundamental-aside" id="platform-env-geoloc">Agents can translate natural language address to <strong>geolocation</strong>, and get its current geolocation.</aside>
-        <aside class="system-fundamental-aside" id="platform-env-move">Through the <strong>movement</strong> module, agent can obtain all navigable directions and position with street view imagery around its current location.</aside>
-        <aside class="system-fundamental-aside" id="platform-env-map"><strong>Mapping</strong> module allows agents to get available routing, time and distance from a position to another.</aside>
-        <aside class="system-fundamental-aside" id="platform-env-place"><strong>Place Info & Search</strong> module enables nearby place searches with hyper-parameters such as name, place type, radius, etc. Also, it provides place information such as place address, reviews, photos and so on.</aside>
-
+        <aside class="system-fundamental-aside" id="platform-env-street">
+            Agents can access first-person <strong>Street View Imagery</strong> cooresponding to their geolocation, field-of-view, and ego-pose. This module provides a one-to-one correspondence between street view panorama and geolocation.
+        </aside>
+        <aside class="system-fundamental-aside" id="platform-env-geoloc">
+            The <strong>Geolocation</strong> (a set of lat-long geocoordinates) is fundamental to any embodied agent, representing its position in the world and allowing it to interoperate with other location-based APIs and modules (e.g., Movement).
+            Agents can also translate natural language addresses into a geolocation using the Geolocation module.
+        </aside>
+        <aside class="system-fundamental-aside" id="platform-env-move">
+            Through the <strong>Movement</strong> module, an agent can obtain all navigable directions and positions that have street view imagery around its current location.
+            Agents can then use the Movement module to move to a new location, updating their geolocation.
+        </aside>
+        <aside class="system-fundamental-aside" id="platform-env-map">
+            The <strong>Mapping</strong> module allows agents to get available routing, time, and distance from one location to another for use in decision-making.
+        </aside>
+        <aside class="system-fundamental-aside" id="platform-env-place">
+            The <strong>Place Info & Search</strong> module enables agents to lookup information about nearby destinations using search-parameters such as name, place type, radius, etc.
+            It provides place information such as name, address, reviews, photos, and so on.
+        </aside>
 
         <figcaption style="width: 100%; text-align: center">Hierarchical <i>V-IRL</i> architecture.</figcaption>
         </div>
 
 
         <!-- Part 3: Benchmark -->
-        <div id="virlbenchmark" style="position: relative">
+        <div id="benchmark" style="position: relative">
         <h2 class="text"><img src="virl_images/icons/benchmark.png" width="50px"> <em>V-IRL</em> Benchmark</h2>
         <p class="text">
             The essential attributes of <i>V-IRL</i> include its ability to access geographically diverse data derived from real-world sensory input, and its API that facilitates interaction with Google Map Platform (GMP) <d-cite key="google_map_platform"></d-cite>. 
