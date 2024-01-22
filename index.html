@@ -69,9 +69,9 @@
                     <h3>Authors</h3>
                     <p><a href="https://jihanyang.github.io/" class="author-link" target="_blank">Jihan Yang</a> <sup>△</sup></p>
                     <p><a href="https://dingry.github.io/" class="author-link" target="_blank">Runyu Ding</a> <sup>△</sup></p>
-                    <p><a href="https://ellisbrown.github.io/" class="author-link" target="_blank">Ellis Brown</a> <sup>▼</sup></p>
+                    <p><a href="https://ellisbrown.github.io/" class="author-link" target="_blank">Ellis Brown</a> <sup>▲</sup></p>
                     <p><a href="https://xjqi.github.io/" class="author-link" target="_blank">Xiaojuan Qi</a> <sup>△</sup></p>
-                    <p><a href="https://www.sainingxie.com/" class="author-link" target="_blank">Saining Xie</a> <sup>▼</sup></p>
+                    <p><a href="https://www.sainingxie.com/" class="author-link" target="_blank">Saining Xie</a> <sup>▲</sup></p>
                 </div>
                 <div class="byline-column">
                     <h3>Affiliations</h3>
@@ -80,7 +80,7 @@
                         <a href="https://www.eee.hku.hk/" class="affiliation-link" target="_blank">University of Hong Kong</a>
                     </p>
                     <p>
-                        <sup>▼</sup>
+                        <sup>▲</sup>
                         <a href="https://cs.nyu.edu/home/index.html" class="affiliation-link" target="_blank">New York University</a>
                     </p>
                 </div>
@@ -105,7 +105,7 @@
                     <li><a href="#agent-human-col" style="font-size: 12px;">Human-Agent Collaboration</a></li>
                 </ul>
                 <div><a href="#system">System Fundamental</a></div>
-                <div><a href="#virlbenchmark"><em>V-IRL</em> Benchmark</a></div>
+                <div><a href="#benchmark"><em>V-IRL</em> Benchmark</a></div>
             </nav>
         </d-contents> -->
         <div class="nav-bar" id="nav-bar">
@@ -139,7 +139,7 @@
             </div>
             <hr style="display: block; margin: auto;">
             <div id="nav-bar-benchmark">
-                <a class="nav-link" href="#virlbenchmark" style="margin-left: 15px;"><img src="virl_images/icons/benchmark.png" style="width: 50px; margin-top: 10px" title="V-IRL Benchmark"></a>
+                <a class="nav-link" href="#benchmark" style="margin-left: 15px;"><img src="virl_images/icons/benchmark.png" style="width: 50px; margin-top: 10px" title="V-IRL Benchmark"></a>
             </div>
         </div>
 
@@ -163,7 +163,7 @@
             a <em>scalable</em> platform enabling agents to interact
             <!-- with the real-world in a virtual yet realistic environment. -->
             with a virtual facsimile of the real world.
-            Leveraging mapping, geospatial, and street-view imagery APIs, <i>V-IRL</i> 
+            Leveraging mapping, geospatial, and street-view imagery APIs (see <a href="#system">System Fundamentals</a>), <i>V-IRL</i> 
             <!-- embeds agents on Earth in real cities, enabling them to ground themselves using granular, sensory-rich perceptual data and 
             exposes granular, sensory-rich perceptual data from real cities that agents can use for practical tasks. -->
             grounds agents in real cities on Earth with sensory-rich perceptual data and access to various descriptive data for solving practical tasks.
@@ -171,6 +171,8 @@
                 Google Street View alone has >220 billion images as of May 2022, and there are many other sources of imagery and data that can be incorporated to enrich the environment.
                 <a href="https://blog.google/products/maps/street-view-15-new-features/" target="_blank">https://blog.google/products/maps/street-view-15-new-features/</a>
             </d-footnote>
+            <!-- initial benchmark = virl benchmark, but many more can be made -->
+            <!-- We use <i>V-IRL</i> to construct an initial benchmark of these  -->
         </p>
         <div class="l-page teaser-video">
             <video autoplay loop muted style="width:100%" preload="auto">
@@ -242,10 +244,7 @@
         </div>
         
         <!-- <h3 id="agent-earthbound">Earthbound Agents</h3>
-        <p>
-        Agents in the <i>V-IRL</i> platform inhabit virtual representations of real cities around the globe. At the core of this representation are <em>geographic coordinates</em> corresponding to points on the Earth's surface. Using these coordinates, <i>V-IRL</i> allows agents to <i>ground</i> themselves in the world using maps, <em>real</em> street view imagery, information about nearby destinations, and additional data from arbitrary geospatial APIs
-        </p> -->
-        <!-- <d-contents class="left-aside-container">
+        <d-contents class="left-aside-container">
             <aside class="left-side-bar">
                 <img style="width: 120px" src="virl_images/avatars/courier.png">
             </aside>
@@ -256,13 +255,19 @@
             <div class="l-screen grey-overlay"></div>
             <h3 class="text"><img style="width: 35px" src="virl_images/avatars/courier.png"> Peng: Visiting Student</h3>
 
+            <!-- <p class="text">
+                Agents in the <i>V-IRL</i> platform inhabit virtual representations of real cities around the globe. At the core of this representation are <em>geographic coordinates</em> corresponding to points on the Earth's surface. Using these coordinates, <i>V-IRL</i> allows agents to <i>ground</i> themselves in the world using maps, <em>real</em> street view imagery, information about nearby destinations, and additional data from arbitrary geospatial APIs
+            </p> -->
             <!-- <p class="l-body">
                 <img src="character_card/courier.png" class="character-card-img">
             </p>
             <blockquote class="storytext"> 
                 Peng needs to visit several locations throughout the city to get documents signed for registration as a visiting student...
             </blockquote> 
-            <hr class="l-body fancybreak"> -->
+        -->
+            <!-- <hr class="l-body fancybreak">  -->
+
+            
             <video class="auto-video l-page" muted autoplay preload="auto">
                 <source src="story/peng_v2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -1222,7 +1227,7 @@
 
 
         <!-- Part 3: Benchmark -->
-        <div id="virlbenchmark" style="position: relative">
+        <div id="benchmark" style="position: relative">
         <h2 class="text"><img src="virl_images/icons/benchmark.png" width="50px"> <em>V-IRL</em> Benchmark</h2>
         <p class="text">
             The essential attributes of <i>V-IRL</i> include its ability to access geographically diverse data derived from real-world sensory input, and its API that facilitates interaction with Google Map Platform (GMP) <d-cite key="google_map_platform"></d-cite>. 
