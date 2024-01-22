@@ -2,25 +2,31 @@ body {
   font-family: Charter;
 }
 
+.header-wrapper {
+    /* max-width: 1200px; */
+    /* background-color: #265073; */
+    
+    /* background: linear-gradient(127deg, #265073 0%, #596FB7 45%, #C6CF9B 80%, #F6ECA9 100%); */
+    background: linear-gradient(127deg, #265073 0%, #596FB7 45%, #C6CF9B 70%, rgb(244,234,203) 100%);
+    
+    /* background: linear-gradient(#176B87 0%, #86B6F6 45%, #B4D4FF 80%, #EEF5FF 100%); */
+    /* background: rgb(38,80,115); */
+    /* background: linear-gradient(127deg, rgba(38,80,115,1) 0%, rgba(34,193,195,1) 50%, rgba(117,191,138,1) 70%, rgba(253,187,45,1) 100%); */
+    
+    /* background: rgb(7,60,105); */
+    /* background: linear-gradient(90deg, rgba(7,60,105,1) 0%, rgba(22,80,129,1) 26%, rgba(255,201,0,1) 100%); */
+}
+
+
 .header-container {
-  /* background-color: #265073; */
-  
-  /* background: linear-gradient(127deg, #265073 0%, #596FB7 45%, #C6CF9B 80%, #F6ECA9 100%); */
-  background: linear-gradient(127deg, #265073 0%, #596FB7 45%, #C6CF9B 70%, rgb(244,234,203) 100%);
-  
-  /* background: linear-gradient(#176B87 0%, #86B6F6 45%, #B4D4FF 80%, #EEF5FF 100%); */
-  /* background: rgb(38,80,115); */
-/* background: linear-gradient(127deg, rgba(38,80,115,1) 0%, rgba(34,193,195,1) 50%, rgba(117,191,138,1) 70%, rgba(253,187,45,1) 100%); */
-  
-  /* background: rgb(7,60,105); */
-  /* background: linear-gradient(90deg, rgba(7,60,105,1) 0%, rgba(22,80,129,1) 26%, rgba(255,201,0,1) 100%); */
-  
   color: #FFC436;
   text-align: center; /* Center content on small screens */
   padding: 20px; /* Reduced padding for small screens */
   opacity: 1.0;
   z-index: 1000;
   position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 
@@ -31,12 +37,14 @@ body {
 }
 
 .header-container p {
-    font-size: 1.06rem;
+    /* font-size: 1.06rem; */
+    font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {
   .header-container {
     padding: 16px;
+    padding-top: 32px;
   }
 
   .header-content h1 {
@@ -539,6 +547,10 @@ d-article .content {
   margin-bottom: 20px;
 }
 
+/* assign the final paragraph of an aside no bottom margin */
+aside p:last-child {
+  margin-bottom: 0;
+}
 
 
 aside.counting-table {
@@ -793,7 +805,7 @@ img {
 
 .inline-tag {
   height: 18px;
-  width: auto
+  width: auto;
 }
 
 .explorer-aside, .tourist-aside {
@@ -1017,8 +1029,14 @@ d-article > div > h3 {
 
 
 .text {
+  /* width: 150%; */
   width: 150%;
   margin: 1em 0 1em -20%;
+  font-size: 1.2rem; 
+}
+
+.abstract {
+    font-size: 1.35rem;
 }
 
 .auto-video {
@@ -1041,6 +1059,7 @@ d-article > div > h3 {
   overflow-x: hidden;
   padding-top: 10px;
   z-index: 101;
+  display: none;
 }
 
 .figure {
@@ -1058,10 +1077,6 @@ d-article > div > h3 {
 }
 
 @media (max-width: 768px) {
-    .nav-bar {
-        display: none;
-    }
-
     .figure {
         width: 100%;
         margin-left: -1%;
