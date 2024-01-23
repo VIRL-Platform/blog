@@ -28,6 +28,11 @@
         <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
             onload="renderMathInElement(document.body);"></script>
         <script defer src="./static/js/fontawesome.all.min.js"></script>
+
+        <!-- medium zoom https://github.com/francoischalifour/medium-zoom -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>  <!-- jquery -->
+        <script defer src="./static/js/medium-zoom.min.js"></script>
+        <script defer src="./static/js/zoom.js"></script>
     </head>
     <body>
         <div class="header-wrapper">
@@ -179,10 +184,6 @@
                 Your browser does not support the video tag.
             </video>
         </div>
-        <div id="myModal" class="modal">
-            <span class="close" id="close-span">&times;</span>
-            <img class="modal-content" id="img01">
-        </div>
 
         <div id="agent-exemplars" style="position: relative;">
         <h2 class="text">Virtual Intelligence in Real Life</h2>
@@ -281,7 +282,7 @@
             <div class="content">
                 <d-figure>
                     <figure style="margin-bottom: 10px;">
-                        <img class="modal-trigger" src="virl_images/courier.png" alt="Route optimizer figure">
+                        <img data-zoomable src="virl_images/courier.png" alt="Route optimizer figure">
                         <figcaption style="text-align: center">Finding the shortest path for Peng to travel to five places.</figcaption>
                     </figure>
                 </d-figure>
@@ -333,7 +334,7 @@
         <div class="content interactive-image">
             <div id="image-text-container">
                 <div class="image-review-container" style="margin-bottom: 0px;">
-                    <img class="modal-trigger" style="width: 55%;" src="virl_images/place_recommend/place1.png" alt="place illustration">
+                    <img data-zoomable style="width: 55%;" src="virl_images/place_recommend/place1.png" alt="place illustration">
                     <div class="text-box">
                         <p style="font-size: 14px; margin-bottom: 0px;"><strong>Example Place Review:</strong></p>
                         <blockquote class="place-review">Well done, Chow House. Authentic cuisine, expertly prepared.  Twice Cooked pork, done the right way. You can see the leeks from the photo with none of that Americanized garbage many places dump into this otherwise elegant dish... Big shrimp.  Big flavor.  Peanuts.  Initially, I was scared of the deep fried dried red pepper, but they turned out really tasty and crunchy, not as spicy as I had originally feared. Pork fried rice, expertly cooked.  All in all, if you live downtown and like authentic Sichuan food, this is your place.  Bravo! (rating: 5)</blockquote>
@@ -396,7 +397,7 @@
             <div class="content">
                 <d-figure>
                     <figure>
-                        <img class="modal-trigger" src="virl_images/agent_estate.png" alt="Estate recommender">
+                        <img data-zoomable src="virl_images/agent_estate.png" alt="Estate recommender">
                         <figcaption style="text-align: center">Part of candidate estates.</figcaption>
                     </figure>
                 </d-figure>
@@ -452,12 +453,12 @@
             <div id="slider-img-rx399" class="slider-img-container">
                 <div class="my-slides">
                 <!-- <div class="numbertext">1 / 2</div> -->
-                <img class="modal-trigger" src="virl_images/rx-399/rx-399_clean_ny.png" style="width:100%">
+                <img data-zoomable src="virl_images/rx-399/rx-399_clean_ny.png" style="width:100%">
                 </div>
             
                 <div class="my-slides">
                 <!-- <div class="numbertext">2 / 2</div> -->
-                <img class="modal-trigger" src="virl_images/rx-399/rx-399_clean_hk.png" style="width:100%">
+                <img data-zoomable src="virl_images/rx-399/rx-399_clean_hk.png" style="width:100%">
                 </div>
                 
                 <a class="prev" onclick="plusSlides('slider-img-rx399', -1)">❮</a>
@@ -543,7 +544,7 @@
                 <!-- Imani can also zoom in to specific regions, where lighter colors represent positions with more unique instances identified.  -->
             </p>
             <div class="img-magnifier-container">
-                <img class="modal-trigger" id="urban_planner_img" style="width: 100%" src="virl_images/urban_planner.png" alt="Urban Planner agent visualization">
+                <img data-zoomable id="urban_planner_img" style="width: 100%" src="virl_images/urban_planner.png" alt="Urban Planner agent visualization">
                 <figcaption>Imani's visualization of trash bins, fire hydrants, park benches in NYC's Central Park using data collected by RX-399. The coarsest level shows general distributions of trash bins, hydrants, and benches in the park.
                 Imani can also zoom in to specific regions, where lighter colors represent positions with more unique instances identified.</figcaption>
             </div>
@@ -777,19 +778,19 @@
 
             <div id="slider-img-tourist" class="slider-img-container">
                 <div class="my-slides">
-                <img class="modal-trigger" src="virl_images/tourist/tourist_nyc_1.png">
+                <img data-zoomable src="virl_images/tourist/tourist_nyc_1.png">
                 </div>
             
                 <div class="my-slides">
-                <img class="modal-trigger" src="virl_images/tourist/tourist_nyc_2.png">
+                <img data-zoomable src="virl_images/tourist/tourist_nyc_2.png">
                 </div>
 
                 <div class="my-slides">
-                    <img class="modal-trigger" src="virl_images/tourist/tourist_sf.png">
+                    <img data-zoomable src="virl_images/tourist/tourist_sf.png">
                 </div>
 
                 <div class="my-slides">
-                    <img class="modal-trigger" src="virl_images/tourist/tourist_hk.png">
+                    <img data-zoomable src="virl_images/tourist/tourist_hk.png">
                 </div>
                 
                 <a class="prev" onclick="plusSlides('slider-img-tourist', -1, 'tourist-aside')">❮</a>
@@ -1287,7 +1288,7 @@
 
         <d-figure>
             <figure style="margin-top: 5px; margin-bottom: 15px">
-                <img class="modal-trigger" src="virl_images/bm_local_matching.png" alt="V-IRL Place Localization" style="width: 80%;display: block; margin: auto;">
+                <img data-zoomable src="virl_images/bm_local_matching.png" alt="V-IRL Place Localization" style="width: 80%;display: block; margin: auto;">
                 <figcaption style="width: 100%;">Matching between 2D object proposal and street place. we first <i>project</i> the bounding box of each object proposal onto a frustum in the 3D space, subject to a radius.
                 We then determine if any <i>nearby places</i> fall within this frustum and radius. 
                 If any nearby place is found, the closest one is assigned as the <i>ground truth</i> for the object proposal. Otherwise, the object proposal is regarded as a <i>false positive</i>. 
@@ -1324,40 +1325,40 @@
 
         <div class="img-grid-row">
             <div class="img-grid-column">
-              <img class="modal-trigger" src="virl_images/place_loc_imgs/bookstore.jpg" style="width:100%">
-              <img class="modal-trigger" src="virl_images/place_loc_imgs/bookstore2.jpg" style="width:100%">
-              <img class="modal-trigger" src="virl_images/place_loc_imgs/clothing2.jpg" style="width:100%">
-              <img class="modal-trigger" src="virl_images/place_loc_imgs/jewelry.jpg" style="width:100%">
+              <img data-zoomable src="virl_images/place_loc_imgs/bookstore.jpg" style="width:100%">
+              <img data-zoomable src="virl_images/place_loc_imgs/bookstore2.jpg" style="width:100%">
+              <img data-zoomable src="virl_images/place_loc_imgs/clothing2.jpg" style="width:100%">
+              <img data-zoomable src="virl_images/place_loc_imgs/jewelry.jpg" style="width:100%">
             </div>
             <div class="img-grid-column">
-              <img class="modal-trigger" src="virl_images/place_loc_imgs/movie.jpg" style="width:100%">
-              <img class="modal-trigger" src="virl_images/place_loc_imgs/clothing.jpg" style="width:100%">
-              <img class="modal-trigger" src="virl_images/place_loc_imgs/spa.jpg" style="width:100%">
-              <img class="modal-trigger" src="virl_images/place_loc_imgs/spa2.jpg" style="width:100%">
+              <img data-zoomable src="virl_images/place_loc_imgs/movie.jpg" style="width:100%">
+              <img data-zoomable src="virl_images/place_loc_imgs/clothing.jpg" style="width:100%">
+              <img data-zoomable src="virl_images/place_loc_imgs/spa.jpg" style="width:100%">
+              <img data-zoomable src="virl_images/place_loc_imgs/spa2.jpg" style="width:100%">
             </div>
             <div class="img-grid-column">
-              <img class="modal-trigger" src="virl_images/place_loc_imgs/convenience.jpg" style="width:100%">
-              <img class="modal-trigger" src="virl_images/place_loc_imgs/convenience2.jpg" style="width:100%">
-              <img class="modal-trigger" src="virl_images/place_loc_imgs/laundry.jpg" style="width:100%">
-              <img class="modal-trigger" src="virl_images/place_loc_imgs/laundry2.jpg" style="width:100%">
+              <img data-zoomable src="virl_images/place_loc_imgs/convenience.jpg" style="width:100%">
+              <img data-zoomable src="virl_images/place_loc_imgs/convenience2.jpg" style="width:100%">
+              <img data-zoomable src="virl_images/place_loc_imgs/laundry.jpg" style="width:100%">
+              <img data-zoomable src="virl_images/place_loc_imgs/laundry2.jpg" style="width:100%">
             </div>
             <div class="img-grid-column">
-              <img class="modal-trigger" src="virl_images/place_loc_imgs/bank.jpg" style="width:100%">
-              <img class="modal-trigger" src="virl_images/place_loc_imgs/bank2.jpg" style="width:100%">
-              <img class="modal-trigger" src="virl_images/place_loc_imgs/park.jpg" style="width:100%">
-              <img class="modal-trigger" src="virl_images/place_loc_imgs/park2.jpg" style="width:100%">
+              <img data-zoomable src="virl_images/place_loc_imgs/bank.jpg" style="width:100%">
+              <img data-zoomable src="virl_images/place_loc_imgs/bank2.jpg" style="width:100%">
+              <img data-zoomable src="virl_images/place_loc_imgs/park.jpg" style="width:100%">
+              <img data-zoomable src="virl_images/place_loc_imgs/park2.jpg" style="width:100%">
             </div>
             <div class="img-grid-column">
-                <img class="modal-trigger" src="virl_images/place_loc_imgs/cafe.jpg" style="width:100%">
-                <img class="modal-trigger" src="virl_images/place_loc_imgs/bar.jpg" style="width:100%">
-                <img class="modal-trigger" src="virl_images/place_loc_imgs/restaurant.jpg" style="width:100%">
-                <img class="modal-trigger" src="virl_images/place_loc_imgs/bakery.jpg" style="width:100%">
+                <img data-zoomable src="virl_images/place_loc_imgs/cafe.jpg" style="width:100%">
+                <img data-zoomable src="virl_images/place_loc_imgs/bar.jpg" style="width:100%">
+                <img data-zoomable src="virl_images/place_loc_imgs/restaurant.jpg" style="width:100%">
+                <img data-zoomable src="virl_images/place_loc_imgs/bakery.jpg" style="width:100%">
             </div>
             <div class="img-grid-column">
-                <img class="modal-trigger" src="virl_images/place_loc_imgs/pharmacy.jpg" style="width:100%">
-                <img class="modal-trigger" src="virl_images/place_loc_imgs/lodging.jpg" style="width:100%">
-                <img class="modal-trigger" src="virl_images/place_loc_imgs/hospital.jpg" style="width:100%">
-                <img class="modal-trigger" src="virl_images/place_loc_imgs/hospital2.jpg" style="width:100%">
+                <img data-zoomable src="virl_images/place_loc_imgs/pharmacy.jpg" style="width:100%">
+                <img data-zoomable src="virl_images/place_loc_imgs/lodging.jpg" style="width:100%">
+                <img data-zoomable src="virl_images/place_loc_imgs/hospital.jpg" style="width:100%">
+                <img data-zoomable src="virl_images/place_loc_imgs/hospital2.jpg" style="width:100%">
             </div>
         </div>
         <figcaption style="text-align: center; margin-bottom: 10px;">Part of <i>V-IRL</i> Place localization benchmark results via GLIP (w/ CLIP proposal).</figcaption>
@@ -1374,15 +1375,15 @@
         </p>
         <div id="slider-img-street-place" class="slider-img-container">
             <div class="my-slides">
-                <img class="modal-trigger" src="virl_images/streetview_vs_place/streetview_vs_placeimage_1.png" style="width:100%">
+                <img data-zoomable src="virl_images/streetview_vs_place/streetview_vs_placeimage_1.png" style="width:100%">
             </div>
             
             <div class="my-slides">
-                <img class="modal-trigger" src="virl_images/streetview_vs_place/streetview_vs_placecentric_2.png" style="width:100%">
+                <img data-zoomable src="virl_images/streetview_vs_place/streetview_vs_placecentric_2.png" style="width:100%">
             </div>
 
             <div class="my-slides">
-                <img class="modal-trigger" src="virl_images/streetview_vs_place/streetview_vs_placecentric_3.png" style="width:100%">    
+                <img data-zoomable src="virl_images/streetview_vs_place/streetview_vs_placecentric_3.png" style="width:100%">    
             </div>
                 
             <a class="prev" onclick="plusSlides('slider-img-street-place', -1)">❮</a>
@@ -1443,7 +1444,7 @@
 
         <d-figure>
             <figure style="margin-top: 0px; margin-bottom: 0px">
-                <img src="virl_images/bm_table_vln.png" alt="V-IRL VLN" style="width: 80%; display: block; margin: auto;">
+                <img src="virl_images/bm_table_vln.png" alt="V-IRL VLN" style="width: 80%; display: block; margin: auto;" data-zoomable>
                 <figcaption style="width: 100%; text-align: left">Results on <i>V-IRL</i> VLN-mini. We test various CLIP-based models, <span class="resscolor">MM-LLM</span>, and <span class="sizescolor">OCR</span> model with GPT postprocessing.  We primarily measure navigation success rate (<i>Success</i>). In addition, as navigation success is mainly influenced by the agent's actions at key positions (<i>i.e.</i>, start positions, intersections and stop positions), we also evaluate the arrival ratio (<i>Arr</i>) and reaction accuracy (<i>Reac</i>) for each route. Arr denotes the percentage of key positions reached, while Reac measures the accuracy of the agent's action predictions at these key positions. Full-set results on CLIP and Oracle are available in paper appendix.</figcaption>
             </figure>
         </d-figure>
@@ -1455,29 +1456,29 @@
             This suggests that existing vision models face challenges with multilingual image data.
         </p>
         <!-- <aside class="img-magnifier-container">
-            <img id="street_lagos" class="modal-trigger" src="virl_images/bm_city/street_lagos.png" style="width: 250px; height: auto">
+            <img id="street_lagos" data-zoomable src="virl_images/bm_city/street_lagos.png" style="width: 250px; height: auto">
             <figcaption style="width: 250px; text-align: center">Lagos, Nigeria.</figcaption>
         </aside> -->
 
         <div>
-            <img id="bm_city_img" class="modal-trigger" src="virl_images/bm_city_analysis.png" alt="City level analysis" style="width: 100%;">
+            <img id="bm_city_img" data-zoomable src="virl_images/bm_city_analysis.png" alt="City level analysis" style="width: 100%;">
             <figcaption style="width: 100%; text-align: center">City-level visualization of <i>V-IRL</i> benchmark results.</figcaption>
             <aside class="left-side-bar">
                 <br><br><br><br>
-                <img id="street_lagos" class="modal-trigger" src="virl_images/bm_city/street_lagos.png" style="width: 240px; height: auto; ">
+                <img id="street_lagos" data-zoomable src="virl_images/bm_city/street_lagos.png" style="width: 240px; height: auto; ">
                 <figcaption style="width: 240px; text-align: center; margin-bottom:5px">Lagos, Nigeria.</figcaption>
-                <img class="modal-trigger" id="street_tokyo" src="virl_images/bm_city/street_tokyo.png" style="width: 240px; height: auto">
+                <img data-zoomable id="street_tokyo" src="virl_images/bm_city/street_tokyo.png" style="width: 240px; height: auto">
                 <figcaption style="width: 240px; text-align: center; margin-bottom:5px">Tokyo, Japan </figcaption>
-                <img class="modal-trigger" id="street_tokyo" src="virl_images/bm_city/street_ny.png" style="width: 240px; height: auto">
+                <img data-zoomable id="street_tokyo" src="virl_images/bm_city/street_ny.png" style="width: 240px; height: auto">
                 <figcaption style="width: 240px; text-align: center; margin-bottom:5px">New York City, USA </figcaption>
             </aside>
             <aside style="position: absolute; top: 90%; left: 105%;">
                 <br><br><br><br>
-                <img class="modal-trigger" id="street_hk" src="virl_images/bm_city/street_hk.png" style="width: 240px; height: auto">
+                <img data-zoomable id="street_hk" src="virl_images/bm_city/street_hk.png" style="width: 240px; height: auto">
                 <figcaption style="width: 240px; text-align: center; margin-bottom:5px">Hong Kong, China.</figcaption>
-                <img  class="modal-trigger" id="street_ba" src="virl_images/bm_city/street_Buenos_Aires.png" style="width: 240px; height: auto">
+                <img  data-zoomable id="street_ba" src="virl_images/bm_city/street_Buenos_Aires.png" style="width: 240px; height: auto">
                 <figcaption style="width: 240px; text-align: center; margin-bottom:5px">Buenos Aires, Argentina.</figcaption>
-                <img  class="modal-trigger" id="street_ba" src="virl_images/bm_city/street_mumbai.png" style="width: 240px; height: auto">
+                <img  data-zoomable id="street_ba" src="virl_images/bm_city/street_mumbai.png" style="width: 240px; height: auto">
                 <figcaption style="width: 240px; text-align: center; margin-bottom:5px">Mumbai, India.</figcaption>
             </aside>
         </div>
@@ -1507,7 +1508,6 @@
         
         </script> -->
         <!-- <script src="./static/js/contents_bar.js"></script> -->
-        <script src="./static/js/modal_image.js"></script>
         <script src="./static/js/nav-bar.js"></script>
         
         <script type="text/javascript">
