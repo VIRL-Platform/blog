@@ -39,7 +39,22 @@
             <div class="header-container" id="header-container">
                 <div class="header-content">
                     <h1 style="margin-top: 0px"><em>V-IRL</em>: Grounding Virtual Intelligence in Real Life</h1>
-                    <p style="color: #FFF7D4">A platform enabling agents to scalably interact with the real-world in a virtual yet realistic environment.</p>
+                    <!-- <p style="color: #FFF7D4">An open-source platform enabling agents to scalably interact with the real-world in a virtual yet realistic environment.</p> -->
+                    <p style="color: #FFF7D4">
+                        An open-source framework 
+                        <!-- built on the <a href="https://developers.google.com/maps/" style="color:#FFC436" target="_blank">Google Maps Platform</a> -->
+                        for 
+                        <em><strong style="color: #ffe099">embodied agent</strong></em>
+                        and 
+                        <em><strong style="color: #ffe099">open-world computer vision</strong></em>
+                        research.
+                        <!-- enabling agents to scalably interact with the real-world in a virtual yet realistic environment. -->
+                        <!-- Develop and test agents in a virtual representation of the real world,  -->
+                        Develop practical agents 
+                        and test foundation models
+                        in virtual real world cities across the globe, 
+                        grounded with <em><strong>real</strong></em> geospatial data and street view imagery.
+                    </p>
                     <div class="button-container">
                         <a href="" class="button paper-link" target="_blank">
                             <span class="icon is-small">
@@ -160,23 +175,29 @@
             <!-- Blog Version: -->
             There's a massive gap between the text-centric digital environments of current AI agents and the sensory-rich world we humans inhabit.
             To develop agents that can operate flexibly and reliably in real-world settings, we must bridge this gap and embody agents in an environment that <em>necessitates</em> the nuanced perceptual understanding required in the real world.
-            Naturally, this problem has long been studied in robotics, with agents physically embodied in the world; however, the physical constraints and cost of real hardware prohibit scaling up agents and testing them in diverse environments beyond the lab.
+            Naturally, this problem has long been studied in robotics, with agents embodied physically in the world; however, the physical constraints and cost of real hardware prohibit scaling up agents and testing them in diverse environments beyond the lab.
             <!-- This problem has long been studied in robotics, but the physical constraints and cost of real hardware and control make scaling up difficult. -->
             <br><br>
             To address this challenge, we introduce <strong><i>V-IRL</i></strong>:
             a <em>scalable</em> platform enabling agents to interact
             <!-- with the real-world in a virtual yet realistic environment. -->
-            with a virtual facsimile of the real world.
-            Leveraging mapping, geospatial, and street-view imagery APIs (see <a href="#system">System Fundamentals</a>), <i>V-IRL</i> 
+            with a <em>virtual facsimile</em> of the real world.
+            Leveraging mapping, geospatial, and street view imagery APIs (see <a href="#system">System Fundamentals</a>), <i>V-IRL</i> 
             <!-- embeds agents on Earth in real cities, enabling them to ground themselves using granular, sensory-rich perceptual data and 
             exposes granular, sensory-rich perceptual data from real cities that agents can use for practical tasks. -->
-            grounds agents in real cities on Earth with sensory-rich perceptual data and access to various descriptive data for solving practical tasks.
-            Furthermore, our platform serves as a vast testbed for measuring progress in agent perception, decision-making, and interaction capabilities with hundreds of billions of images spanning the entire globe.<d-footnote>
-                Google Street View alone has >220 billion images as of May 2022, and there are many other sources of imagery and data that can be incorporated to enrich the environment.
+            embeds agents in real cities across the Earth, grounded with sensory-rich perceptual data and access to various descriptive data for solving practical tasks.
+            Furthermore, our platform serves as a vast testbed for measuring progress in 
+            open-world computer vision and embodied AI with unprecedented scale and diversity&mdash;providing structured access to
+            hundreds of billions of images spanning the entire globe.
+            <!-- agent perception, decision-making, and interaction capabilities with hundreds of billions of images spanning the entire globe. -->
+            <d-footnote>
+                Google Street View alone has >220 billion images as of May 2022, and there are numerous other sources of imagery and data that can be incorporated to enrich the environment.
                 <a href="https://blog.google/products/maps/street-view-15-new-features/" target="_blank">https://blog.google/products/maps/street-view-15-new-features/</a>
             </d-footnote>
             <!-- initial benchmark = virl benchmark, but many more can be made -->
             <!-- We use <i>V-IRL</i> to construct an initial benchmark of these  -->
+            <!-- We use <i>V-IRL</i> to construct an initial benchmark of these capabilities, and instantiate a variety of exemplar agents to demonstrate the versatility of the platform. -->
+            We use <i>V-IRL</i> to construct an initial benchmark of these capabilities (see <a href="#benchmark"><i>V-IRL</i> Benchmark</a>), and instantiate a variety of exemplar agents to demonstrate the versatility of the platform (see <a href="#agent-exemplars">Agents</a>).
         </p>
         <div class="l-page teaser-video">
             <video autoplay loop muted style="width:100%" preload="auto">
