@@ -818,18 +818,21 @@ img {
   color: rgb(0, 0, 0);
   font-size: 13px;
   height: fit-content;
+  position: absolute;
+  left: 105%;
 }
 
 .tourist-aside {
-  position: absolute;
   top: 39%;
-  left: 105%;
 }
 
 .explorer-aside {
-  position: absolute;
   top: 37%;
-  left: 105%;
+}
+
+.virl-tag {
+    height: 20px;
+    margin-right: 5px;
 }
 
 blockquote.place-review {
