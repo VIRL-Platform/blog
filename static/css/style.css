@@ -438,7 +438,7 @@ blockquote.storytext:before {
   display: inline-block;
   font-size: 11px;
   margin-top: 0px;  /* Keeps the original top margin */
-  margin-bottom: 10px;  /* Keeps the original bottom margin */
+  margin-bottom: 2em;
   margin-left: 5px;  /* Increases the left margin */
   margin-right: 5px;  /* Increases the right margin */
   cursor: pointer;
@@ -588,6 +588,10 @@ aside tr:hover {
 }
 aside th:first-child, aside td:first-child {
   border-right: 1px solid #dee2e6;
+}
+
+figcaption {
+    font-size: 1em;
 }
 
 figcaption .table-caption {
@@ -1128,7 +1132,7 @@ a.active-link {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: left;
   padding: 0px;
-  margin-bottom: 1em;
+  margin: 1em;
   border-radius: 15px;
   line-height: 1.6;
 }
