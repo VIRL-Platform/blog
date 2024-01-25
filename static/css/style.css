@@ -127,6 +127,7 @@ body {
 
   .teaser-video {
     width: 100%; /* Set width to 100% */
+    margin-bottom: 2em;
   }
 
   .header-image {
@@ -987,7 +988,11 @@ d-article > div > h3 {
   /* width: 150%; */
   width: 150%;
   margin: 1em 0 1em -20%;
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
+}
+
+h1.text {
+    font-size: 2em;
 }
 
 .abstract {
@@ -1191,4 +1196,31 @@ div.takeaway-tags img {
   aside {
     display: none;
   }
+}
+
+
+#earthbound, .earthbound {
+    /* background-color: rgba(227, 242, 233, 0.5); */
+    position: relative;
+    padding-top: 1em;
+    .grey-overlay {
+        background-color: rgba(227, 242, 233, 0.5);
+    }
+    .text {
+        margin-bottom: 0px;
+        padding-bottom: 1em;
+    }
+}
+
+#language, .language {
+    /* background-color: rgba(227, 242, 233, 0.5); */
+    position: relative;
+    padding-top: 1em;
+    .grey-overlay {
+        background-color: rgba(227, 237, 248, 0.5);
+    }
+    .text {
+        margin-bottom: 0px;
+        padding-bottom: 1em;
+    }
 }
