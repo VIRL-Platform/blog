@@ -943,7 +943,7 @@ aside blockquote {
   left: -35%;
 }
 
-#click-hint{
+.click-hint{
   display: block;
   margin: auto;
   width: 80%;
@@ -958,7 +958,7 @@ aside blockquote {
   margin-bottom: 20px; /* Add some margin at the bottom */
 }
 
-#click-hint strong {
+.click-hint strong {
   color: #007bff; /* Highlight the 'strong' element with a different color */
   /* text-decoration: underline; Underline the 'strong' text */
 }
@@ -1115,6 +1115,7 @@ a.active-link {
   justify-content: space-between; /* Aligns items in a row with space between them */
   text-align: left;
   padding: 10px;
+  padding-left: 15px;
   background-color: rgb(113, 115, 148);
   border-radius: 15px 15px 0px 0px;
   line-height: 1.6;
@@ -1142,7 +1143,7 @@ div.takeaway-tags img {
   font-size: 17px; /* Adjusts the font size */
   color: #333; /* Sets the text color; choose a color that fits your design */
   margin: 0px; /* Adds space around the paragraph */
-  padding: 10px;
+  padding: 10px 10px 15px 15px;
   background-color: #f9f9f9; /* Optional background color */
   border-radius: 5px; /* Rounds the corners if there's a background color */
   line-height: 1.4; /* Adjusts the line height for better readability */
