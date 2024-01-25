@@ -1074,6 +1074,18 @@ h2.text {
 .col-color {
     background-color: rgba(255, 255, 204, 0.5);
 }
+.geo-color:hover {
+    background-color: rgba(227, 242, 233, 0.9);
+}
+.llm-color:hover {
+    background-color: rgba(227, 237, 248, 0.9);
+}
+.cv-color:hover {
+    background-color: rgba(254, 237, 237, 0.9);
+}
+.col-color:hover {
+    background-color: rgba(255, 255, 204, 0.9);
+}
 
 div.nav-bar a {
   border: none;
