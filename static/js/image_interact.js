@@ -100,3 +100,17 @@ function setLayoutOfText(className) {
     elements[i].className = elements[i].className.replace("text", className);
   }
 }
+
+function showTakeaway(id) {
+    // First hide all takeaways
+    document.querySelectorAll('.exemplar-takeaways > .takeaway-card').forEach(function(takeaway) {
+        takeaway.style.display = 'none';
+    });
+
+    // Then show the hovered one
+    var takeaway = document.getElementById(id);
+    takeaway.style.display = 'block';
+
+    // print what we did
+    console.log("showing takeaway " + id);
+}

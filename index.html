@@ -262,53 +262,158 @@
             </ul>
             <br>
             <div class="avatar-row figure">
-                <div class="avatar">
+                <div class="avatar" onmouseover="showTakeaway('takeaway-peng')">
                     <a href="#peng">
                         <img src="virl_images/avatars/courier.png" alt="Route optimizer Peng">
                     </a>
                     <figcaption>Peng</figcaption>
                 </div>
                 <div class="avatar">
-                    <a href="#aria">
+                    <a href="#aria" onmouseover="showTakeaway('takeaway-aria')">
                         <img src="virl_images/avatars/recommender.png" alt="Place recommender">
                     </a>
                     <figcaption>Aria</figcaption>
                 </div>
                 <div class="avatar">
-                    <a href="#vivek">
+                    <a href="#vivek" onmouseover="showTakeaway('takeaway-vivek')">
                     <img src="virl_images/avatars/real_estate.png" alt="Estate recommender">
                     </a>
                     <figcaption>Vivek</figcaption>
                 </div>
                 <div class="avatar">
-                    <a href="#rx-399">
+                    <a href="#rx-399" onmouseover="showTakeaway('takeaway-rx-399')">
                     <img src="virl_images/avatars/robot.png" alt="Robot RX-399">
                     </a>
                     <figcaption>RX-399</figcaption>
                 </div>
                 <div class="avatar">
-                    <a href="#imani">
+                    <a href="#imani" onmouseover="showTakeaway('takeaway-imani')">
                     <img src="virl_images/avatars/urban_planner.png" alt="Urban planner">
                     </a>
                     <figcaption>Imani</figcaption>
                 </div>
                 <div class="avatar">
-                    <a href="#hiro">
+                    <a href="#hiro" onmouseover="showTakeaway('takeaway-hiro')">
                     <img src="virl_images/avatars/explorer.png" alt="Intentional explorer">
                     </a>
                     <figcaption>Hiro</figcaption>
                 </div>
                 <div class="avatar">
-                    <a href="#ling">
+                    <a href="#ling" onmouseover="showTakeaway('takeaway-ling')">
                     <img src="virl_images/avatars/tourist.png" alt="Tourist">
                     </a>
                     <figcaption>Ling</figcaption>
                 </div>
                 <div class="avatar">
-                    <a href="#diego">
+                    <a href="#diego" onmouseover="showTakeaway('takeaway-diego')">
                     <img src="virl_images/avatars/concierge.png" alt="Concierge">
                     </a>
                     <figcaption>Diego</figcaption>
+                </div>
+            </div>
+            <!--  
+                Exemplar Takeaways
+            -->
+            <div class="exemplar-takeaways">
+                <div class="takeaway-card" id="takeaway-peng">
+                    <div class="takeaway-head">
+                        <span>Peng: Takeaway</span>
+                        <div class="takeaway-tags">
+                            <img src="virl_images/tags/geo.png">
+                        </div>
+                    </div>
+                    <p class="takeaway-content">
+                        <i>V-IRL</i> instantiates agents with real geospatial information, and enables useful tasks like route optimization.
+                    </p>
+                </div>
+                <div class="takeaway-card" id="takeaway-aria">
+                    <div class="takeaway-head">
+                        <span>Aria: Takeaway</span>
+                        <div class="takeaway-tags">
+                            <img src="virl_images/tags/geo.png">
+                            <img src="virl_images/tags/lm.png">
+                        </div>
+                    </div>
+                    <p class="takeaway-content">
+                        <i>V-IRL</i> exposes rich real-world information to agents that they can use for real-world tasks.
+                    </p>
+                </div>
+                <div class="takeaway-card" id="takeaway-vivek">
+                    <div class="takeaway-head">
+                        <span>Vivek: Takeaway</span>
+                        <div class="takeaway-tags">
+                            <img src="virl_images/tags/geo.png">
+                            <img src="virl_images/tags/lm.png">
+                        </div>
+                    </div>
+                    <p class="takeaway-content">
+                        Grounded in geographic coordinates, <i>V-IRL</i> agents can leverage arbitrary real-world information via APIs.
+                    </p>
+                </div>
+                <div class="takeaway-card" id="takeaway-rx-399">
+                    <div class="takeaway-head">
+                        <span>RX-399: Takeaway</span>
+                        <div class="takeaway-tags">
+                            <img src="virl_images/tags/geo.png">
+                            <img src="virl_images/tags/cv.png">
+                        </div>
+                    </div>
+                    <p class="takeaway-content">
+                        <i>V-IRL</i> agents can use perceptual input to understand and interact with their environment.
+                    </p>
+                </div>
+                <div class="takeaway-card" id="takeaway-imani">
+                    <div class="takeaway-head">
+                        <span>Imani: Takeaway</span>
+                        <div class="takeaway-tags">
+                            <img src="virl_images/tags/geo.png">
+                            <img src="virl_images/tags/cv.png">
+                        </div>
+                    </div>
+                    <p class="takeaway-content">
+                        <i>V-IRL</i> enables realistic open-world applications requiring vast geospatial and first-person visual information.
+                    </p>
+                </div>
+                <div class="takeaway-card" id="takeaway-hiro">
+                    <div class="takeaway-head">
+                        <span>Hiro: Takeaway</span>
+                        <div class="takeaway-tags">
+                            <img src="virl_images/tags/geo.png">
+                            <img src="virl_images/tags/lm.png">
+                            <img src="virl_images/tags/cv.png">
+                        </div>
+                    </div>
+                    <p class="takeaway-content">
+                        <i>V-IRL</i> agents can utilize visual detectors, VLMs and LLMs to iteratively perceive, decide, and interact in the environment.
+                    </p>
+                </div>
+                <div class="takeaway-card" id="takeaway-ling">
+                    <div class="takeaway-head">
+                        <span>Ling: Takeaway</span>
+                        <div class="takeaway-tags">
+                            <img src="virl_images/tags/geo.png">
+                            <img src="virl_images/tags/lm.png">
+                            <img src="virl_images/tags/cv.png">
+                            <img src="virl_images/tags/col.png">
+                        </div>
+                    </div>
+                    <p class="takeaway-content">
+                        <i>V-IRL</i> agents can collaborate to solve complex tasks that are beyond their individual expertise.
+                    </p>
+                </div>
+                <div class="takeaway-card" id="takeaway-diego">
+                    <div class="takeaway-head">
+                        <span>Diego: Takeaway</span>
+                        <div class="takeaway-tags">
+                            <img src="virl_images/tags/geo.png">
+                            <img src="virl_images/tags/lm.png">
+                            <img src="virl_images/tags/cv.png">
+                            <img src="virl_images/tags/col.png">
+                        </div>
+                    </div>
+                    <p class="takeaway-content">
+                        <i>V-IRL</i> agents can collaborate with users to solve complex tasks that require understanding the user's internal state.
+                    </p>
                 </div>
             </div>
         </div>
@@ -495,7 +600,7 @@
                     </div>
                 </div>
                 <p class="takeaway-content">
-                    Grounded in the real world, <i>V-IRL</i> agents can leverage any real-world information to finish their mission.
+                    Grounded in geographic coordinates, <i>V-IRL</i> agents can leverage arbitrary real-world information via APIs.
                 </p>
             </div>
         </div>
@@ -605,7 +710,7 @@
                     </div>
                 </div>
                 <p class="takeaway-content">
-                    <i>V-IRL</i> agents can use perceptive input to understand and interact with their environment.
+                    <i>V-IRL</i> agents can use perceptual input to understand and interact with their environment.
                 </p>
             </div>
         </div>

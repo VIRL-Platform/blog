@@ -918,7 +918,7 @@ aside blockquote {
   margin-left: auto;
   margin-right: auto;
   padding: 5px 10px;
-  font-size: 14px;
+  font-size: 1.05em;
   color: #333;
   /* background-color: #f8f8f8; */
   /* border: 1px solid #ddd; */
@@ -1127,6 +1127,11 @@ a.active-link {
   align-items: center; /* Vertically centers the tags within the div */
   /* Additional styling, if necessary, can go here */
 }
+
+.exemplar-takeaways > .takeaway-card {
+    display: none;
+}
+
 
 div.takeaway-tags img {
   height: 28px;
