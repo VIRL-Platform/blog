@@ -834,6 +834,7 @@ img {
 .virl-tag {
     height: 20px;
     margin-right: 5px;
+    pointer-events: none;
 }
 
 blockquote.place-review {
@@ -1059,6 +1060,7 @@ h2.text {
     padding-top: 5px;
     padding-bottom: 5px;
     width: 50px;
+    height: auto;
 }
 .geo-color {
     background-color: rgba(227, 242, 233, 0.5);
@@ -1221,7 +1223,7 @@ div.takeaway-tags img {
     padding-top: 1em;
 }
 
-#earthbound, .earthbound {
+#geo, .geo {
     position: relative;
     padding-top: 1em;
     
