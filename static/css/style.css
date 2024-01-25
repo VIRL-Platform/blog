@@ -1121,11 +1121,6 @@ div.takeaway-tags img {
   border-radius: 0px 0px 15px 15px;
 }
 
-.agent-block {
-  position: relative;
-  padding-bottom: 10px;
-  padding-top: 5px;
-}
 
 .diego-revise-img {
   width: 130%;
@@ -1198,11 +1193,17 @@ div.takeaway-tags img {
   }
 }
 
+.agent-block {
+    position: relative;
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
 
 #earthbound, .earthbound {
     /* background-color: rgba(227, 242, 233, 0.5); */
     position: relative;
     padding-top: 1em;
+    
     .grey-overlay {
         background-color: rgba(227, 242, 233, 0.5);
     }
@@ -1216,6 +1217,7 @@ div.takeaway-tags img {
     /* background-color: rgba(227, 242, 233, 0.5); */
     position: relative;
     padding-top: 1em;
+    
     .grey-overlay {
         background-color: rgba(227, 237, 248, 0.5);
     }
@@ -1223,4 +1225,11 @@ div.takeaway-tags img {
         margin-bottom: 0px;
         padding-bottom: 1em;
     }
+    hr {
+        margin-top: 30px;
+    }
+}
+
+.agent-block > .grey-overlay {
+    border-bottom: 0.2px solid rgba(129, 126, 126, 0.25);
 }
