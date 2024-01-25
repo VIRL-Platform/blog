@@ -939,8 +939,19 @@ aside blockquote {
 
 .left-side-bar {
   position: absolute;
-  top: 90%;
+  top: 91.5%;
   left: -35%;
+}
+.right-side-bar {
+  position: absolute;
+  top: 91.5%;
+  right: -35%;
+}
+
+@media (max-width: 1180px) {
+    div.bm_city_fig > aside {
+        display: none;
+    }
 }
 
 .click-hint{
