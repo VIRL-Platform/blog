@@ -199,16 +199,17 @@
             Naturally, this problem has long been studied in robotics, with agents embodied physically in the world; however, the physical constraints and cost of real hardware prohibit scaling up agents and testing them in diverse environments beyond the lab.
             <!-- This problem has long been studied in robotics, but the physical constraints and cost of real hardware and control make scaling up difficult. -->
             <br><br>
-            To address this challenge, we introduce <strong><i>V-IRL</i></strong>:
+            To address this challenge, we introduce <strong><i>V-IRL</i></strong>,
             a <em>scalable</em> platform enabling agents to interact
-            <!-- with the real-world in a virtual yet realistic environment. -->
             with a <em>virtual facsimile</em> of the real world.
-            Leveraging mapping, geospatial, and street view imagery APIs (see <a href="#system">System Fundamentals</a>), <i>V-IRL</i> 
+            Leveraging mapping, geospatial, and street view imagery APIs (see <a href="#system">&sect;System Fundamentals</a>), <i>V-IRL</i>
             <!-- embeds agents on Earth in real cities, enabling them to ground themselves using granular, sensory-rich perceptual data and 
             exposes granular, sensory-rich perceptual data from real cities that agents can use for practical tasks. -->
-            embeds agents in real cities across the Earth, grounded with sensory-rich perceptual data and access to various descriptive data for solving practical tasks.
-            To showcase the capabilities our framework enables, we use it to instantiate a series of exemplar agents tasked with various practical tasks in <a href="#agent-exemplars">&sect;Agent Exemplars</a>.
-        </p><p class="text abstract">
+            <!-- embeds agents in real cities across the Earth, grounded with sensory-rich perceptual data and access to various descriptive data for solving practical tasks. -->
+            embeds agents in real cities across the Earth.
+            To showcase the capabilities our framework enables, in <a href="#agent-exemplars">&sect;Agent Exemplars</a>, we use <i>V-IRL</i> to instantiate a series of agents
+            that solve various practical tasks, grounded with its sensory-rich perceptual and descriptive data.
+            <br><br>
             Our framework also functions as a vast testbed for measuring progress in 
             open-world computer vision and embodied AI with unprecedented scale and diversity&mdash;providing structured access to
             <em>hundreds of billions of images</em> spanning the entire globe.
@@ -216,7 +217,7 @@
                 Google Street View alone has >220 billion images as of May 2022, and there are numerous other sources of imagery and data that can be incorporated to enrich the environment.
                 <a href="https://blog.google/products/maps/street-view-15-new-features/" target="_blank">https://blog.google/products/maps/street-view-15-new-features/</a>
             </d-footnote>
-            We use <i>V-IRL</i> to construct a initial benchmark of "open-world" vision models on a <em>truly open-world</em> distribution in <a href="#benchmark">&sect;<i>V-IRL</i> Benchmark</a>.
+            In <a href="#benchmark">&sect;<i>V-IRL</i> Benchmark</a>, we use <i>V-IRL</i> to construct an initial benchmark of "open-world" vision models on a <em>truly open-world</em> distribution.
         </p>
         <div class="l-page teaser-video">
             <video autoplay loop muted style="width:100%" preload="auto">
@@ -243,7 +244,7 @@
                 and Agent-{Agent, Human} Collaboration using <img class="virl-tag" src="virl_images/tags/col.png">.
             </p> -->
             <p class="text">
-                To demonstrate the versatility of the <strong><i>V-IRL</i></strong> framework, we use it to instantiate several exemplar agents virtually in real cities around the globe and engage them in a variety of practical tasks.
+                To demonstrate the versatility of the <strong><i>V-IRL</i></strong> framework, we use it to instantiate several exemplar agents virtually in real cities around the globe and engage them in various practical tasks.
                 For illustration, we give <i>V-IRL</i> agents character metadata, including an 8-bit avatar, a name, a short bio, and an intention they are trying to accomplish.
                 For a deeper dive into <i>V-IRL</i>'s components and the capabilities they enable, see <a href="#system">&sect;System Fundamentals</a>.
             </p><p class="text">
