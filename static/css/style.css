@@ -1031,12 +1031,14 @@ h2.text {
 }
 
 #nav-bar-benchmark {
-  background-color: #d2e3c845;
-  padding-bottom: 10px
+    padding-bottom: 10px;
+    /* background-color: #d2e3c845; */
+    background-color: #ffc1c145;
 }
 
 #nav-bar-system {
-  background-color: #b4d5ff32;
+  /* background-color: #b4d5ff32; */
+    background-color: #ac87c52a;
 }
 
 @media (max-width: 768px) {
@@ -1046,12 +1048,29 @@ h2.text {
     }
 }
 
-#nav-sub-agents {
-  padding-left: 15px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+#nav-bar > div {
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   /* background-color: #fae7f378; */
-  background-color: #ac87c52a;
+  /* background-color: #ac87c52a; */
+}
+.nav-link > img {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 50px;
+}
+.geo-color {
+    background-color: rgba(227, 242, 233, 0.5);
+}
+.llm-color {
+    background-color: rgba(227, 237, 248, 0.5);
+}
+.cv-color {
+    background-color: rgba(254, 237, 237, 0.5);
+}
+.col-color {
+    background-color: rgba(255, 255, 204, 0.5);
 }
 
 div.nav-bar a {
