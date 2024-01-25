@@ -279,14 +279,19 @@
             </aside>
         </d-contents> -->
         <!-- <h3 id="peng">Peng: Visiting Student</h3> -->
+
+        <div id="earthbound">
+            <h2 class="text">Earthbound Agents</h2>
+            <div class="l-screen grey-overlay"></div>
+            <p class="text">
+                Agents in the <i>V-IRL</i> platform inhabit virtual representations of real cities around the globe. At the core of this representation are <em>geographic coordinates</em> corresponding to points on the Earth's surface. Using these coordinates, <i>V-IRL</i> allows agents to <i>ground</i> themselves in the world using maps, <em>real</em> street view imagery, information about nearby destinations, and additional data from arbitrary geospatial APIs
+            </p>
+        </div>
         
-        <div id="peng" class="agent-block">
+        <div id="peng" class="agent-block earthbound">
             <div class="l-screen grey-overlay"></div>
             <h3 class="text"><img style="width: 35px" src="virl_images/avatars/courier.png"> Peng: Visiting Student</h3>
 
-            <!-- <p class="text">
-                Agents in the <i>V-IRL</i> platform inhabit virtual representations of real cities around the globe. At the core of this representation are <em>geographic coordinates</em> corresponding to points on the Earth's surface. Using these coordinates, <i>V-IRL</i> allows agents to <i>ground</i> themselves in the world using maps, <em>real</em> street view imagery, information about nearby destinations, and additional data from arbitrary geospatial APIs
-            </p> -->
             <!-- <p class="l-body">
                 <img src="character_card/courier.png" class="character-card-img">
             </p>
@@ -337,11 +342,19 @@
             enable agents to reason, plan  
             and use external tools & APIs.
         </p> -->
+        <div id="language">
+            <h2 class="text">Language-Driven Agents</h2>
+            <div class="l-screen grey-overlay"></div>
+            <p class="text">
+                To tackle more complex tasks, we follow the pattern of language-driven agents <d-cite key="xi2023rise"></d-cite>. LLMs enable agents to reason, plan, and use external tools & APIs.
+            </p>
+        </div>
 
         <!-- place recommender agent -->
         
-        <div id="aria" class="agent-block">
+        <div id="aria" class="agent-block language">
         <h3 class="text" id="aria" style="margin-top: 40px;"><img style="width: 35px" src="virl_images/avatars/recommender.png"> Aria: Place Recommender</h3>
+        <div class="l-screen grey-overlay"></div>
         <!-- <p class="l-body">
             <img src="character_card/place_recommender_single.png" class="character-card-img">
         </p> -->
@@ -402,7 +415,7 @@
         </div>
         
         <!-- Real estate agent -->
-        <div id="vivek" class="agent-block">
+        <div id="vivek" class="agent-block language">
             <div class="l-screen grey-overlay"></div>
             <h3 class="text"><img style="width: 35px" src="virl_images/avatars/real_estate.png"> Vivek: Estate Agent</h3>
             <!-- <p class="l-body">
