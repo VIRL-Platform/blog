@@ -110,7 +110,4 @@ function showTakeaway(id) {
     // Then show the hovered one
     var takeaway = document.getElementById(id);
     takeaway.style.display = 'block';
-
-    // print what we did
-    console.log("showing takeaway " + id);
 }
