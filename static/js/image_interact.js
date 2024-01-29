@@ -7,11 +7,11 @@ function changeContent(place) {
 
   // Here you can add the image URLs and text for each place
   var images = {
-    'Place1': 'virl_images/place_recommend/place1.png',
-    'Place2': 'virl_images/place_recommend/place2.png',
-    'Place3': 'virl_images/place_recommend/place3.png',
-    'Place4': 'virl_images/place_recommend/place4.png',
-    'Place5': 'virl_images/place_recommend/place5.png',
+    'Place1': 'static/img/place_recommend/place1.png',
+    'Place2': 'static/img/place_recommend/place2.png',
+    'Place3': 'static/img/place_recommend/place3.png',
+    'Place4': 'static/img/place_recommend/place4.png',
+    'Place5': 'static/img/place_recommend/place5.png',
   };
 
   var texts = {
