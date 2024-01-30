@@ -7,11 +7,11 @@ function changeContent(place) {
 
   // Here you can add the image URLs and text for each place
   var images = {
-    'Place1': 'virl_images/place_recommend/place1.png',
-    'Place2': 'virl_images/place_recommend/place2.png',
-    'Place3': 'virl_images/place_recommend/place3.png',
-    'Place4': 'virl_images/place_recommend/place4.png',
-    'Place5': 'virl_images/place_recommend/place5.png',
+    'Place1': 'static/img/place_recommend/place1.jpg',
+    'Place2': 'static/img/place_recommend/place2.jpg',
+    'Place3': 'static/img/place_recommend/place3.jpg',
+    'Place4': 'static/img/place_recommend/place4.jpg',
+    'Place5': 'static/img/place_recommend/place5.jpg',
   };
 
   var texts = {
@@ -110,7 +110,4 @@ function showTakeaway(id) {
     // Then show the hovered one
     var takeaway = document.getElementById(id);
     takeaway.style.display = 'block';
-
-    // print what we did
-    console.log("showing takeaway " + id);
 }
