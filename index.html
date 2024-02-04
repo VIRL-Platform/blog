@@ -16,7 +16,6 @@
         <script defer="" src="./static/js/hider.js"></script>
         <script src="./static/js/image_interact.js"></script>
         <script src="./static/js/switch_videos.js"></script>
-        <!-- <script src="./static/js/my_magnifier.js"></script> -->
 
         <link rel="stylesheet" href="./static/css/style.css">
         <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
@@ -39,21 +38,13 @@
             <div class="header-container" id="header-container">
                 <div class="header-content">
                     <h1 style="margin-top: 0px">V-<i>IRL</i>: Grounding Virtual Intelligence in Real Life</h1>
-                    <!-- <p style="color: #FFF7D4">An open-source platform enabling agents to scalably interact with the real-world in a virtual yet realistic environment.</p> -->
                     <p style="color: #FFF7D4">
-                        An open-source framework 
-                        <!-- built on the <a href="https://developers.google.com/maps/" style="color:#FFC436" target="_blank">Google Maps Platform</a> -->
-                        for 
+                        An open-source framework for 
                         <em><strong style="color: #ffe099">embodied agent</strong></em>
                         and 
                         <em><strong style="color: #ffe099">open-world computer vision</strong></em>
                         research.
-                        <!-- enabling agents to scalably interact with the real-world in a virtual yet realistic environment. -->
-                        <!-- Develop and test agents in a virtual representation of the real world,  -->
-                        Develop practical agents 
-                        and test foundation models
-                        in virtual real world cities across the globe, 
-                        grounded with <em><strong>real</strong></em> geospatial data and street view imagery.
+                        Develop practical agents and test foundation models in virtual real world cities across the globe, grounded with <em><strong>real</strong></em> geospatial data and street view imagery.
                     </p>
                     <div class="button-container">
                         <a href="" class="button paper-link" target="_blank">
@@ -112,21 +103,6 @@
             </div>
         </div>
 
-        <!-- <d-contents style="margin-top: 5px; position: relative;">
-            <nav>
-                <h4>Contents</h4>
-                <div><a href="#agent-exemplars">Virtual Intelligence in Real Life</a></div>
-                <ul>
-                    <li><a href="#agent-earthbound" style="font-size: 12px;">Earthbound Agents</a></li>
-                    <li><a href="#agent-language" style="font-size: 12px;">Language-Driven Agents</a></li>
-                    <li><a href="#agent-vision" style="font-size: 12px;">Visually Grounded Agents</a></li>
-                    <li><a href="#agent-agent-col" style="font-size: 12px;">Agent-Agent Collaboration</a></li>
-                    <li><a href="#agent-human-col" style="font-size: 12px;">Human-Agent Collaboration</a></li>
-                </ul>
-                <div><a href="#system">System Fundamental</a></div>
-                <div><a href="#benchmark">V-<i>IRL</i> Benchmark</a></div>
-            </nav>
-        </d-contents> -->
         <div class="nav-bar" id="nav-bar">
             <a class="nav-link" href="#top" style="opacity: 0.7">
                 <div style="margin: 8px 0px; text-align: center">
@@ -191,24 +167,14 @@
         </div>
 
         <p class="text abstract">
-            <!-- There is a sensory gulf between the Earth that humans inhabit and the imaginary, digital realms in which modern AI agents are created.
-            To develop AI agents that can sense, think, and act as flexibly as humans in real-world settings, it's essential to bridge the gap between the digital and physical worlds.
-            How can we embody agents in an environment as rich and diverse as the one we inhabit, without the constraints imposed by real hardware and control?
-            Towards this end, we introduce <strong>V-<i>IRL</i></strong>: a platform that enables agents to scalably interact with the real-world in a virtual yet realistic environment.
-            Our platorm serves as a playground for developing agents that can accomplish a variety of practical tasks, and as a vast testbed for measuring progress in capabilities spanning perception, decision-making, and interaction with real-world data spanning the entire globe. -->
-            <!-- Blog Version: -->
             There's a massive gap between the text-centric digital environments of current AI agents and the sensory-rich world we humans inhabit.
             To develop agents that can operate flexibly and reliably in real-world settings, we must bridge this gap and embody agents in an environment that <em>necessitates</em> the nuanced perceptual understanding required in the real world.
             Naturally, this problem has long been studied in robotics, with agents embodied physically in the world; however, the physical constraints and cost of real hardware prohibit scaling up agents and testing them in diverse environments beyond the lab.
-            <!-- This problem has long been studied in robotics, but the physical constraints and cost of real hardware and control make scaling up difficult. -->
             <br><br>
             To address this challenge, we introduce <strong>V-<i>IRL</i></strong>,
             a <em>scalable</em> platform enabling agents to interact
             with a <em>virtual facsimile</em> of the real world.
             Leveraging mapping, geospatial, and street view imagery APIs (see <a href="#system">&sect;System Fundamentals</a>), V-<i>IRL</i>
-            <!-- embeds agents on Earth in real cities, enabling them to ground themselves using granular, sensory-rich perceptual data and 
-            exposes granular, sensory-rich perceptual data from real cities that agents can use for practical tasks. -->
-            <!-- embeds agents in real cities across the Earth, grounded with sensory-rich perceptual data and access to various descriptive data for solving practical tasks. -->
             embeds agents in real cities across the Earth.
             To showcase the capabilities our platform enables, in <a href="#agent-exemplars">&sect;Agent Exemplars</a>, we use V-<i>IRL</i> to instantiate a series of agents
             that solve various practical tasks, grounded with its sensory-rich perceptual and descriptive data.
@@ -232,20 +198,7 @@
         <hr>
 
         <div id="agent-exemplars" class="agent-block">
-            <!-- <h1 class="text">Virtual Intelligence in Real Life: Agent Exemplars</h1> -->
             <h1 class="text">V-<i>IRL</i> Agent Exemplars</h1>
-            <!-- <p class="text">
-                To demonstrate the versatility of the <strong>V-<i>IRL</i></strong> platform, we use it to instantiate several exemplar agents virtually in real cities around the globe and engage them in a variety of practical tasks.
-                Each subsequent agent and their task is designed to reveal a new capability of the platform.
-                For a deeper dive into V-<i>IRL</i>'s components and the capabilities they enable, see <a href="#system">System Fundamentals</a>.
-            </p><p class="text">
-                For illustration, we give V-<i>IRL</i> agents character metadata, including an 8-bit avatar, a name, a short bio, and an intention they are trying to accomplish.
-                We highlight the specific V-<i>IRL</i> capabilities being employed throughout using colored tags:
-                Geolocation & Mapping capabilities using <img class="virl-tag" src="static/img/tags/geo.png">,
-                Language Models & Reasoning using <img class="virl-tag" src="static/img/tags/lm.png">,
-                Computer Vision using <img class="virl-tag" src="static/img/tags/cv.png">,
-                and Agent-{Agent, Human} Collaboration using <img class="virl-tag" src="static/img/tags/col.png">.
-            </p> -->
             <p class="text">
                 To demonstrate the versatility of the <strong>V-<i>IRL</i></strong> platform, we use it to instantiate several exemplar agents virtually in real cities around the globe and engage them in various practical tasks.
                 For illustration, we give V-<i>IRL</i> agents character metadata, including an 8-bit avatar, a name, a short bio, and an intention they are trying to accomplish.
@@ -254,10 +207,6 @@
                 Each subsequent agent and their task is designed to reveal a new capability of the platform.
                 We highlight the specific V-<i>IRL</i> capabilities being employed throughout using tags and correspondingly colored sections:
             </p>
-            <!-- Geolocation & Mapping capabilities using <img class="virl-tag" src="static/img/tags/geo.png">,
-            Language Models & Reasoning using <img class="virl-tag" src="static/img/tags/lm.png">,
-            Computer Vision using <img class="virl-tag" src="static/img/tags/cv.png">,
-            and Agent-{Agent, Human} Collaboration using <img class="virl-tag" src="static/img/tags/col.png">. -->
             <ul class="text">
                 <li><img class="virl-tag" src="static/img/tags/geo.png"> Action & Geolocation/Mapping capabilities: <a href="#geo" class="geo-color">&sect;Earthbound Agents</a></li>
                 <li><img class="virl-tag" src="static/img/tags/lm.png"> Reasoning & Language Models: <a href="#language" class="llm-color">&sect;Language-Driven Agents</a></li>
@@ -317,10 +266,7 @@
                     <figcaption>Diego</figcaption>
                 </div>
             </div>
-            <!--  
-                Exemplar Takeaways
-            -->
-            <!-- TODO: add bio's? -->
+
             <div class="exemplar-takeaways">
                 <div class="takeaway-card" id="takeaway-peng">
                     <div class="takeaway-head">
@@ -424,14 +370,6 @@
                 </div>
             </div>
         </div>
-        
-        <!-- <h3 id="agent-earthbound">Earthbound Agents</h3>
-        <d-contents class="left-aside-container">
-            <aside class="left-side-bar">
-                <img style="width: 120px" src="static/img/avatars/courier.png">
-            </aside>
-        </d-contents> -->
-        <!-- <h3 id="peng">Peng: Visiting Student</h3> -->
 
         <div id="geo">
             <h2 class="text"><img class="virl-tag" src="static/img/tags/geo.png"><br>Earthbound Agents</h2>
@@ -439,7 +377,6 @@
             <p class="text">
                 Agents using the V-<i>IRL</i> platform inhabit virtual representations of real cities around the globe. At the core of this representation are <em>geographic coordinates</em> corresponding to points on the Earth's surface.
             </p>
-            <!-- static/img/Latitude_and_Longitude_of_the_Earth.svg -->
             <div>
                 <d-figure>
                     <img src="static/img/Latitude_and_Longitude_of_the_Earth.svg" alt="Latitude and Longitude of the Earth" data-zoomable style="max-width: 100%;">
@@ -449,27 +386,14 @@
                 </d-figure>
             </div>
             <p class="text">
-                <!-- Using these geographic coordinates, V-<i>IRL</i> allows agents to <i>ground</i> themselves in the world using maps, <em>real</em> street view imagery, information about nearby destinations, and additional data from arbitrary geospatial APIs. -->
-                <!-- With these geographic coordinates as a link between the virtual and real world,  -->
                 With these geographic coordinates as a link between digital media and the real world,
                 V-<i>IRL</i> agents <em>ground</em> themselves in the world using APIs for maps, <em>real</em> street view imagery, information about nearby destinations, and much more.
-                <!-- V-<i>IRL</i> agents can leverage real-world information via APIs. -->
             </p>
         </div>
         
         <div id="peng" class="agent-block geo">
             <div class="l-screen grey-overlay"></div>
             <h3 class="text"><img style="width: 35px" src="static/img/avatars/courier.png"> Peng: Visiting Student</h3>
-
-            <!-- <p class="l-body">
-                <img src="character_card/courier.jpg" class="character-card-img">
-            </p>
-            <blockquote class="storytext"> 
-                Peng needs to visit several locations throughout the city to get documents signed for registration as a visiting student...
-            </blockquote> 
-        -->
-            <!-- <hr class="l-body fancybreak">  -->
-
             
             <video class="auto-video l-page" muted autoplay preload="auto" playsinline>
                 <source src="static/video/story/peng.mp4" type="video/mp4">
@@ -481,9 +405,6 @@
                 Leveraging Geolocation & Mapping capabilities, Peng saves 7 minutes by walking along the shortest path as opposed to in order waypoint visitation.
             </p>
             
-            <!-- <div class="collapsible">
-                <h4>AGENT BEHAVIOR EXAMPLE <svg height="25px" width="25px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-51.2 -51.2 614.40 614.40" xml:space="preserve" fill="#000000" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="1.024"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#000000;} </style> <g> <path class="st0" d="M278.796,94.952c26.218,0,47.472-21.254,47.472-47.481C326.268,21.254,305.014,0,278.796,0 c-26.227,0-47.481,21.254-47.481,47.472C231.315,73.698,252.569,94.952,278.796,94.952z"></path> <path class="st0" d="M407.86,236.772l-54.377-28.589l-22.92-47.087c-11.556-23.754-33.698-40.612-59.679-45.439l-23.58-4.386 c-11.859-2.197-24.111-0.614-35.027,4.542l-68.67,32.426c-7.628,3.599-13.654,9.863-16.969,17.601l-30.539,71.308 c-1.941,4.533-1.978,9.652-0.11,14.202c1.868,4.561,5.494,8.187,10.046,10.055l0.686,0.275c9.102,3.726,19.532-0.384,23.654-9.314 l28.03-60.704l44.368-14.34l-43.964,195.39l-42.82,106.765c-2.372,5.916-2.106,12.555,0.715,18.26 c2.82,5.714,7.938,9.954,14.074,11.667l1.85,0.512c9.844,2.747,20.293-1.511,25.42-10.357l50.751-87.663l30.237-59.998 l55.182,60.896l40.76,86.354c4.596,9.734,15.466,14.834,25.887,12.133l0.458-0.128c6.053-1.566,11.163-5.586,14.13-11.09 c2.94-5.504,3.47-11.996,1.438-17.903l-29.99-86.93c-4.212-12.225-10.457-23.644-18.47-33.79l-48.699-64.394l17.866-92.92 l23.058,29.294c2.848,3.626,6.538,6.52,10.741,8.426l60.658,27.388c4.387,1.979,9.387,2.098,13.864,0.33 c4.479-1.768,8.05-5.274,9.9-9.716l0.192-0.467C419.562,250.874,416.019,241.067,407.86,236.772z"></path> </g> </g></svg></h4> <div class="collapsible-indicator"></div>
-            </div> -->
             <div>
                 <d-figure>
                     <figure>
@@ -506,13 +427,6 @@
             </div>
         </div>
         
-
-        <!-- <h3 id="agent-language">Language-Driven Agents</h3>
-        <p>
-            To tackle more complex tasks, we follow the pattern of language-driven agents <d-cite key="xi2023rise"></d-cite>. LLMs
-            enable agents to reason, plan  
-            and use external tools & APIs.
-        </p> -->
         <div id="language">
             <h2 class="text"><img class="virl-tag" src="static/img/tags/lm.png"><br>Language-Driven Agents</h2>
             <div class="l-screen grey-overlay"></div>
@@ -526,14 +440,6 @@
         <div id="aria" class="agent-block language">
         <h3 class="text" id="aria" style="margin-top: 40px;"><img style="width: 35px" src="static/img/avatars/recommender.png"> Aria: Place Recommender</h3>
         <div class="l-screen grey-overlay"></div>
-        <!-- <p class="l-body">
-            <img src="character_card/place_recommender_single.jpg" class="character-card-img">
-        </p> -->
-        <!-- <blockquote class="storytext"> 
-            Peng is starving for some lunch but doesn't know where to eat...
-            Luckily, he met a nice grad student Aria during his errands who might be able to help him find a good spot...
-        </blockquote>  -->
-        <!-- <hr class="l-body fancybreak"> -->
         
         <video class="auto-video" muted autoplay preload="auto" playsinline>
             <source src="static/video/story/aria.mp4" type="video/mp4">
@@ -543,7 +449,6 @@
             Aria searches for possible restaurants nearby.
             She then synthesizes public reviews to make final recommendations via GPT-4. As Peng is new to the city and originally from Sichuan, she recommends the spicy Chinese joint <em>Chow House 粤德轩</em> to give him a taste of home.
         </p>
-        <!-- <div class="collapsible"><h4>AGENT BEHAVIOR EXAMPLE <svg width="25px" height="25px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--medical-icon" preserveAspectRatio="xMidYMid meet" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M56.411.719S7.623.704 7.637.719C3.14.719.612 3.044.612 7.793v48.966c0 4.443 2.273 6.769 6.766 6.769h49.173c4.493 0 6.769-2.21 6.769-6.769V7.793c.001-4.634-2.275-7.074-6.909-7.074zM30.749 23.374c0 1.536-1.399 3.181-3.215 3.181V52.49c0 3.682-5.018 3.682-5.018 0V26.555c-1.767 0-3.306-1.361-3.306-3.4V8.882c0-1.242 1.795-1.29 1.795.049v10.55h1.503V8.833c0-1.141 1.729-1.214 1.729.049v10.599h1.553V8.848c0-1.193 1.678-1.241 1.678.047v10.586h1.528V8.848c0-1.18 1.753-1.227 1.753.047v14.479zm13.386 29.104c0 3.601-5.028 3.547-5.028 0V36.496H36.43V12.199c0-5.656 7.706-5.656 7.706 0v40.279z" fill="#000000"></path></g></svg></h4> <div class="collapsible-indicator"></div></div> -->
         
         <!-- TODO: optimize mobile view -->
         <div class="interactive-image">
@@ -591,13 +496,6 @@
         <div id="vivek" class="agent-block language">
             <div class="l-screen grey-overlay"></div>
             <h3 class="text"><img style="width: 35px" src="static/img/avatars/real_estate.png"> Vivek: Estate Agent</h3>
-            <!-- <p class="l-body">
-                <img src="character_card/estate_agent.jpg" class="character-card-img">
-            </p> -->
-            <!-- <blockquote class="storytext"> 
-                Peng hires Vivek to help him find an apartment in East Village, Jersey City, or Long Island City for $1k--$3k per month close to a gym, supermarket, and public transit...
-            </blockquote>
-            <hr class="l-body fancybreak"> -->
             <video class="auto-video" muted autoplay preload="auto" playsinline>
                 <source src="static/video/story/vivek.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -608,7 +506,6 @@
                 His top recommendation is a cost-effective 1 bedroom apartment for $1986/mo, which is close to a supermarket, 2 bus stations, and a gym.
             </p>
 
-            <!-- <div class="collapsible"><h4>AGENT BEHAVIOR EXAMPLE <svg width="25px" height="25px" viewBox="0 0 24.00 24.00" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.048"></g><g id="SVGRepo_iconCarrier"><defs><style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.92px;}</style></defs><path class="cls-1" d="M1.46,13.44H2.9a1.44,1.44,0,0,1,1.44,1.44v0A1.44,1.44,0,0,1,2.9,16.31H1.46a0,0,0,0,1,0,0V13.44a0,0,0,0,1,0,0Z"></path><path class="cls-1" d="M1.46,20.15V16.31h1a1.91,1.91,0,0,1,1.91,1.92v1.92"></path><polyline class="cls-1" points="10.08 19.19 7.21 19.19 7.21 13.44 10.08 13.44"></polyline><line class="cls-1" x1="9.13" y1="16.31" x2="7.21" y2="16.31"></line><polyline class="cls-1" points="12 20.15 12 13.44 12.96 13.44 14.88 19.19 15.83 19.19 15.83 12.48"></polyline><line class="cls-1" x1="17.75" y1="13.44" x2="23.5" y2="13.44"></line><line class="cls-1" x1="20.63" y1="20.15" x2="20.63" y2="13.44"></line><line class="cls-1" x1="23.5" y1="22.06" x2="0.5" y2="22.06"></line><polyline class="cls-1" points="22.54 10.56 12 1.94 1.46 10.56"></polyline></g></svg></h4>  <div class="collapsible-indicator"></div> </div> -->
             <div>
                 <d-figure>
                     <figure>
@@ -632,14 +529,7 @@
             </div>
         </div>
 
-        <!-- Vision agents -->
-        <!-- <h3 id="agent-vision">Visually Grounded Agents</h3>
-        <p>
-            Although language-driven agents can address some real-world tasks using external tools, their reliance on solely text-based information limits their applicability to tasks where <em>visual grounding</em> is required.
-            In contrast, <em>real sensory input</em> is integral to many daily human activities---allowing a deep connection to and understanding of the 
-            real world around us.
-            Agents can leverage street view imagery through the V-<i>IRL</i> platform to <em>visually ground</em> themselves in the real world---opening up a wide range of <em>perception-driven tasks</em>.
-        </p> -->
+        <!-- Visual agents -->
 
         <div id="vision">
             <h2 class="text"><img class="virl-tag" src="static/img/tags/cv.png"><br>Visually Grounded Agents</h2>
@@ -656,18 +546,6 @@
         <div id="rx-399" class="agent-block vision">
             <div class="l-screen grey-overlay"></div>
             <h3 class="text"><img style="width: 35px" src="static/img/avatars/robot.png"> RX-399: Urban Assistance Robot</h3>
-            <!-- <d-contents class="left-aside-container">
-                <aside class="left-side-bar">
-                    <img style="width: 120px" src="static/img/avatars/robot.png">
-                </aside>
-            </d-contents> -->
-            <!-- <p class="l-body">
-                <img src="character_card/rx399.jpg" class="character-card-img">
-            </p>
-            <blockquote class="storytext"> 
-                RX-399 is a state-of-the-art robot agent with advanced navigation and sensing capabilities. Its manufacturer is running a pilot program with sanitation departments in Hong Kong and New York City to assess its readiness for garbage duty...
-            </blockquote>
-            <hr class="l-body fancybreak"> -->
 
             <video class="auto-video" muted autoplay preload="auto" playsinline>
                 <source src="static/video/story/rx399.mp4" type="video/mp4">
@@ -680,12 +558,10 @@
 
             <div id="slider-img-rx399" class="slider-img-container">
                 <div class="my-slides">
-                <!-- <div class="numbertext">1 / 2</div> -->
                 <img data-zoomable src="static/img/rx-399/rx-399_clean_ny.jpg" style="width:100%">
                 </div>
             
                 <div class="my-slides">
-                <!-- <div class="numbertext">2 / 2</div> -->
                 <img data-zoomable src="static/img/rx-399/rx-399_clean_hk.jpg" style="width:100%">
                 </div>
                 
@@ -706,14 +582,12 @@
 
             <div class="l-body">
                 <div id="RX399video1Container" class="video-container">
-                    <!-- <iframe src="https://www.youtube.com/embed/Q6Hty1BTLdw?si=XAK_3qkchKgrDVit" title="RX-399 in New York City" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe> -->
                     <video class="video-music" controls preload="metadata" playsinline>
                         <source src="static/video/rx-399_ny.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <div id="RX399video2Container" class="video-container" style="display:none;">
-                    <!-- <iframe src="https://www.youtube.com/embed/9gudvNT5Ces?si=j4K_7ULDvNMIt5dp" title="RX-399 in Hong Kong" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe> -->
                     <video class="video-music" controls preload="metadata" playsinline>
                         <source src="static/video/rx-399_hk.mp4" type="video/mp4">
                         Your browser does not support the video tag.
@@ -746,19 +620,6 @@
         <div id="imani" class="agent-block vision">
             <div class="l-screen grey-overlay"></div>
             <h3 class="text"><img style="width: 35px" src="static/img/avatars/urban_planner.png"> Imani: Urban Planner</h3>
-            <!-- <d-contents class="left-aside-container">
-                <aside class="left-side-bar">
-                    <img style="width: 120px" src="static/img/avatars/urban_planner.png">
-                </aside>
-            </d-contents> -->
-
-            <!-- <p class="l-body">
-                <img src="character_card/urban_planner.jpg" class="character-card-img">
-            </p>
-            <blockquote class="storytext">
-                Imani needs to analyze the distribution of trash bins, fire hydrants, and park benches in New York's Central Park for a project with the NYC Parks & Recreation department...
-            </blockquote> -->
-            <!-- <hr class="l-body fancybreak"> -->
             
             <video class="auto-video" muted autoplay preload="auto" playsinline>
                 <source src="static/video/story/imani.mp4" type="video/mp4">
@@ -768,8 +629,6 @@
             <p class="text">
                 Imani sets routes spanning Central Park and objects of interest for RX-399, who traverses the routes and records all detected instances. 
                 After RX-399 finishes its route, Imani analyzes the collected data by RX-399 at different levels of detail.
-                <!-- As depicted in \cref{fig:agent_urban_plan}, the coarsest level shows general \geoul{distributions} of trash bins, hydrants, and benches in the park. -->
-                <!-- Imani can also zoom in to specific regions, where lighter colors represent positions with more unique instances identified.  -->
             </p>
             <div class="img-magnifier-container">
                 <img data-zoomable id="urban_planner_img" style="width: 100%" src="static/img/urban_planner.jpg" alt="Urban Planner agent visualization">
@@ -801,14 +660,12 @@
 
             <div class="l-body">
                 <div id="UrbanPlannervideo1Container" class="video-container">
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Tq4fkKXrxYo?si=663Xhkzoq6XOONgF" title="Urban Planner agent video illustration" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe> -->
                     <video class="video-music" controls preload="metadata" playsinline>
                         <source src="static/video/urban_planner.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <div id="UrbanPlannervideo2Container" class="video-container" style="display:none;">
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Tj_3A1vHUZU?si=d78eIoIIBZjPbvEB" title="Play on heatmap" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe> -->
                     <video class="video-music" controls preload="metadata" playsinline>
                         <source src="static/video/urban_planner_play.mp4" type="video/mp4">
                         Your browser does not support the video tag.
@@ -841,20 +698,6 @@
         <div id="hiro" class="agent-block vision">
             <div class="l-screen grey-overlay"></div>
             <h3 class="text"><img style="width: 35px" src="static/img/avatars/explorer.png"> Hiro: Seasoned Traveler (Intentional Explorer)</h3>
-            <!-- <d-contents class="left-aside-container">
-                <aside class="left-side-bar">
-                    <img style="width: 120px" src="static/img/avatars/explorer.png">
-                </aside>
-            </d-contents> -->
-
-            <!-- <p class="l-body">
-                <img src="character_card/intentional_explorer.jpg" class="character-card-img">
-            </p>
-            <blockquote class="storytext">
-                Hiro is starting a new journey in Hong Kong.
-                He decides to explore without a specific destination in mind, looking for a good local lunch spot with food that's not too spicy...
-            </blockquote>
-            <hr class="l-body fancybreak"> -->
 
             <video class="auto-video" muted autoplay preload="auto" playsinline>
                 <source src="static/video/story/hiro.mp4" type="video/mp4">
@@ -863,13 +706,6 @@
             <p class="text">
                 Driven by his intention, Hiro uses open-world detection to find a restaurant; uses VQA to select proper roads; uses place reviews and LLM to decide whether a place is suitable for his purpose.
             </p>
-
-            <!-- <d-figure>
-                <figure>
-                    <img src="static/img/intentional_explorer.jpg" style="width: 100%" alt="Intentional Explorer agent exploring">
-                    <figcaption style="width: 100%; text-align: center">Visualization for Hiro's lunch exploration in HK. Concrete procedure is depicted in the following video.</figcaption>
-                </figure>
-            </d-figure> -->
             
             <div id="slider-img-explorer" class="slider-img-container">
                 <div class="my-slides">
@@ -953,7 +789,6 @@
 
 
             <p class="video-container">
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/bOGa7eI-K_I?si=MPPoxbxf8S7Dj7Tp" title="Intentional Explorer agent exploration procedure" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe> -->
                 <video class="video-music" controls preload="metadata" playsinline>
                     <source src="static/video/intentional_explorer.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -975,11 +810,7 @@
             </div>
         </div>
         
-        
-        <!-- <h3 id="agent-agent-col">Agent-Agent Collaborative Agents</h3>
-        <p>
-            As with previous agents, collaborative agents are designed for specific tasks; however, they can handle objectives beyond their expertise through collaboration with each other.
-        </p> -->
+        <!-- Collaborative agents -->
 
         <div id="collaboration">
             <h2 class="text">Collaborative Agents<br><img class="virl-tag" src="static/img/tags/col.png"></h2>
@@ -991,21 +822,7 @@
         <div id="ling" class="agent-block collaboration">
             <div class="l-screen grey-overlay"></div>
             <h3 class="text"><img style="width: 35px" src="static/img/avatars/tourist.png"> Ling: Tourist</h3>
-            <!-- <d-contents class="left-aside-container">
-                <aside class="left-side-bar">
-                    <img style="width: 120px" src="static/img/avatars/tourist.png">
-                </aside>
-            </d-contents> -->
 
-            <!-- <p class="l-body">
-                <img src="character_card/tourist.jpg" class="character-card-img">
-            </p> -->
-            <!-- <blockquote class="storytext">
-                Ling travels to cities around the world. She 
-                seeks out authentic experiences and
-                is always unafraid to ask for help from Locals whenever she finds herself lost...
-            </blockquote>
-            <hr class="l-body fancybreak"> -->
             <video class="auto-video" muted autoplay preload="auto" playsinline>
                 <source src="static/video/story/ling.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -1066,14 +883,12 @@
 
             <div class="l-body">
                 <div id="Touristvideo1Container" class="video-container">
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/H_F-_NoHDLk?si=7TcYGkiFOIBaCHZo" title="Tourist-Local collaboration in San Francisco" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe> -->
-                    <video class="video-music" controls preload="metadata" playsinline>
+=                    <video class="video-music" controls preload="metadata" playsinline>
                         <source src="static/video/tourist_sf.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <div id="Touristvideo2Container" class="video-container" style="display:none;">
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/kS2zIDyVvSU?si=hoA4oI4sKXWDk1Wy" title="Tourist-Local collaboration in Hong Kong" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe> -->
                     <video class="video-music" controls preload="metadata" playsinline>
                         <source src="static/video/tourist_hk.mp4" type="video/mp4">
                         Your browser does not support the video tag.
@@ -1104,26 +919,9 @@
             </div>
         </div>
 
-        <!-- <h3 id="agent-human-col">Human-Agent Collaborative Agents</h3>
-        <p>
-            Grounded in the same real-world as humans, agents are also capable of collaborating with humans to serve as assistants.
-        </p> -->
         <div id="diego" class="agent-block collaboration">
             <div class="l-screen grey-overlay"></div>
             <h3 class="text"><img style="width: 35px" src="static/img/avatars/concierge.png"> Diego: Expert Concierge</h3>
-            <!-- <d-contents class="left-aside-container">
-                <aside class="left-side-bar">
-                    <img style="width: 120px" src="static/img/avatars/concierge.png">
-                </aside>
-            </d-contents> -->
-
-            <!-- <p class="l-body">
-                <img src="character_card/interactive_concierge.jpg" class="character-card-img">
-            </p>
-            <blockquote class="storytext">
-                As a university student in NYC, you're excited to spend a day exploring lesser-known and tranquil places. Your friend recommended Diego, who is known for his professionalism in planning practical and personalized itineraries...
-            </blockquote>
-            <hr class="l-body fancybreak"> -->
             <video class="auto-video" muted autoplay preload="auto" playsinline>
                 <source src="static/video/story/diego.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -1135,7 +933,6 @@
             </p>
             <d-figure class="l-page">
                 <figure>
-                    <!-- <img src="static/img/interactive_concierge.jpg" alt="Interactive Concierge Diego" style="width: 100%"> -->
                     <video id="diego-plan-video" playsinline autoplay loop muted>
                         <source src="static/video/interactive_concierge_gif.mp4" type="video/mp4">
                         Your browser does not support the video tag.
@@ -1147,13 +944,6 @@
                 You can intervene Diego's planning process by adjusting your interoception status or providing verbal feedback for Diego.
                 In response, Diego promptly revises his original plan to make it accommodate your demands, and re-estimate your state changes after revision. (see the following figures)
             </p>
-
-            <!-- <d-figure>
-                <figure>
-                    <img src="static/img/interactive_concierge_revise.jpg" alt="Interactive Concierge Diego Revise" style="width: 100%">
-                    <figcaption style="width: 100%; text-align: center">Diego adapts original plan to suit user's intervention.</figcaption>
-                </figure>
-            </d-figure> -->
 
             <div>
                 <img src="static/img/diego_intervent/diego_origin.jpg" class="diego-revise-img">
@@ -1209,41 +999,30 @@
                 Additionally, grounded on tightly related street views and Map in V-<i>IRL</i>, Diego travels places in his itinerary to scout for potential scenic viewpoints for you as shown in the following figure. 
                 He uses VQA to assess each captured views, attaching highly rated positions to your itinerary.
             </p>
-            <!-- <d-figure>
-                <figure>
-                    <img src="static/img/photographer.jpg" alt="Interactive Concierge Diego takes photos" style="width: 130%">
-                    <figcaption style="width: 130%; text-align: center">Diego records attractive locations in your itinerary.</figcaption>
-                </figure>
-            </d-figure> -->
 
             <div id="slider-img-photographer" class="slider-img-container">
                 <div class="my-slides">
-                    <!-- <div class="numbertext">1 / 5</div> -->
                     <img src="static/img/photographer/photographer_1.jpg">
                     <div class="overlay"><i>Geo Location: [40.8649162, -73.9311561]</i></div>
                 </div>
             
                 <div class="my-slides">
-                    <!-- <div class="numbertext">2 / 5</div> -->
                     <img src="static/img/photographer/photographer_2.jpg">
                     <div class="overlay"><i>Geo Location: [40.8647205, -73.9325163]</i></div>
                 </div>
 
                 <div class="my-slides">
                     <img src="static/img/photographer/photographer_3.jpg">
-                    <!-- <div class="numbertext">3 / 5</div> -->
                     <div class="overlay"><i>Geo Location: [40.8653388, -73.9322499]</i></div>
                 </div>
 
                 <div class="my-slides">
                     <img src="static/img/photographer/photographer_4.jpg">
-                    <!-- <div class="numbertext">4 / 5</div> -->
                     <div class="overlay"><i>Geo Location: [40.8609142,-73.9324818]</i></div>
                 </div>
 
                 <div class="my-slides">
                     <img src="static/img/photographer/photographer_5.jpg">
-                    <!-- <div class="numbertext">5 / 5</div> -->
                     <div class="overlay"><i>Geo Location: [40.8642401,-73.9325958]</i></div>
                 </div>
                 
@@ -1290,19 +1069,11 @@
 
         </div>
 
-        <!-- <d-figure>
-            <figure>
-                <img src="static/img/interactive_concierge_pipeline.jpg" alt="Pipeline of Interactive Concierge agent" usemap="#imagemap" style="width: 100%">
-                <figcaption style="width: 100%; text-align: center">Pipeline overview of interactive concierge agent Diego.</figcaption>
-            </figure>
-        </d-figure> -->
-        
 
-        <!-- Part 2: System fundamental -->
+        <!-- Part 2: System fundamentals -->
         <div id="system" style="position: relative">
         <h2 class="text"><img src="static/img/icons/system.png" width="50px"> System Fundamentals</h2>
         <p class="text">
-            <!-- This section introduces our system's core: a platform designed for perception-driven agents that transforms real-world cities around the world into a vast virtual playground where agents can be constructed to solve practical tasks. At its heart, V-<i>IRL</i> is comprised of a hierarchical architecture. -->
             Here we describe <strong>V-<i>IRL</i></strong>'s hierarchical architecture that transforms real cities around the world into a vast virtual playground in which agents can be constructed to solve practical tasks.
             The <i><u>platform</u></i> lies at the foundation&mdash;providing the underlying components and infrastructure for agents to employ.
             Higher level <i><u>capabilities</u></i> of <em>Perception</em>, <em>Reasoning</em>, </em>Action</em>, and <em>Collaboration</em> emerge from the platform's components.
@@ -1565,28 +1336,28 @@
 
         <div class="img-grid-row">
             <div class="img-grid-column">
-              <img data-zoomable src="static/img/place_loc_imgs/bookstore.jpg" style="width:100%">
-              <img data-zoomable src="static/img/place_loc_imgs/bookstore2.jpg" style="width:100%">
-              <img data-zoomable src="static/img/place_loc_imgs/clothing2.jpg" style="width:100%">
-              <img data-zoomable src="static/img/place_loc_imgs/jewelry.jpg" style="width:100%">
+                <img data-zoomable src="static/img/place_loc_imgs/bookstore.jpg" style="width:100%">
+                <img data-zoomable src="static/img/place_loc_imgs/bookstore2.jpg" style="width:100%">
+                <img data-zoomable src="static/img/place_loc_imgs/clothing2.jpg" style="width:100%">
+                <img data-zoomable src="static/img/place_loc_imgs/jewelry.jpg" style="width:100%">
             </div>
             <div class="img-grid-column">
-              <img data-zoomable src="static/img/place_loc_imgs/movie.jpg" style="width:100%">
-              <img data-zoomable src="static/img/place_loc_imgs/clothing.jpg" style="width:100%">
-              <img data-zoomable src="static/img/place_loc_imgs/spa.jpg" style="width:100%">
-              <img data-zoomable src="static/img/place_loc_imgs/spa2.jpg" style="width:100%">
+                <img data-zoomable src="static/img/place_loc_imgs/movie.jpg" style="width:100%">
+                <img data-zoomable src="static/img/place_loc_imgs/clothing.jpg" style="width:100%">
+                <img data-zoomable src="static/img/place_loc_imgs/spa.jpg" style="width:100%">
+                <img data-zoomable src="static/img/place_loc_imgs/spa2.jpg" style="width:100%">
             </div>
             <div class="img-grid-column">
-              <img data-zoomable src="static/img/place_loc_imgs/convenience.jpg" style="width:100%">
-              <img data-zoomable src="static/img/place_loc_imgs/convenience2.jpg" style="width:100%">
-              <img data-zoomable src="static/img/place_loc_imgs/laundry.jpg" style="width:100%">
-              <img data-zoomable src="static/img/place_loc_imgs/laundry2.jpg" style="width:100%">
+                <img data-zoomable src="static/img/place_loc_imgs/convenience.jpg" style="width:100%">
+                <img data-zoomable src="static/img/place_loc_imgs/convenience2.jpg" style="width:100%">
+                <img data-zoomable src="static/img/place_loc_imgs/laundry.jpg" style="width:100%">
+                <img data-zoomable src="static/img/place_loc_imgs/laundry2.jpg" style="width:100%">
             </div>
             <div class="img-grid-column">
-              <img data-zoomable src="static/img/place_loc_imgs/bank.jpg" style="width:100%">
-              <img data-zoomable src="static/img/place_loc_imgs/bank2.jpg" style="width:100%">
-              <img data-zoomable src="static/img/place_loc_imgs/park.jpg" style="width:100%">
-              <img data-zoomable src="static/img/place_loc_imgs/park2.jpg" style="width:100%">
+                <img data-zoomable src="static/img/place_loc_imgs/bank.jpg" style="width:100%">
+                <img data-zoomable src="static/img/place_loc_imgs/bank2.jpg" style="width:100%">
+                <img data-zoomable src="static/img/place_loc_imgs/park.jpg" style="width:100%">
+                <img data-zoomable src="static/img/place_loc_imgs/park2.jpg" style="width:100%">
             </div>
             <div class="img-grid-column">
                 <img data-zoomable src="static/img/place_loc_imgs/cafe.jpg" style="width:100%">
@@ -1695,10 +1466,6 @@
             In Lagos, vision models might struggle due to its non-traditional street views relative to more developed cities (see street views in aside figures). For cities like Tokyo, Hong Kong and Buenos Aires, an intriguing observation is their primary use of non-English languages in street views.
             This suggests that existing vision models face challenges with multilingual image data.
         </p>
-        <!-- <aside class="img-magnifier-container">
-            <img id="street_lagos" data-zoomable src="static/img/bm_city/street_lagos.jpg" style="width: 250px; height: auto">
-            <figcaption style="width: 250px; text-align: center">Lagos, Nigeria.</figcaption>
-        </aside> -->
 
         <div class="bm_city_fig">
             <img id="bm_city_img" data-zoomable src="static/img/bm_city_analysis.jpg" alt="City level analysis" style="width: 100%;">
@@ -1753,11 +1520,6 @@
         
         <!-- bibliography will be inlined during Distill pipeline's pre-rendering -->
         <d-bibliography src="bibliography.bib"></d-bibliography>
-
-        <!-- <script type="text/bibliography">
-        
-        </script> -->
-        <!-- <script src="./static/js/contents_bar.js"></script> -->
         <script src="./static/js/nav-bar.js"></script>
         
         <script type="text/javascript">
