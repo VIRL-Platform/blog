@@ -186,7 +186,7 @@
         </div>
         
         <div class="l-page video-container" style="margin-left: 4%; margin-bottom: 20px">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/bLYRp872JsQ?si=GJ5naMLEIyV2pm5j" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fBD2QTSmFqw?si=ecz_98uvw7NcAshP" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
             <figcaption style="text-align: center">(Best viewed in 4K)</figcaption>
         </div>
 
@@ -1474,7 +1474,7 @@
             This enables us to develop three V-<i>IRL</i> benchmarks to assess the capabilities of existing vision models in such open-world data distribution.
         </p>
 
-        <h3 class="text">V-<em>RL Place:</em> Localization</h3>
+        <h3 class="text">V-<em>IRL Place:</em> Localization</h3>
         <p class="text">
             <strong>Motivation:</strong> Every day, humans traverse through cities, moving between diverse places to fulfil a range of goals, like the Intentional Explorer agent.
             We assess the performance of vision models on the everyday human activity <i>place localization</i> using street view imagery and associated place data.
@@ -1604,7 +1604,7 @@
         <figcaption style="text-align: center; margin-bottom: 10px;">Part of V-<i>IRL</i> Place localization benchmark results via GLIP (w/ CLIP proposal).</figcaption>
 
 
-        <h3 class="text">V-<em>RL Place:</em> Recognition and VQA</h3>
+        <h3 class="text">V-<em>IRL Place:</em> Recognition and VQA</h3>
         <p class="text">
             <strong>Motivation:</strong> In contrast to the challenging V-<i>IRL</i> place localization task on street view imagery, in real life, humans can recognize businesses by taking a closer, <strong>place-centric</strong> look.
             In this regard, we assess existing vision models on two perception tasks based on place-centric images: <i>i)</i> recognizing specific place types; <i>ii)</i> identifying human intentions by Vision Question Answering (VQA), named intention VQA.
@@ -1689,7 +1689,7 @@
             </figure>
         </d-figure>
 
-        <h3 class="text">Geographic Diversity</h3>
+        <h3 id="geo-diversity" class="text">Geographic Diversity</h3>
         <p class="text">
             Spanning 12 cities across the globe, our V-<i>IRL</i> benchmarks provide an opportunity to analyze the inherent model biases in different regions. As depicted in the following figure, vision models demonstrate subpar performance on all three benchmark tasks in Lagos, Tokyo, Hong Kong, and Buenos Aires.
             In Lagos, vision models might struggle due to its non-traditional street views relative to more developed cities (see street views in aside figures). For cities like Tokyo, Hong Kong and Buenos Aires, an intriguing observation is their primary use of non-English languages in street views.
@@ -1719,10 +1719,22 @@
                 <img  data-zoomable id="street_ba" src="static/img/bm_city/street_mumbai.jpg" style="width: 240px; height: auto">
                 <figcaption style="width: 240px; text-align: center; margin-bottom:5px">Mumbai, India.</figcaption>
             </aside>
+        </div>        
         </div>
+
+        <div id="discussion" style="position: relative; margin-top: 40px; margin-bottom: 40px;">
+            <h2 class="text" style="margin-top:0px; margin-bottom:10px"><img src="static/img/icons/discussion.png" width="50px"> Discussion: Ethics & Privacy</h2>
         
-        
+            <p class="text">Our framework serves as a tool for AI development and as a crucible for ethical discourse and preparation. As AI is inevitably being integrated into society&mdash;<em>e.g.</em>, via augmented reality wearables or robots navigating city streets&mdash;it is imperative to confront and discuss ethical and privacy concerns now. Unlike these impending <em>real-time</em> systems, the data accessed by <em>V-IRL</em> is "stale" and often preprocessed---providing a controlled environment to study these concerns.</p>
+            
+            <p class="text">Notably, <em>V-IRL</em> exclusively utilizes preexisting, readily available APIs; it does not capture or make available any previously inaccessible data. Our primary source of street-view imagery, Google Maps<d-cite key="google_map_platform"></d-cite>, is subject to major privacy-protection measures, including blurring faces and license plates <d-cite key="frome2009large"></d-cite>. 
+            Moreover, <em>V-IRL</em> complies with the <a href="https://cloud.google.com/maps-platform/terms">Google Maps Platform license</a>, similarly to notable existing works that also leverage Google's street views <d-cite key="zamir2014image"></d-cite> <d-cite key="chen2019touchdown"></d-cite>.</p>
+            
+            <p class="text">
+                We believe <em>V-IRL</em> is an invaluable tool for researching bias. As discussed in <a href="#geo-diversity">geographic diversity</a>, <em>V-IRL</em>'s <em>global scale</em> provides a lens to study linguistic, cultural, and other geographic biases inherent in models. By using <em>V-IRL</em> to study such questions, we aim to preemptively tackle the ethical dilemmas that will arise with deploying real-time systems rather than being blindsided by them. We hope our work helps spur proactive discussion of future challenges throughout the community.
+            </p>
         </div>
+
         </d-article>
         <d-appendix>
             <h3>BibTeX</h3>
@@ -1730,8 +1742,8 @@
                 @article{VIRL,<br>
                 &nbsp;&nbsp;title={V-IRL: Grounding Virtual Intelligence in Real Life},<br>
                 &nbsp;&nbsp;author={Yang, Jihan and Ding, Runyu and Brown, Ellis and Qi, Xiaojuan and Xie, Saining},<br>
-                &nbsp;&nbsp;year={2023},<br>
-                &nbsp;&nbsp;journal={arXiv preprint arXiv:2312},<br>
+                &nbsp;&nbsp;year={2024},<br>
+                &nbsp;&nbsp;journal={arXiv preprint arXiv:2402},<br>
                 }
             </p>
 
