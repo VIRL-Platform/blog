@@ -1034,6 +1034,7 @@ h2.text {
   top: 20px;
   width: 70px;
   height: fit-content;
+  max-height: 100%;  /* Gives navbar a scrollbar if it's too long */
   background-color: #dbdbdb39;
   overflow-x: hidden;
   padding-top: 10px;
