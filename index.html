@@ -162,7 +162,7 @@
         </div>
         
         <div class="l-page video-container" style="margin-left: 4%; margin-bottom: 20px">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/fBD2QTSmFqw?si=ecz_98uvw7NcAshP" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/F8OYtifxfe8?si=mgddGW5uih500O_m" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
             <figcaption style="text-align: center">(Best viewed in 4K)</figcaption>
         </div>
 
@@ -1489,7 +1489,7 @@
         </div>        
         </div>
 
-        <div id="discussion" style="position: relative; margin-top: 40px; margin-bottom: 40px;">
+        <div id="discussion" style="position: relative; margin-top: 40px; margin-bottom: 0px;">
             <h2 class="text" style="margin-top:0px; margin-bottom:10px"><img src="static/img/icons/discussion.png" width="50px"> Discussion: Ethics & Privacy</h2>
         
             <p class="text">Our platform serves as a tool for AI development and as a crucible for ethical discourse and preparation. As AI is inevitably being integrated into society&mdash;<em>e.g.</em>, via augmented reality wearables or robots navigating city streets&mdash;it is imperative to confront and discuss ethical and privacy concerns now. Unlike these impending <em>real-time</em> systems, the data accessed by <em>V-IRL</em> is "stale" and often preprocessed---providing a controlled environment to study these concerns.</p>
@@ -1502,12 +1502,26 @@
             </p>
         </div>
 
+        <div id="conclusion" style="position: relative; margin-top: 20px; margin-bottom: 40px;">
+            <h2 class="text" style="margin-top:0px; margin-bottom:10px"><img src="static/img/icons/conclusion.jpg" width="50px"> Conclusion</h2>
+            <p class="text">
+                In this work, we introduce <em>V-IRL</em>, an open-source platform designed to bridge the sensory gap between the digital and physical worlds, enabling AI agents to interact with the real world in a virtual yet realistic environment.
+                Through <em>V-IRL</em>, agents can develop rich sensory grounding and perception, utilizing real geospatial data and street-view imagery.
+                We demonstrate the platform's versatility by creating diverse exemplar agents and developing benchmarks measuring the performance of foundational language and vision models on open-world visual data from across the globe.
+            </p>
+            <p class="text">
+                This platform opens new avenues for advancing AI capabilities in perception, decision-making, and real-world data interaction.
+                As spatial computing and robotic systems become increasingly prevalent, the demand for and possibilities of AI agents will only grow.
+                From personal assistants to practical applications like urban planning to life-changing tools for the visually impaired, we hope <em>V-IRL</em> helps usher in a new era of perceptually grounded agents.
+            </p>
+        </div>
+
         </d-article>
         <d-appendix>
             <h3>BibTeX</h3>
             <p class="bibtex">
-                @article{VIRL,<br>
-                &nbsp;&nbsp;title={V-IRL: Grounding Virtual Intelligence in Real Life},<br>
+                @article{yang2024virl,<br>
+                &nbsp;&nbsp;title={{V-IRL: Grounding Virtual Intelligence in Real Life}},<br>
                 &nbsp;&nbsp;author={Yang, Jihan and Ding, Runyu and Brown, Ellis and Qi, Xiaojuan and Xie, Saining},<br>
                 &nbsp;&nbsp;year={2024},<br>
                 &nbsp;&nbsp;journal={arXiv preprint arXiv:2402},<br>
@@ -1527,13 +1541,6 @@
             switchVideo('RX399', 'video1Container', 'video1Preview');
             switchVideo('UrbanPlanner', 'video1Container', 'video1Preview');
             switchVideo('Tourist', 'video1Container', 'video1Preview');
-
-            // magnify("urban_planner_img", 2);
-            // magnify("bm_city_img", 1.5);
-            // magnify("street_lagos", 2, 80, 80);
-            // magnify("street_tokyo", 2, 80, 80);
-            // magnify("street_hk", 2, 80, 80);
-            // magnify("street_ba", 2, 80, 80);
 
             let slideIndex = 1;
             showSlides("slider-img-rx399", slideIndex);
